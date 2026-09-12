@@ -58,11 +58,11 @@
 
     <div class="category-nav-bar">
         <div class="container">
-            <a href="#oils" class="category-chip active"><i class="fa-solid fa-droplet"></i> Edible Oils</a>
-            <a href="#foods" class="category-chip"><i class="fa-solid fa-bowl-food"></i> Soya &amp; Foods</a>
-            <a href="#staples" class="category-chip"><i class="fa-solid fa-wheat-awn"></i> Staples &amp; Atta</a>
-            <a href="#rice" class="category-chip"><i class="fa-solid fa-seedling"></i> Rice Range</a>
-            <a href="#soap" class="category-chip"><i class="fa-solid fa-soap"></i> Alife Hygiene Soap</a>
+            <button type="button" class="category-chip" data-filter="oils"><i class="fa-solid fa-droplet"></i> Edible Oils</button>
+            <button type="button" class="category-chip" data-filter="foods"><i class="fa-solid fa-bowl-food"></i> Soya &amp; Foods</button>
+            <button type="button" class="category-chip" data-filter="staples"><i class="fa-solid fa-wheat-awn"></i> Staples &amp; Atta</button>
+            <button type="button" class="category-chip" data-filter="rice"><i class="fa-solid fa-seedling"></i> Rice Range</button>
+            <button type="button" class="category-chip" data-filter="soap"><i class="fa-solid fa-soap"></i> Alife Hygiene Soap</button>
         </div>
     </div>
 
@@ -131,14 +131,53 @@
                 '</div>';
         }).join("");
 
-        // Active state toggling for category chips
+        const groups = catalog.querySelectorAll(".catalog-group");
         const chips = document.querySelectorAll(".category-chip");
-        chips.forEach(chip => {
-            chip.addEventListener("click", function() {
-                chips.forEach(c => c.classList.remove("active"));
-                this.classList.add("active");
+        const backBar = document.createElement("div");
+        backBar.className = "catalog-back";
+        backBar.hidden = true;
+        backBar.innerHTML = '<button type="button" class="catalog-back-btn"><i class="fa-solid fa-arrow-left"></i> Go back</button>';
+        catalog.parentNode.insertBefore(backBar, catalog);
+
+        function showAll() {
+            groups.forEach(function (group) {
+                group.hidden = false;
+            });
+            chips.forEach(function (chip) {
+                chip.classList.remove("active");
+            });
+            backBar.hidden = true;
+        }
+
+        function showCategory(id) {
+            let found = false;
+            groups.forEach(function (group) {
+                const match = group.id === id;
+                group.hidden = !match;
+                if (match) found = true;
+            });
+            if (!found) {
+                showAll();
+                return;
+            }
+            chips.forEach(function (chip) {
+                chip.classList.toggle("active", chip.dataset.filter === id);
+            });
+            backBar.hidden = false;
+            backBar.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+
+        chips.forEach(function (chip) {
+            chip.addEventListener("click", function () {
+                if (chip.classList.contains("active")) {
+                    showAll();
+                    return;
+                }
+                showCategory(chip.dataset.filter);
             });
         });
+
+        backBar.querySelector(".catalog-back-btn").addEventListener("click", showAll);
     </script>
 </body>
 

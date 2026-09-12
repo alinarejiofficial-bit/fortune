@@ -586,6 +586,7 @@ ul {
     border: 1px solid #eadace;
     white-space: nowrap;
     transition: all 0.25s ease;
+    cursor: pointer;
 }
 
 .category-chip i {
@@ -604,6 +605,30 @@ ul {
 .category-chip:hover i,
 .category-chip.active i {
     color: #ffffff;
+}
+
+.catalog-back {
+    margin: 28px 0 8px;
+}
+
+.catalog-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    color: #a80825;
+    border: 1px solid #eadace;
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.catalog-back-btn:hover {
+    background: #a80825;
+    color: #fff;
+    border-color: #a80825;
 }
 
 /* Products Catalog Group Section */
