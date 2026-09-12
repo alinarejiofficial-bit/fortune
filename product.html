@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Fortune</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-droplet"></i> Fortune edible oils and foods</span>
+                <span><i class="fa-solid fa-heart"></i> For a healthy growing nation</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="aw-pill">
+                    <strong>adani<br>wilmar</strong>
+                    <span>For a healthy growing nation</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+            <div class="logo">
+                <a href="index.html" class="brand-lockup">
+                    <span class="brand-word">f<span class="brand-o">o</span>rtune<sup>&reg;</sup></span>
+                    <span class="brand-sub">edible oils and foods</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="container">
+            <span class="page-kicker">Product detail</span>
+            <h1 id="banner-title">Fortune oil</h1>
+            <p id="banner-packs"></p>
+        </div>
+    </section>
+
+    <section class="page-section">
+        <div class="container">
+            <p class="crumb"><a href="index.html">Home</a> / <a href="products.html">Products</a> / <span id="crumb-name">Product</span></p>
+            <div class="detail" id="detail"></div>
+            <div class="related">
+                <h2 class="section-title">More from the range</h2>
+                <div class="products-grid" id="related"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <div class="logo light">
+                    <a href="index.html" class="brand-lockup">
+                        <span class="brand-word">f<span class="brand-o">o</span>rtune<sup>&reg;</sup></span>
+                        <span class="brand-sub">edible oils and foods</span>
+                    </a>
+                </div>
+                <p>Fortune edible oils and foods, from Adani Wilmar. For a healthy growing nation.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html#oils">Edible Oils</a></li>
+                    <li><a href="products.html#foods">Soya &amp; Foods</a></li>
+                    <li><a href="products.html#staples">Staples</a></li>
+                    <li><a href="products.html#rice">Basmati &amp; Kohinoor</a></li>
+                    <li><a href="products.html#soap">Alife Soap</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-building"></i> Adani Wilmar</p>
+                    <p><i class="fa-solid fa-leaf"></i> For a healthy growing nation</p>
+                    <p><i class="fa-solid fa-tag"></i> Edible oils and foods</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Fortune. Edible oils and foods.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const product = getProduct(params.get("id")) || PRODUCTS[0];
+
+        document.title = product.name + " - Fortune";
+        document.getElementById("banner-title").textContent = product.name;
+        document.getElementById("banner-packs").textContent = product.packs;
+        document.getElementById("crumb-name").textContent = product.name;
+
+        document.getElementById("detail").innerHTML =
+            '<div class="detail-photo"><img src="' + product.image + '" alt="' + product.name + '"></div>' +
+            '<div>' +
+                '<span class="section-subtitle">FORTUNE</span>' +
+                '<h1>' + product.name + '</h1>' +
+                '<p class="detail-summary">' + product.summary + '</p>' +
+                '<div class="pack-chips">' + product.packList.map(function (pack) {
+                    return '<span>' + pack + '</span>';
+                }).join("") + '</div>' +
+                '<ul class="detail-points">' + product.points.map(function (point) {
+                    return '<li>' + point + '</li>';
+                }).join("") + '</ul>' +
+                '<a href="contact.html" class="btn btn-primary">Enquire about this oil</a>' +
+            '</div>';
+
+        const related = PRODUCTS.filter(function (item) {
+            return item.id !== product.id && item.category === product.category;
+        }).concat(PRODUCTS.filter(function (item) {
+            return item.id !== product.id && item.category !== product.category;
+        })).slice(0, 3);
+
+        document.getElementById("related").innerHTML = related.map(function (item) {
+            return '<div class="product-card">' +
+                '<img src="' + item.image + '" alt="' + item.name + '">' +
+                '<h4>' + item.name + '</h4>' +
+                '<p class="pack-line">' + item.packs + '</p>' +
+                '<a href="product.html?id=' + item.id + '" class="btn btn-dark">View Details</a>' +
+            '</div>';
+        }).join("");
+    </script>
+</body>
+
+</html>
