@@ -2,9 +2,9 @@ const PRODUCTS = [
     {
         id: "sunflower",
         category: "Edible Oils",
-        name: "Fortune refined sunflower oil",
-        image: "images/oil-sunflower.png",
-        packs: "Pet Bottles 1 litre · Jerry Can 5 litres · Pouch 1 litre",
+        name: "Fortune Refined Sunflower Oil",
+        image: "images/oil-sunflower-exact.png",
+        packs: "Pet Bottles 1L · Jerry Can 5L · Pouch 1L",
         packList: ["Pet Bottles — 1 litre", "Jerry Can — 5 litres", "Pouch — 1 litre"],
         summary: "Light, everyday refined sunflower oil from the Fortune range.",
         points: [
@@ -18,8 +18,8 @@ const PRODUCTS = [
         id: "mustard",
         category: "Edible Oils",
         name: "Fortune Kachi Ghani Mustard Oil",
-        image: "images/oil-mustard.png",
-        packs: "Pet Bottles 1 litre, 500 ml, 200 ml · Pouch 1 litre",
+        image: "images/oil-mustard-exact.png",
+        packs: "Pet Bottles 1L, 500ml · Pouch 1L",
         packList: ["Pet Bottles — 1 litre", "Pet Bottles — 500 ml", "Pet Bottles — 200 ml", "Pouch — 1 litre"],
         summary: "Traditional kachi ghani mustard oil with a deep amber colour.",
         points: [
@@ -151,8 +151,8 @@ const PRODUCTS = [
         id: "soya-chunks",
         category: "Soya & Foods",
         name: "Fortune Soya Chunks",
-        image: "images/soya-chunks.jpg",
-        packs: "₹10, ₹20, 200 gms and 1 kg packs",
+        image: "images/soya-chunks-exact.png",
+        packs: "₹10, ₹20, 200g and 1kg packs",
         packList: ["₹10 pack", "₹20 pack", "200 gms", "1 kg"],
         summary: "Fortune soya chunks from the foods range.",
         points: ["Soya chunks", "Available in ₹10, ₹20, 200 gms and 1 kg packs"]
@@ -425,9 +425,11 @@ function getProduct(id) {
 
 function productCard(item) {
     return '<div class="product-card">' +
-        '<img src="' + item.image + '" alt="' + item.name + '">' +
+        '<div class="product-img-box">' +
+            '<img src="' + item.image + '" alt="' + item.name + '">' +
+        '</div>' +
         '<h4>' + item.name + '</h4>' +
         '<p class="pack-line">' + item.packs + '</p>' +
-        '<a href="product.html?id=' + item.id + '" class="btn btn-dark">View Details</a>' +
+        '<a href="product.html?id=' + item.id + '" class="btn">View Details</a>' +
         '</div>';
 }
