@@ -640,7 +640,7 @@ ul {
     left: 0;
     transform: none;
     bottom: -2px;
-    width: 72px;
+    width: 100%;
     height: 3px;
     background-color: #a80825;
     border-radius: 3px;
@@ -3790,5 +3790,430 @@ ul {
         transition: none !important;
         opacity: 1 !important;
         transform: none !important;
+    }
+}
+
+/* Responsive layout */
+:root {
+    --nav-height: 80px;
+}
+
+.navbar {
+    height: var(--nav-height);
+}
+
+.category-nav-bar {
+    top: var(--nav-height);
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .footer .container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px !important;
+    }
+
+    .why-features {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        overflow: visible !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .products-grid .product-card {
+        flex: none !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .about-title,
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --nav-height: 68px;
+    }
+
+    .top-bar {
+        display: block !important;
+        font-size: 0.75rem;
+    }
+
+    .top-bar .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .top-bar-left {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .aw-slogan,
+    .top-bar-sep {
+        display: none;
+    }
+
+    .navbar .container {
+        position: relative;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .nav-toggle {
+        display: block !important;
+        order: 0;
+        font-size: 1.35rem;
+        padding: 8px;
+    }
+
+    .logo {
+        margin: 0 !important;
+    }
+
+    .brand-word {
+        font-size: 1.7rem;
+    }
+
+    .btn-nav-contact {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fff;
+        padding: 8px 20px 16px;
+        box-shadow: 0 16px 28px rgba(0, 0, 0, 0.08);
+        z-index: 300;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    .nav-links li,
+    .nav-links #about,
+    .nav-links a {
+        display: block !important;
+    }
+
+    .nav-links li a {
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+        padding: 14px 0 !important;
+        border-bottom: 1px solid #f3ebe4;
+    }
+
+    .nav-links li a::after,
+    .nav-links li a.active::after {
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        align-items: stretch;
+        overflow: visible;
+    }
+
+    .hero-bg-container {
+        position: relative;
+        inset: auto;
+        order: 2;
+        height: 280px;
+        width: 100%;
+    }
+
+    .hero-overlay-shade {
+        background: linear-gradient(180deg, rgba(247, 243, 236, 0.15), transparent 28%);
+    }
+
+    .hero-photo {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero .container {
+        order: 1;
+        position: relative;
+        width: 100%;
+        padding: 32px 20px 8px;
+    }
+
+    .hero-content,
+    .hero-title,
+    .hero-desc {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2.35rem !important;
+    }
+
+    .hero-desc,
+    .hero-content p {
+        font-size: 1rem !important;
+        width: auto !important;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons .btn,
+    .btn-hero-primary,
+    .btn-hero-outline {
+        font-size: 0.95rem !important;
+        padding: 12px 18px !important;
+        width: auto;
+    }
+
+    .hero-badges {
+        flex-wrap: wrap;
+        gap: 14px 18px;
+        margin-bottom: 20px;
+    }
+
+    .badge-sep {
+        display: none;
+    }
+
+    .features .container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 12px !important;
+        align-items: start;
+    }
+
+    .features .feature-box,
+    .features .feature-box:not(:last-child) {
+        border: none !important;
+        padding: 0;
+        min-width: 0;
+    }
+
+    .feature-text h4 {
+        font-size: 0.95rem !important;
+    }
+
+    .feature-text p {
+        font-size: 0.8rem !important;
+    }
+
+    .about {
+        padding: 48px 0;
+    }
+
+    .about-grid,
+    .about .container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+
+    .about-visual,
+    .about-image,
+    .about-image-wrapper,
+    .about .container .about-image img,
+    .about-image-wrapper img {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .about-title {
+        font-size: 2rem !important;
+    }
+
+    .about-desc,
+    .about-content p {
+        font-size: 1rem !important;
+        max-width: none !important;
+        width: auto !important;
+    }
+
+    .about-features-grid,
+    #home-about .about-points {
+        grid-template-columns: 1fr !important;
+    }
+
+    .why-features {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .why-text h4 {
+        font-size: 1.05rem !important;
+    }
+
+    .why-text p {
+        font-size: 0.9rem !important;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .contact-card,
+    .contact-form {
+        padding: 24px 18px;
+    }
+
+    .contact-form button[type="submit"] {
+        width: 100%;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    .page-banner {
+        padding: 42px 0;
+    }
+
+    .page-banner h1 {
+        font-size: 2rem !important;
+    }
+
+    .page-banner p {
+        font-size: 0.98rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem !important;
+    }
+
+    .catalog-group .section-title {
+        font-size: 1.55rem !important;
+    }
+
+    .footer .container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+
+    #link,
+    .footer .footer-col:first-child p {
+        display: block !important;
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center !important;
+        gap: 16px !important;
+    }
+
+    .detail {
+        grid-template-columns: 1fr !important;
+        padding: 20px 16px !important;
+    }
+
+    .detail-photo,
+    .detail-photo img {
+        width: 100%;
+        height: auto !important;
+        max-height: 360px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .features .container,
+    .products-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero-bg-container {
+        height: 230px;
+    }
+
+    .hero-title {
+        font-size: 1.9rem !important;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn,
+    .btn-hero-primary,
+    .btn-hero-outline,
+    .btn-about-cta {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.95rem !important;
+    }
+
+    .product-card img,
+    .products-grid .product-card img,
+    .product-img-box img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 220px;
+        border-radius: 12px !important;
+        object-fit: contain !important;
+    }
+
+    .product-img-box {
+        height: 200px;
+    }
+
+    .product-card {
+        padding: 18px 14px !important;
+    }
+
+    .modal-content {
+        margin: 12% 16px;
+        padding: 24px 18px;
+        width: auto;
     }
 }

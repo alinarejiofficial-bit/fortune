@@ -1,7 +1,15 @@
 document.documentElement.classList.add("js");
 
 document.getElementById("navToggle")?.addEventListener("click", function () {
-    document.querySelector(".nav-links")?.classList.toggle("active");
+    const links = document.querySelector(".nav-links");
+    const open = links?.classList.toggle("active");
+    this.setAttribute("aria-expanded", open ? "true" : "false");
+});
+
+document.querySelectorAll(".nav-links a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        document.querySelector(".nav-links")?.classList.remove("active");
+    });
 });
 
 const revealSelector = [
