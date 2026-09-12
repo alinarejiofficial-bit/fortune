@@ -4304,6 +4304,48 @@ video {
         gap: 16px !important;
     }
 
+    .footer,
+    .footer-col,
+    .footer-bottom,
+    .footer-bottom .container {
+        text-align: center;
+    }
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .brand-lockup,
+    .footer .logo.light {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer-col ul li a:hover {
+        padding-left: 0;
+    }
+
+    .footer .contact-info,
+    .footer .contact-info p {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-col .btn {
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .detail {
         grid-template-columns: 1fr !important;
         padding: 20px 16px !important;
