@@ -5471,6 +5471,29 @@ body.is-bisleri .aw-teal {
     color: #c9a227;
 }
 
+body.is-scrolled .navbar {
+    position: sticky;
+    top: 0;
+}
+
+body.is-scrolled .btn-nav-contact,
+body.is-scrolled.is-bailley .btn-nav-contact,
+body.is-scrolled.is-bisleri .btn-nav-contact,
+body.is-scrolled.is-fortune .btn-nav-contact {
+    background-color: #145c3e;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(20, 92, 62, 0.2);
+}
+
+body.is-scrolled .btn-nav-contact:hover,
+body.is-scrolled.is-bailley .btn-nav-contact:hover,
+body.is-scrolled.is-bisleri .btn-nav-contact:hover,
+body.is-scrolled.is-fortune .btn-nav-contact:hover {
+    background-color: #0c3d2a;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(20, 92, 62, 0.3);
+}
+
 .hero-slides .hero-photo-bisleri {
     object-position: 68% 58%;
 }

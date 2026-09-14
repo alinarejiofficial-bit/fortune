@@ -152,6 +152,12 @@ if (heroSlides.length > 1) {
     startHeroTimer();
 }
 
+function setHeaderScrolled() {
+    document.body.classList.toggle("is-scrolled", window.scrollY > 40);
+}
+setHeaderScrolled();
+window.addEventListener("scroll", setHeaderScrolled, { passive: true });
+
 const toTop = document.querySelector(".to-top");
 if (toTop) {
     const hero = document.querySelector(".hero");
