@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail - Fortune</title>
+    <title>Product Detail - Premium Food Supply</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -17,13 +17,13 @@
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-left">
-                <span><i class="fa-solid fa-droplet"></i> Fortune edible oils and foods</span>
-                <span><i class="fa-solid fa-heart"></i> For a healthy growing nation</span>
+                <span><i class="fa-solid fa-leaf"></i> Premium Food Supply</span>
+                <span><i class="fa-solid fa-wheat-awn"></i> Quality foods, carefully supplied</span>
             </div>
             <div class="top-bar-right">
                 <span class="aw-pill">
                     <strong>adani<br>wilmar</strong>
-                    <span>For a healthy growing nation</span>
+                    <span>Premium Food Supply</span>
                 </span>
             </div>
         </div>
@@ -34,8 +34,7 @@
             <button class="nav-toggle" id="navToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
             <div class="logo">
                 <a href="index.html" class="brand-lockup">
-                    <span class="brand-word">f<span class="brand-o">o</span>rtune<sup>&reg;</sup></span>
-                    <span class="brand-sub">edible oils and foods</span>
+                    <img class="brand-logo" src="images/premium-logo.jpg" alt="Premium Food Supply">
                 </a>
             </div>
             <ul class="nav-links">
@@ -51,7 +50,7 @@
     <section class="page-banner">
         <div class="container">
             <span class="page-kicker">PRODUCT SHOWCASE</span>
-            <h1 id="banner-title">Fortune Product</h1>
+            <h1 id="banner-title">Product</h1>
             <p id="banner-packs"></p>
         </div>
     </section>
@@ -72,11 +71,10 @@
             <div class="footer-col">
                 <div class="logo light">
                     <a href="index.html" class="brand-lockup">
-                        <span class="brand-word">f<span class="brand-o">o</span>rtune<sup>&reg;</sup></span>
-                        <span class="brand-sub">edible oils and foods</span>
+                        <img class="brand-logo" src="images/premium-logo.jpg" alt="Premium Food Supply">
                     </a>
                 </div>
-                <p>Fortune edible oils and foods, from Adani Wilmar. For a healthy growing nation.</p>
+                <p>Premium Food Supply. Oils, rice, staples, and everyday foods.</p>
             </div>
             <div class="footer-col">
                 <h4>Pages</h4>
@@ -100,8 +98,8 @@
             <div class="footer-col">
                 <h4>Contact</h4>
                 <div class="contact-info">
-                    <p><i class="fa-solid fa-building"></i> Adani Wilmar</p>
-                    <p><i class="fa-solid fa-leaf"></i> For a healthy growing nation</p>
+                    <p><i class="fa-solid fa-building"></i> Premium Food Supply</p>
+                    <p><i class="fa-solid fa-leaf"></i> Quality foods, carefully supplied</p>
                     <p><i class="fa-solid fa-tag"></i> Edible oils and foods</p>
                 </div>
                 <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Contact Us</a>
@@ -109,7 +107,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Fortune. Edible oils and foods.</p>
+                <p>&copy; 2026 Premium Food Supply.</p>
             </div>
         </div>
     </footer>
@@ -120,7 +118,7 @@
         const params = new URLSearchParams(window.location.search);
         const product = getProduct(params.get("id")) || PRODUCTS[0];
 
-        document.title = product.name + " - Fortune";
+        document.title = product.name + " - Premium Food Supply";
         document.getElementById("banner-title").textContent = product.name;
         document.getElementById("banner-packs").textContent = "Available Pack Formats: " + product.packs;
         document.getElementById("crumb-name").textContent = product.name;
