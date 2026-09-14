@@ -59,6 +59,42 @@ function watchReveals(root) {
 
 watchReveals(document);
 
+const heroSlides = document.querySelectorAll(".hero-slides .hero-photo");
+const heroCopies = document.querySelectorAll("[data-hero-copy]");
+
+const heroThemes = ["is-bailley", "is-bisleri", "is-fortune"];
+
+function showHeroCopy(index) {
+    heroCopies.forEach(function (copy) {
+        copy.hidden = Number(copy.getAttribute("data-hero-copy")) !== index;
+    });
+    const hero = document.querySelector(".hero");
+    if (!hero) return;
+    heroThemes.forEach(function (name) {
+        hero.classList.remove(name);
+    });
+    hero.classList.add(heroThemes[index] || "is-bailley");
+}
+
+if (heroSlides.length > 1 && !motionQuery.matches) {
+    let heroIndex = 0;
+    window.setInterval(function () {
+        const current = heroSlides[heroIndex];
+        heroIndex = (heroIndex + 1) % heroSlides.length;
+        const next = heroSlides[heroIndex];
+        next.classList.add("is-prep");
+        void next.offsetWidth;
+        current.classList.remove("is-active");
+        current.classList.add("is-exit");
+        next.classList.remove("is-prep", "is-exit");
+        next.classList.add("is-active");
+        showHeroCopy(heroIndex);
+        window.setTimeout(function () {
+            current.classList.remove("is-exit");
+        }, 900);
+    }, 5000);
+}
+
 const revealWatcher = new MutationObserver(function () {
     watchReveals(document);
 });
