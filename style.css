@@ -214,9 +214,9 @@ ul {
 .logo.light .brand-logo {
     height: 110px;
     max-width: 320px;
-    background: #fff;
-    border-radius: 12px;
-    padding: 4px 8px;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
 }
 
 .brand-word {
@@ -4969,12 +4969,10 @@ video {
     align-items: center;
     justify-content: center;
     margin: 0 0 4px;
-    padding: 8px 10px 6px;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow:
-        0 0 0 1px rgba(198, 161, 91, 0.7),
-        0 12px 28px rgba(0, 0, 0, 0.22);
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .footer .logo.light .brand-logo {
