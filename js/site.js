@@ -69,30 +69,87 @@ function showHeroCopy(index) {
         copy.hidden = Number(copy.getAttribute("data-hero-copy")) !== index;
     });
     const hero = document.querySelector(".hero");
-    if (!hero) return;
-    heroThemes.forEach(function (name) {
-        hero.classList.remove(name);
+    const theme = heroThemes[index] || "is-bailley";
+    [document.body, hero].forEach(function (el) {
+        if (!el) return;
+        heroThemes.forEach(function (name) {
+            el.classList.remove(name);
+        });
+        el.classList.add(theme);
     });
-    hero.classList.add(heroThemes[index] || "is-bailley");
 }
 
-if (heroSlides.length > 1 && !motionQuery.matches) {
+if (heroSlides.length > 1) {
     let heroIndex = 0;
-    window.setInterval(function () {
+    let heroTimer = 0;
+    const heroDots = document.querySelectorAll("[data-hero-dot]");
+    const heroSection = document.querySelector(".hero");
+
+    function updateHeroDots(index) {
+        heroDots.forEach(function (dot) {
+            const active = Number(dot.getAttribute("data-hero-dot")) === index;
+            dot.classList.toggle("is-active", active);
+            dot.setAttribute("aria-current", active ? "true" : "false");
+        });
+    }
+
+    function goToHero(index, direction) {
+        const nextIndex = (index + heroSlides.length) % heroSlides.length;
+        if (nextIndex === heroIndex) return;
         const current = heroSlides[heroIndex];
-        heroIndex = (heroIndex + 1) % heroSlides.length;
-        const next = heroSlides[heroIndex];
-        next.classList.add("is-prep");
+        const next = heroSlides[nextIndex];
+        const forward = direction !== "prev";
+        next.classList.add(forward ? "is-prep" : "is-prep-prev");
         void next.offsetWidth;
         current.classList.remove("is-active");
-        current.classList.add("is-exit");
-        next.classList.remove("is-prep", "is-exit");
+        current.classList.add(forward ? "is-exit" : "is-exit-prev");
+        next.classList.remove("is-prep", "is-prep-prev", "is-exit", "is-exit-prev");
         next.classList.add("is-active");
+        heroIndex = nextIndex;
         showHeroCopy(heroIndex);
+        updateHeroDots(heroIndex);
         window.setTimeout(function () {
-            current.classList.remove("is-exit");
+            current.classList.remove("is-exit", "is-exit-prev");
         }, 900);
-    }, 5000);
+    }
+
+    function startHeroTimer() {
+        if (motionQuery.matches) return;
+        window.clearInterval(heroTimer);
+        heroTimer = window.setInterval(function () {
+            goToHero(heroIndex + 1, "next");
+        }, 5000);
+    }
+
+    document.querySelector(".hero-next")?.addEventListener("click", function () {
+        goToHero(heroIndex + 1, "next");
+        startHeroTimer();
+    });
+    document.querySelector(".hero-prev")?.addEventListener("click", function () {
+        goToHero(heroIndex - 1, "prev");
+        startHeroTimer();
+    });
+    heroDots.forEach(function (dot) {
+        dot.addEventListener("click", function () {
+            const target = Number(dot.getAttribute("data-hero-dot"));
+            goToHero(target, target > heroIndex ? "next" : "prev");
+            startHeroTimer();
+        });
+    });
+
+    let touchStartX = 0;
+    heroSection?.addEventListener("touchstart", function (event) {
+        touchStartX = event.changedTouches[0].clientX;
+    }, { passive: true });
+    heroSection?.addEventListener("touchend", function (event) {
+        const delta = event.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(delta) < 48) return;
+        if (delta < 0) goToHero(heroIndex + 1, "next");
+        else goToHero(heroIndex - 1, "prev");
+        startHeroTimer();
+    }, { passive: true });
+
+    startHeroTimer();
 }
 
 const revealWatcher = new MutationObserver(function () {

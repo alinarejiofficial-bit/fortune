@@ -5098,6 +5098,110 @@ video {
     transform: translateX(100%);
 }
 
+.hero-slides .hero-photo.is-prep-prev {
+    transition: none;
+    transform: translateX(-100%);
+}
+
+.hero-slides .hero-photo.is-exit-prev {
+    transform: translateX(100%);
+    z-index: 0;
+}
+
+.hero-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    pointer-events: none;
+}
+
+.hero-nav,
+.hero-dot {
+    pointer-events: auto;
+    border: 0;
+    cursor: pointer;
+}
+
+.hero-nav {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.88);
+    color: #1c1917;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.hero-nav:hover {
+    transform: translateY(-1px);
+}
+
+.hero-dots {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.hero-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(28, 25, 23, 0.28);
+}
+
+.hero-dot.is-active {
+    width: 22px;
+    background: #1c1917;
+}
+
+body.is-bailley .hero-nav,
+body.is-bailley .hero-dot.is-active {
+    color: #6b2d91;
+    background: #6b2d91;
+}
+
+body.is-bailley .hero-nav {
+    background: rgba(255, 255, 255, 0.92);
+    color: #6b2d91;
+}
+
+body.is-fortune .hero-nav {
+    background: rgba(255, 248, 232, 0.94);
+    color: #8a5e00;
+}
+
+body.is-fortune .hero-dot.is-active {
+    background: #c99208;
+}
+
+body.is-bisleri .hero-nav {
+    background: rgba(255, 225, 74, 0.94);
+    color: #12352f;
+}
+
+body.is-bisleri .hero-dots {
+    background: rgba(8, 32, 30, 0.45);
+}
+
+body.is-bisleri .hero-dot {
+    background: rgba(255, 255, 255, 0.45);
+}
+
+body.is-bisleri .hero-dot.is-active {
+    background: #ffe14a;
+}
+
 .hero-slides .hero-photo-bailley {
     object-position: center 58%;
 }
@@ -5217,6 +5321,124 @@ video {
     background-color: #fff1a0;
     border-color: #fff1a0;
     color: #12352f;
+}
+
+.top-bar,
+.navbar,
+.nav-toggle,
+.nav-links li a,
+.nav-links li a::after,
+.btn-nav-contact,
+.aw-blue,
+.aw-teal {
+    transition: color 0.45s ease, background-color 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease;
+}
+
+body.is-bailley .top-bar {
+    background-color: #5a247e;
+}
+
+body.is-bailley .navbar {
+    background-color: #f8f3fb;
+    border-bottom-color: #eadcf4;
+}
+
+body.is-bailley .nav-toggle,
+body.is-bailley .nav-links li a:hover,
+body.is-bailley .nav-links li a.active,
+body.is-bailley .aw-blue {
+    color: #6b2d91;
+}
+
+body.is-bailley .nav-links li a.active::after,
+body.is-bailley .nav-links li a:hover::after {
+    background-color: #6b2d91;
+}
+
+body.is-bailley .btn-nav-contact {
+    background-color: #6b2d91;
+    box-shadow: 0 2px 8px rgba(107, 45, 145, 0.24);
+}
+
+body.is-bailley .btn-nav-contact:hover {
+    background-color: #541f74;
+    box-shadow: 0 4px 12px rgba(107, 45, 145, 0.32);
+}
+
+body.is-bailley .aw-teal {
+    color: #8b5cb0;
+}
+
+body.is-fortune .top-bar {
+    background-color: #8a5a06;
+}
+
+body.is-fortune .navbar {
+    background-color: #fff8e8;
+    border-bottom-color: #f0e0b0;
+}
+
+body.is-fortune .nav-toggle,
+body.is-fortune .nav-links li a:hover,
+body.is-fortune .nav-links li a.active,
+body.is-fortune .aw-blue {
+    color: #8a5e00;
+}
+
+body.is-fortune .nav-links li a.active::after,
+body.is-fortune .nav-links li a:hover::after {
+    background-color: #c99208;
+}
+
+body.is-fortune .btn-nav-contact {
+    background-color: #e8b006;
+    color: #2a1c00;
+    box-shadow: 0 2px 8px rgba(184, 122, 8, 0.28);
+}
+
+body.is-fortune .btn-nav-contact:hover {
+    background-color: #c99208;
+    color: #2a1c00;
+    box-shadow: 0 4px 12px rgba(184, 122, 8, 0.36);
+}
+
+body.is-fortune .aw-teal {
+    color: #c99208;
+}
+
+body.is-bisleri .top-bar {
+    background-color: #0b665e;
+}
+
+body.is-bisleri .navbar {
+    background-color: #f2fbf9;
+    border-bottom-color: #cfe8e4;
+}
+
+body.is-bisleri .nav-toggle,
+body.is-bisleri .nav-links li a:hover,
+body.is-bisleri .nav-links li a.active,
+body.is-bisleri .aw-blue {
+    color: #0b665e;
+}
+
+body.is-bisleri .nav-links li a.active::after,
+body.is-bisleri .nav-links li a:hover::after {
+    background-color: #0b665e;
+}
+
+body.is-bisleri .btn-nav-contact {
+    background-color: #0b665e;
+    box-shadow: 0 2px 8px rgba(11, 102, 94, 0.24);
+}
+
+body.is-bisleri .btn-nav-contact:hover {
+    background-color: #084e48;
+    box-shadow: 0 4px 12px rgba(11, 102, 94, 0.32);
+}
+
+body.is-bisleri .aw-teal {
+    color: #c9a227;
 }
 
 .hero.is-bisleri .hero-overlay-shade {
