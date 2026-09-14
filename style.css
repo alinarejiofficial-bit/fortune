@@ -2918,11 +2918,11 @@ ul {
 
 @media (max-width:320px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
     .navbar {
         height: 30px;
@@ -5063,10 +5063,15 @@ video {
     animation: none;
 }
 
+.hero-bg-container,
+.hero-slides {
+    overflow: hidden;
+    max-width: 100%;
+}
+
 .hero-slides {
     position: absolute;
     inset: 0;
-    overflow: hidden;
 }
 
 .hero-slides .hero-photo {
@@ -5542,6 +5547,41 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
 
 .to-top[hidden] {
     display: none !important;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.hero,
+.hero-bg-container,
+.hero-slides {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+
+    .hero-badges {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .footer-links {
+        gap: 16px !important;
+        flex-wrap: wrap;
+    }
+
+    .logo img,
+    .navbar .logo img,
+    .navbar .brand-logo {
+        margin-left: 0 !important;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
