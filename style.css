@@ -5186,20 +5186,12 @@ body.is-fortune .hero-dot.is-active {
 }
 
 body.is-bisleri .hero-nav {
-    background: rgba(255, 225, 74, 0.94);
-    color: #12352f;
-}
-
-body.is-bisleri .hero-dots {
-    background: rgba(8, 32, 30, 0.45);
-}
-
-body.is-bisleri .hero-dot {
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.92);
+    color: #0b7a8a;
 }
 
 body.is-bisleri .hero-dot.is-active {
-    background: #ffe14a;
+    background: #0b8a9a;
 }
 
 .hero-slides .hero-photo-bailley {
@@ -5310,17 +5302,55 @@ body.is-bisleri .hero-dot.is-active {
     background-color: rgba(255, 250, 236, 0.78);
 }
 
+.hero.is-bisleri .hero-kicker,
+.hero.is-bisleri .hero-title .highlight,
+.hero.is-bisleri .badge-icon {
+    color: #0b7a8a;
+}
+
+.hero.is-bisleri .hero-title,
+.hero.is-bisleri .hero-desc,
+.hero.is-bisleri .badge-title,
+.hero.is-bisleri .badge-sub {
+    color: #1c1917;
+}
+
+.hero.is-bisleri .badge-sub {
+    color: #555555;
+}
+
+.hero.is-bisleri .hero-overlay-shade {
+    background: linear-gradient(90deg, rgba(232, 248, 252, 0.94) 0%, rgba(232, 248, 252, 0.7) 40%, rgba(232, 248, 252, 0.1) 68%, rgba(232, 248, 252, 0) 100%);
+}
+
 .hero.is-bisleri .btn-hero-primary {
-    background-color: #ffe14a;
-    border-color: #ffe14a;
-    color: #12352f;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+    background-color: #0b8a9a;
+    border-color: #0b8a9a;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(11, 138, 154, 0.28);
 }
 
 .hero.is-bisleri .btn-hero-primary:hover {
-    background-color: #fff1a0;
-    border-color: #fff1a0;
-    color: #12352f;
+    background-color: #086f7c;
+    border-color: #086f7c;
+    color: #fff;
+}
+
+.hero.is-bisleri .btn-hero-outline {
+    background-color: #f3fcfd;
+    color: #0b7a8a;
+    border-color: #b7e3ea;
+}
+
+.hero.is-bisleri .btn-hero-outline:hover {
+    background-color: #0b8a9a;
+    color: #fff;
+    border-color: #0b8a9a;
+}
+
+.hero.is-bisleri .badge-icon {
+    border-color: #b7e3ea;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .top-bar,
@@ -5407,7 +5437,7 @@ body.is-fortune .aw-teal {
 }
 
 body.is-bisleri .top-bar {
-    background-color: #0b665e;
+    background-color: #0a6f7c;
 }
 
 body.is-bisleri .navbar {
@@ -5419,70 +5449,30 @@ body.is-bisleri .nav-toggle,
 body.is-bisleri .nav-links li a:hover,
 body.is-bisleri .nav-links li a.active,
 body.is-bisleri .aw-blue {
-    color: #0b665e;
+    color: #0b7a8a;
 }
 
 body.is-bisleri .nav-links li a.active::after,
 body.is-bisleri .nav-links li a:hover::after {
-    background-color: #0b665e;
+    background-color: #0b8a9a;
 }
 
 body.is-bisleri .btn-nav-contact {
-    background-color: #0b665e;
-    box-shadow: 0 2px 8px rgba(11, 102, 94, 0.24);
+    background-color: #0b8a9a;
+    box-shadow: 0 2px 8px rgba(11, 138, 154, 0.24);
 }
 
 body.is-bisleri .btn-nav-contact:hover {
-    background-color: #084e48;
-    box-shadow: 0 4px 12px rgba(11, 102, 94, 0.32);
+    background-color: #086f7c;
+    box-shadow: 0 4px 12px rgba(11, 138, 154, 0.32);
 }
 
 body.is-bisleri .aw-teal {
     color: #c9a227;
 }
 
-.hero.is-bisleri .hero-overlay-shade {
-    background: linear-gradient(180deg, rgba(4, 24, 22, 0) 46%, rgba(4, 24, 22, 0.78) 100%);
-}
-
-.hero.is-bisleri .container {
-    align-self: stretch;
-    display: flex;
-    align-items: flex-end;
-    min-height: 100%;
-    padding-top: 36px;
-    padding-bottom: 36px;
-}
-
-.hero.is-bisleri .hero-kicker {
-    color: #ffe14a;
-}
-
-.hero.is-bisleri .hero-title,
-.hero.is-bisleri .hero-desc {
-    color: #fff;
-}
-
-.hero.is-bisleri .hero-title {
-    font-size: clamp(2rem, 4vw, 2.8rem);
-    margin-bottom: 8px;
-}
-
-.hero.is-bisleri .hero-desc {
-    margin-bottom: 18px;
-    max-width: 460px;
-}
-
-.hero.is-bisleri .btn-hero-outline {
-    background: transparent;
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.55);
-}
-
-.hero.is-bisleri .btn-hero-outline:hover {
-    background: #fff;
-    color: #0c3d2a;
-    border-color: #fff;
+.hero-slides .hero-photo-bisleri {
+    object-position: 68% 58%;
 }
 
 @media (max-width: 900px) {
@@ -5492,7 +5482,7 @@ body.is-bisleri .aw-teal {
     }
 
     .hero-slides .hero-photo-bisleri {
-        object-position: center center !important;
+        object-position: 64% center !important;
     }
 
     .hero-slides .hero-photo-fortune {
