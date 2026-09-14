@@ -4070,18 +4070,18 @@ video {
     .hero-buttons {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         width: 100%;
         gap: 12px;
         margin-bottom: 22px;
     }
 
     .hero-buttons .btn,
-    .btn-hero-primary,
-    .btn-hero-outline {
+    .hero .btn-hero-primary,
+    .hero .btn-hero-outline {
         font-size: 0.95rem !important;
-        padding: 14px 18px !important;
-        width: 100%;
+        padding: 14px 22px !important;
+        width: min(240px, 78%);
         justify-content: center;
         text-align: center;
     }
@@ -4491,12 +4491,17 @@ video {
 
     .hero-buttons {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
     .hero-buttons .btn,
-    .btn-hero-primary,
-    .btn-hero-outline,
+    .hero .btn-hero-primary,
+    .hero .btn-hero-outline {
+        width: min(220px, 74%) !important;
+        justify-content: center;
+        font-size: 0.95rem !important;
+    }
+
     .btn-about-cta {
         width: 100%;
         justify-content: center;
