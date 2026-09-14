@@ -4002,7 +4002,8 @@ video {
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
-        min-height: 620px;
+        min-height: calc(100vh - var(--nav-height));
+        min-height: calc(100dvh - var(--nav-height));
         overflow: hidden;
         background-color: #f7f3ec;
         padding-top: 0;
@@ -4035,8 +4036,12 @@ video {
         position: relative;
         z-index: 2;
         width: 100%;
-        padding: 64px 20px 48px;
+        min-height: calc(100vh - var(--nav-height));
+        min-height: calc(100dvh - var(--nav-height));
+        padding: 72px 20px 88px;
         text-align: center;
+        display: flex;
+        align-items: center;
     }
 
     .hero-content,
@@ -4471,7 +4476,8 @@ video {
     }
 
     .hero {
-        min-height: 580px;
+        min-height: calc(100vh - var(--nav-height));
+        min-height: calc(100dvh - var(--nav-height));
         padding-top: 0;
     }
 
