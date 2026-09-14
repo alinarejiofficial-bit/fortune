@@ -5490,6 +5490,37 @@ body.is-bisleri .aw-teal {
     }
 }
 
+.to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 120;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #145c3e;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 4px 14px rgba(20, 92, 62, 0.25);
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.to-top:hover {
+    background-color: #0c3d2a;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(20, 92, 62, 0.35);
+}
+
+.to-top[hidden] {
+    display: none !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .hero-slides .hero-photo {
         transition: none;

@@ -152,6 +152,22 @@ if (heroSlides.length > 1) {
     startHeroTimer();
 }
 
+const toTop = document.querySelector(".to-top");
+if (toTop) {
+    const hero = document.querySelector(".hero");
+    function toggleToTop() {
+        const passed = hero
+            ? window.scrollY > hero.offsetTop + hero.offsetHeight - 80
+            : window.scrollY > 480;
+        toTop.hidden = !passed;
+    }
+    toggleToTop();
+    window.addEventListener("scroll", toggleToTop, { passive: true });
+    toTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: motionQuery.matches ? "auto" : "smooth" });
+    });
+}
+
 const revealWatcher = new MutationObserver(function () {
     watchReveals(document);
 });
