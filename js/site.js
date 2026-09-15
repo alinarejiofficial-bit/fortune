@@ -60,14 +60,22 @@ function watchReveals(root) {
 watchReveals(document);
 
 const heroSlides = document.querySelectorAll(".hero-slides .hero-photo");
-const heroCopies = document.querySelectorAll("[data-hero-copy]");
-
 const heroThemes = ["is-bailley", "is-bisleri", "is-fortune"];
 
-function showHeroCopy(index) {
-    heroCopies.forEach(function (copy) {
-        copy.hidden = Number(copy.getAttribute("data-hero-copy")) !== index;
+function syncHeroVideo() {
+    document.querySelectorAll(".hero-slides video").forEach(function (video) {
+        if (video.classList.contains("hero-photo-bisleri")) {
+            video.playbackRate = 0.5;
+        }
+        if (video.classList.contains("is-active") && !motionQuery.matches) {
+            video.play().catch(function () {});
+        } else {
+            video.pause();
+        }
     });
+}
+
+function setHeroTheme(index) {
     const hero = document.querySelector(".hero");
     const theme = heroThemes[index] || "is-bailley";
     [document.body, hero].forEach(function (el) {
@@ -77,6 +85,7 @@ function showHeroCopy(index) {
         });
         el.classList.add(theme);
     });
+    syncHeroVideo();
 }
 
 if (heroSlides.length > 1) {
@@ -106,7 +115,7 @@ if (heroSlides.length > 1) {
         next.classList.remove("is-prep", "is-prep-prev", "is-exit", "is-exit-prev");
         next.classList.add("is-active");
         heroIndex = nextIndex;
-        showHeroCopy(heroIndex);
+        setHeroTheme(heroIndex);
         updateHeroDots(heroIndex);
         window.setTimeout(function () {
             current.classList.remove("is-exit", "is-exit-prev");
@@ -118,7 +127,7 @@ if (heroSlides.length > 1) {
         window.clearInterval(heroTimer);
         heroTimer = window.setInterval(function () {
             goToHero(heroIndex + 1, "next");
-        }, 5000);
+        }, 10000);
     }
 
     document.querySelector(".hero-next")?.addEventListener("click", function () {
@@ -150,6 +159,7 @@ if (heroSlides.length > 1) {
     }, { passive: true });
 
     startHeroTimer();
+    syncHeroVideo();
 }
 
 function setHeaderScrolled() {

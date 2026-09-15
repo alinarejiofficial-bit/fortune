@@ -173,7 +173,7 @@ ul {
 /* Navbar */
 .navbar {
     background-color: #ffffff;
-    height: 108px;
+    height: 92px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
     position: sticky;
     top: 0;
@@ -3853,7 +3853,7 @@ body {
 
 /* Responsive layout */
 :root {
-    --nav-height: 108px;
+    --nav-height: 92px;
 }
 
 .navbar {
@@ -5208,8 +5208,10 @@ body.is-bisleri .hero-dot.is-active {
     background: #0b8a9a;
 }
 
-.hero-slides .hero-photo-bailley {
-    object-position: center 58%;
+.hero-slides .hero-photo-bailley,
+.hero-slides video.hero-photo {
+    object-position: center center;
+    object-fit: cover;
 }
 
 .hero-slides .hero-photo-bisleri {
@@ -5217,7 +5219,7 @@ body.is-bisleri .hero-dot.is-active {
 }
 
 .hero-slides .hero-photo-fortune {
-    object-position: 72% 58%;
+    object-position: center 62%;
 }
 
 .hero .hero-kicker,
@@ -5509,21 +5511,41 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
 }
 
 .hero-slides .hero-photo-bisleri {
-    object-position: 68% 58%;
+    object-position: center center;
 }
 
 @media (max-width: 900px) {
+    .hero-overlay-shade {
+        background: linear-gradient(180deg, rgba(247, 243, 236, 0.72) 0%, rgba(247, 243, 236, 0.38) 32%, rgba(247, 243, 236, 0.05) 65%, rgba(247, 243, 236, 0) 100%) !important;
+    }
+
+    .hero.is-bisleri .hero-overlay-shade {
+        background: linear-gradient(180deg, rgba(232, 248, 252, 0.75) 0%, rgba(232, 248, 252, 0.38) 32%, rgba(232, 248, 252, 0.05) 65%, rgba(232, 248, 252, 0) 100%) !important;
+    }
+
+    .hero.is-bailley .hero-overlay-shade {
+        background: linear-gradient(180deg, rgba(246, 240, 252, 0.75) 0%, rgba(246, 240, 252, 0.38) 32%, rgba(246, 240, 252, 0.05) 65%, rgba(246, 240, 252, 0) 100%) !important;
+    }
+
+    .hero.is-fortune .hero-overlay-shade {
+        background: linear-gradient(180deg, rgba(255, 246, 220, 0.75) 0%, rgba(255, 246, 220, 0.38) 32%, rgba(255, 246, 220, 0.05) 65%, rgba(255, 246, 220, 0) 100%) !important;
+    }
+
     .hero-slides .hero-photo,
     .hero-slides .hero-photo-bailley {
-        object-position: 62% center !important;
+        object-position: center center !important;
+        filter: none !important;
     }
 
     .hero-slides .hero-photo-bisleri {
-        object-position: 64% center !important;
+        object-position: center center !important;
+        filter: none !important;
     }
 
     .hero-slides .hero-photo-fortune {
-        object-position: 68% 55% !important;
+        object-position: center center !important;
+        filter: contrast(1.12) brightness(1.04) saturate(1.1) !important;
+        image-rendering: -webkit-optimize-contrast !important;
     }
 }
 
