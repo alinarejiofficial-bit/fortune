@@ -695,6 +695,23 @@ ul {
     border-radius: 3px;
 }
 
+.catalog-subgroup {
+    margin-bottom: 40px;
+}
+
+.catalog-subgroup:last-child {
+    margin-bottom: 0;
+}
+
+.catalog-subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #145c3e;
+    margin: 0 0 18px;
+    letter-spacing: -0.2px;
+}
+
 /* Product Detail Page */
 .crumb {
     font-family: 'Inter', sans-serif;
@@ -864,11 +881,11 @@ ul {
     background: #ffffff;
     border: 1px solid #efe5da;
     border-radius: 18px;
-    padding: 32px 28px;
+    padding: 28px 24px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 18px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
 }
@@ -1108,6 +1125,110 @@ ul {
     border-color: #145c3e;
     box-shadow: 0 0 0 4px rgba(20, 92, 62, 0.12);
     outline: none;
+}
+
+.topic-picker {
+    position: relative;
+}
+
+.topic-picker-btn {
+    width: 100%;
+    padding: 14px 44px 14px 18px;
+    border-radius: 10px;
+    border: 1px solid #dcd0c5;
+    background-color: #faf8f5;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.98rem;
+    color: #2c2523;
+    text-align: left;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a80825' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    transition: all 0.25s ease;
+}
+
+.topic-picker.is-open .topic-picker-btn,
+.topic-picker-btn:focus {
+    background-color: #ffffff;
+    border-color: #145c3e;
+    box-shadow: 0 0 0 4px rgba(20, 92, 62, 0.12);
+    outline: none;
+}
+
+.topic-picker-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 40;
+    max-height: 280px;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 1px solid #e5ddd4;
+    border-radius: 10px;
+    box-shadow: 0 12px 28px rgba(28, 25, 23, 0.12);
+    padding: 6px;
+}
+
+.topic-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 11px 12px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #2c2523;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.topic-option:hover,
+.topic-option:focus {
+    background: #f3f7f4;
+    color: #145c3e;
+    outline: none;
+}
+
+.topic-option.topic-brand {
+    font-weight: 600;
+}
+
+.topic-option.topic-category {
+    font-weight: 600;
+    color: #145c3e;
+}
+
+.topic-option.topic-brand i,
+.topic-option.topic-category i,
+.topic-option.topic-back i {
+    font-size: 0.75rem;
+    color: #a80825;
+}
+
+.topic-option.topic-back {
+    font-weight: 700;
+    color: #145c3e;
+    border-bottom: 1px solid #eadfd6;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 4px;
+}
+
+.topic-group-label {
+    padding: 10px 12px 4px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #145c3e;
 }
 
 .form-note {
@@ -4906,6 +5027,43 @@ video {
     padding: 28px 22px 24px;
     text-align: center;
     box-shadow: 0 8px 24px rgba(12, 51, 38, 0.05);
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(12, 51, 38, 0.1);
+    border-color: rgba(20, 92, 62, 0.35);
+}
+
+.home-brand-products {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.home-brand-products .brand-product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 28px 20px;
+}
+
+.home-brand-products .brand-product-img img {
+    width: auto !important;
+    max-width: 180px !important;
+    max-height: 72px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .home-brand-products {
+        grid-template-columns: 1fr !important;
+    }
 }
 
 .brand-logo-wrap {
@@ -4913,7 +5071,7 @@ video {
     align-items: center;
     justify-content: center;
     min-height: 92px;
-    margin: 0 auto 16px;
+    margin: 0 auto;
     padding: 12px 16px;
     background: #fff;
     border-radius: 12px;

@@ -14,20 +14,6 @@
 
 <body>
 
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-left">
-                <span><i class="fa-solid fa-leaf"></i> Premium Food Supply</span>
-                <span><i class="fa-solid fa-wheat-awn"></i> Quality foods, carefully supplied</span>
-            </div>
-            <div class="top-bar-right">
-                <span class="aw-pill">
-                    <strong>adani<br>wilmar</strong>
-                    <span>Premium Food Supply</span>
-                </span>
-            </div>
-        </div>
-    </div>
 
     <nav class="navbar">
         <div class="container">
@@ -51,17 +37,16 @@
         <div class="container">
             <span class="page-kicker">OUR COLLECTION</span>
             <h1>The product range</h1>
-            <p>Refined oils, soya, basmati rice, everyday staples, and hygiene soap — supplied in clear pack sizes.</p>
+            <p>Bailley, Bisleri, and Fortune — quality brands supplied for homes and trade.</p>
         </div>
     </section>
 
     <div class="category-nav-bar">
         <div class="container">
-            <button type="button" class="category-chip" data-filter="oils"><i class="fa-solid fa-droplet"></i> Edible Oils</button>
-            <button type="button" class="category-chip" data-filter="foods"><i class="fa-solid fa-bowl-food"></i> Soya &amp; Foods</button>
-            <button type="button" class="category-chip" data-filter="staples"><i class="fa-solid fa-wheat-awn"></i> Staples &amp; Atta</button>
-            <button type="button" class="category-chip" data-filter="rice"><i class="fa-solid fa-seedling"></i> Rice Range</button>
-            <button type="button" class="category-chip" data-filter="soap"><i class="fa-solid fa-soap"></i> Alife Hygiene Soap</button>
+            <button type="button" class="category-chip active" data-filter="all"><i class="fa-solid fa-border-all"></i> All Products</button>
+            <button type="button" class="category-chip" data-filter="bailley"><i class="fa-solid fa-droplet"></i> Bailley</button>
+            <button type="button" class="category-chip" data-filter="bisleri"><i class="fa-solid fa-bottle-water"></i> Bisleri</button>
+            <button type="button" class="category-chip" data-filter="fortune"><i class="fa-solid fa-wheat-awn"></i> Fortune</button>
         </div>
     </div>
 
@@ -77,7 +62,6 @@
                         <img class="brand-logo" src="images/premium-logo.png" alt="Premium Food Supply">
                     </a>
                 </div>
-                <p class="footer-tagline"><span>Premium Food Supply</span> Oils, rice, staples, and everyday foods.</p>
             </div>
             <div class="footer-col">
                 <h4>Pages</h4>
@@ -91,11 +75,9 @@
             <div class="footer-col">
                 <h4>Products</h4>
                 <ul>
-                    <li><a href="products.html#oils">Edible Oils</a></li>
-                    <li><a href="products.html#foods">Soya &amp; Foods</a></li>
-                    <li><a href="products.html#staples">Staples</a></li>
-                    <li><a href="products.html#rice">Basmati &amp; Kohinoor</a></li>
-                    <li><a href="products.html#soap">Alife Soap</a></li>
+                    <li><a href="products.html?brand=bailley">Bailley</a></li>
+                    <li><a href="products.html?brand=bisleri">Bisleri</a></li>
+                    <li><a href="products.html?brand=fortune">Fortune</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -104,7 +86,6 @@
                     <p><i class="fa-solid fa-location-dot"></i> 15/1617C Chirakkal Building, Kannangattu Road, Kochi</p>
                     <p><i class="fa-solid fa-phone"></i> <a href="tel:9895018283">9895018283</a></p>
                     <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@premiumfoodsupply.com">info@premiumfoodsupply.com</a></p>
-                    <p><i class="fa-solid fa-file-invoice"></i> GSTIN: 32CGFPV3683M1ZS</p>
                 </div>
                 <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Contact Us</a>
             </div>
@@ -122,35 +103,48 @@
     <script src="js/site.js"></script>
     <script>
         const catalog = document.getElementById("catalog");
-        catalog.innerHTML = PRODUCT_CATEGORIES.map(function (group) {
-            const items = PRODUCTS.filter(function (item) {
-                return item.category === group.name;
-            });
-            return '<div class="catalog-group" id="' + group.id + '">' +
-                '<div class="section-header"><h2 class="section-title">' + group.name + '</h2></div>' +
-                '<div class="products-grid">' + items.map(productCard).join("") + '</div>' +
-                '</div>';
-        }).join("");
+        const brandParam = new URLSearchParams(window.location.search).get("brand");
+        const brandFilter = brandParam ? BRAND_FILTERS[brandParam] : null;
+
+        if (brandFilter) {
+            catalog.innerHTML = renderBrandCatalog(brandParam);
+        } else {
+            catalog.innerHTML = PRODUCT_CATEGORIES.map(function (group) {
+                return renderBrandCatalog(group.id);
+            }).join("");
+        }
 
         const groups = catalog.querySelectorAll(".catalog-group");
         const chips = document.querySelectorAll(".category-chip");
         const backBar = document.createElement("div");
         backBar.className = "catalog-back";
-        backBar.hidden = true;
+        backBar.hidden = !brandFilter;
         backBar.innerHTML = '<button type="button" class="catalog-back-btn"><i class="fa-solid fa-arrow-left"></i> Go back</button>';
         catalog.parentNode.insertBefore(backBar, catalog);
 
         function showAll() {
+            if (brandFilter) {
+                window.location.href = "products.html";
+                return;
+            }
             groups.forEach(function (group) {
                 group.hidden = false;
             });
             chips.forEach(function (chip) {
-                chip.classList.remove("active");
+                chip.classList.toggle("active", chip.dataset.filter === "all");
             });
             backBar.hidden = true;
         }
 
         function showCategory(id) {
+            if (id === "all") {
+                showAll();
+                return;
+            }
+            if (brandFilter) {
+                window.location.href = "products.html?brand=" + id;
+                return;
+            }
             let found = false;
             groups.forEach(function (group) {
                 const match = group.id === id;
@@ -170,15 +164,30 @@
 
         chips.forEach(function (chip) {
             chip.addEventListener("click", function () {
-                if (chip.classList.contains("active")) {
+                const id = chip.dataset.filter;
+                if (brandFilter) {
+                    window.location.href = id === "all" ? "products.html" : "products.html?brand=" + id;
+                    return;
+                }
+                if (id === "all" || chip.classList.contains("active")) {
                     showAll();
                     return;
                 }
-                showCategory(chip.dataset.filter);
+                showCategory(id);
             });
         });
 
         backBar.querySelector(".catalog-back-btn").addEventListener("click", showAll);
+
+        if (!brandFilter) {
+            const filterParam = new URLSearchParams(window.location.search).get("filter");
+            if (filterParam && filterParam !== "all") showCategory(filterParam);
+            else showAll();
+        } else {
+            chips.forEach(function (chip) {
+                chip.classList.toggle("active", chip.dataset.filter === brandParam);
+            });
+        }
     </script>
 </body>
 

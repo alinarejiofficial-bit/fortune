@@ -91,7 +91,7 @@ const PRODUCTS = [
     },
     {
         id: "xpert-sugar",
-        category: "Edible Oils",
+        category: "Fortune Xpert Oils",
         name: "Fortune Xpert - Pro Sugar Conscious",
         image: "images/oil-xpert-sugar.png",
         packs: "Jerry Can 5 litres · Pouch 1 litre",
@@ -107,7 +107,7 @@ const PRODUCTS = [
     },
     {
         id: "xpert-immunity",
-        category: "Edible Oils",
+        category: "Fortune Xpert Oils",
         name: "Fortune Xpert - Pro Immunity",
         image: "images/oil-xpert-immunity.png",
         packs: "Jerry Can 5 litres · Pouch 1 litre",
@@ -123,7 +123,7 @@ const PRODUCTS = [
     },
     {
         id: "xpert-total",
-        category: "Edible Oils",
+        category: "Fortune Xpert Oils",
         name: "Fortune Xpert - Total",
         image: "images/oil-xpert-total.png",
         packs: "Jerry Can 5 litres · Pouch 1 litre",
@@ -139,7 +139,7 @@ const PRODUCTS = [
     },
     {
         id: "soya-granules",
-        category: "Soya & Foods",
+        category: "Soya Products",
         name: "Fortune Soya Granules / Chura",
         image: "images/soya-granules-premium.png",
         packs: "₹10, ₹20, 200 gms and 1 kg packs",
@@ -149,7 +149,7 @@ const PRODUCTS = [
     },
     {
         id: "soya-chunks",
-        category: "Soya & Foods",
+        category: "Soya Products",
         name: "Fortune Soya Chunks",
         image: "images/soya-chunks-exact.png",
         packs: "₹10, ₹20, 200g and 1kg packs",
@@ -159,7 +159,7 @@ const PRODUCTS = [
     },
     {
         id: "soya-mini",
-        category: "Soya & Foods",
+        category: "Soya Products",
         name: "Fortune Mini Soya Chunks",
         image: "images/soya-mini-premium.png",
         packs: "₹10, ₹20, 200 gms and 1 kg packs",
@@ -169,7 +169,7 @@ const PRODUCTS = [
     },
     {
         id: "wada-kolam",
-        category: "Soya & Foods",
+        category: "Rice Range",
         name: "Fortune Wada Kolam Rice",
         image: "images/wada-kolam-premium.png",
         packs: "Shown in the Fortune foods range",
@@ -179,7 +179,7 @@ const PRODUCTS = [
     },
     {
         id: "sona-regular",
-        category: "Soya & Foods",
+        category: "Rice Range",
         name: "Fortune Sona Masoori Rice Regular",
         image: "images/sona-regular-premium.png",
         packs: "Shown in the Fortune foods range",
@@ -189,7 +189,7 @@ const PRODUCTS = [
     },
     {
         id: "sona-supreme",
-        category: "Soya & Foods",
+        category: "Rice Range",
         name: "Fortune Sona Masoori Rice Supreme",
         image: "images/sona-supreme-premium.png",
         packs: "Shown in the Fortune foods range",
@@ -199,7 +199,7 @@ const PRODUCTS = [
     },
     {
         id: "biryani-kit",
-        category: "Soya & Foods",
+        category: "Rice Range",
         name: "Kohinoor Biryani Kit",
         image: "images/biryani-kit-premium.png",
         packs: "Biryani kit",
@@ -209,7 +209,7 @@ const PRODUCTS = [
     },
     {
         id: "chakki-atta",
-        category: "Staples",
+        category: "Staples & Atta",
         name: "Fortune Chakki Fresh Atta",
         image: "images/chakki-atta-premium.png",
         packs: "Pouches: 1 kg, 5 kg, 10 kg",
@@ -219,7 +219,7 @@ const PRODUCTS = [
     },
     {
         id: "suji",
-        category: "Staples",
+        category: "Staples & Atta",
         name: "Fortune Suji",
         image: "images/suji-premium.png",
         packs: "Pouch 500 g",
@@ -229,7 +229,7 @@ const PRODUCTS = [
     },
     {
         id: "rawa",
-        category: "Staples",
+        category: "Staples & Atta",
         name: "Fortune Rawa",
         image: "images/rawa-premium.png",
         packs: "Pouch 500 g",
@@ -239,7 +239,7 @@ const PRODUCTS = [
     },
     {
         id: "maida",
-        category: "Staples",
+        category: "Staples & Atta",
         name: "Fortune Maida",
         image: "images/maida-premium.png",
         packs: "Pouch 500 g",
@@ -249,7 +249,7 @@ const PRODUCTS = [
     },
     {
         id: "besan",
-        category: "Staples",
+        category: "Staples & Atta",
         name: "Fortune Chana Dal Besan",
         image: "images/besan-premium.png",
         packs: "Pouches: 200 g, 500 g, 1 kg",
@@ -259,7 +259,7 @@ const PRODUCTS = [
     },
     {
         id: "sugar",
-        category: "Staples",
+        category: "Staples & Atta",
         name: "Fortune Sugar",
         image: "images/sugar-premium.png",
         packs: "Pouches: 500 g, 1 kg, 5 kg",
@@ -269,7 +269,7 @@ const PRODUCTS = [
     },
     {
         id: "indori-poha",
-        category: "Staples",
+        category: "Staples & Atta",
         name: "Fortune Indori Poha",
         image: "images/indori-poha-premium.png",
         packs: "Pouch 500 g",
@@ -279,7 +279,7 @@ const PRODUCTS = [
     },
     {
         id: "thick-poha",
-        category: "Staples",
+        category: "Staples & Atta",
         name: "Fortune Thick Poha",
         image: "images/thick-poha-premium.png",
         packs: "Pouch 500 g",
@@ -369,7 +369,7 @@ const PRODUCTS = [
     },
     {
         id: "soap-sandalwood",
-        category: "Fortune Alife Soap",
+        category: "Alife Hygiene Soap",
         name: "Fortune Alife Soap - Sandalwood",
         image: "images/soap-sandalwood-premium.png",
         packs: "Sandalwood",
@@ -379,7 +379,7 @@ const PRODUCTS = [
     },
     {
         id: "soap-lily",
-        category: "Fortune Alife Soap",
+        category: "Alife Hygiene Soap",
         name: "Fortune Alife Soap - Lily",
         image: "images/soap-lily-premium.png",
         packs: "Lily",
@@ -389,7 +389,7 @@ const PRODUCTS = [
     },
     {
         id: "soap-lime",
-        category: "Fortune Alife Soap",
+        category: "Alife Hygiene Soap",
         name: "Fortune Alife Soap - Lime",
         image: "images/soap-lime-premium.png",
         packs: "Lime",
@@ -399,23 +399,296 @@ const PRODUCTS = [
     },
     {
         id: "soap-rose",
-        category: "Fortune Alife Soap",
+        category: "Alife Hygiene Soap",
         name: "Fortune Alife Soap - Rose",
         image: "images/soap-rose-premium.png",
         packs: "Rose",
         packList: ["Rose"],
         summary: "Fortune Alife soap in rose.",
         points: ["Fortune Alife Soap", "Rose"]
+    },
+    {
+        id: "bisleri-20l-jar",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 20 L Packaged Drinking Water",
+        image: "images/bisleri/water-20l.png",
+        packs: "1 Jar · ₹100/- per jar",
+        packList: ["20 Litre jar", "₹100/- per jar"],
+        summary: "Bisleri 20 litre packaged drinking water jar.",
+        points: ["20 Litre jar", "₹100/- per jar"]
+    },
+    {
+        id: "bisleri-10l-jar",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 10 L Packaged Drinking Water",
+        image: "images/bisleri/water-10l.png",
+        packs: "1 Jar · ₹130/- per jar",
+        packList: ["10 Litre jar", "₹130/- per jar"],
+        summary: "Bisleri 10 litre packaged drinking water jar.",
+        points: ["10 Litre jar", "₹130/- per jar"]
+    },
+    {
+        id: "bisleri-5l-jar",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 5 L Packaged Drinking Water",
+        image: "images/bisleri/water-5l.png",
+        packs: "1 Jar · ₹75/- per jar",
+        packList: ["5 Litre jar", "₹75/- per jar"],
+        summary: "Bisleri 5 litre packaged drinking water jar.",
+        points: ["5 Litre jar", "₹75/- per jar"]
+    },
+    {
+        id: "bisleri-2l-case",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 2 L Packaged Drinking Water — Case",
+        image: "images/bisleri/water-2l.png",
+        packs: "Case of 9 bottles · ₹270/-",
+        packList: ["Case of 9 bottles", "₹270/- per case"],
+        summary: "Bisleri 2 litre packaged drinking water, case of 9 bottles.",
+        points: ["2 Litre bottle", "Case of 9 bottles", "₹270/- per case"]
+    },
+    {
+        id: "bisleri-2l-single",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 2 L Packaged Drinking Water — Single",
+        image: "images/bisleri/water-2l.png",
+        packs: "1 Bottle · ₹30/-",
+        packList: ["Single 2 litre bottle", "₹30/- per bottle"],
+        summary: "Bisleri 2 litre packaged drinking water, single bottle.",
+        points: ["2 Litre bottle", "₹30/- per bottle"]
+    },
+    {
+        id: "bisleri-1l-case",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 1 L Packaged Drinking Water — Case",
+        image: "images/bisleri/water-1l.png",
+        packs: "Case of 12 bottles · ₹240/-",
+        packList: ["Case of 12 bottles", "₹240/- per case"],
+        summary: "Bisleri 1 litre packaged drinking water, case of 12 bottles.",
+        points: ["1 Litre bottle", "Case of 12 bottles", "₹240/- per case"]
+    },
+    {
+        id: "bisleri-1l-single",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 1 L Packaged Drinking Water — Single",
+        image: "images/bisleri/water-1l.png",
+        packs: "1 Bottle · ₹20/-",
+        packList: ["Single 1 litre bottle", "₹20/- per bottle"],
+        summary: "Bisleri 1 litre packaged drinking water, single bottle.",
+        points: ["1 Litre bottle", "₹20/- per bottle"]
+    },
+    {
+        id: "bisleri-500ml-case",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 500 ML Packaged Drinking Water — Case",
+        image: "images/bisleri/water-500ml.png",
+        packs: "Case of 24 bottles · ₹240/-",
+        packList: ["Case of 24 bottles", "₹240/- per case"],
+        summary: "Bisleri 500 ml packaged drinking water, case of 24 bottles.",
+        points: ["500 ML bottle", "Case of 24 bottles", "₹240/- per case"]
+    },
+    {
+        id: "bisleri-500ml-single",
+        category: "Packaged Drinking Water",
+        name: "Bisleri 500 ML Packaged Drinking Water — Single",
+        image: "images/bisleri/water-500ml.png",
+        packs: "1 Bottle · ₹10/-",
+        packList: ["Single 500 ml bottle", "₹10/- per bottle"],
+        summary: "Bisleri 500 ml packaged drinking water, single bottle.",
+        points: ["500 ML bottle", "₹10/- per bottle"]
+    },
+    {
+        id: "bisleri-soda-750ml-case",
+        category: "Bisleri Soda",
+        name: "Bisleri Soda 750 ML — Case",
+        image: "images/bisleri/soda-750ml.png",
+        packs: "Case of 12 bottles · ₹240/-",
+        packList: ["Case of 12 bottles", "₹240/- per case"],
+        summary: "Bisleri soda 750 ml, case of 12 bottles.",
+        points: ["750 ML soda", "Case of 12 bottles", "₹240/- per case"]
+    },
+    {
+        id: "bisleri-soda-750ml-single",
+        category: "Bisleri Soda",
+        name: "Bisleri Soda 750 ML — Single",
+        image: "images/bisleri/soda-750ml.png",
+        packs: "1 Bottle · ₹20/-",
+        packList: ["Single 750 ml bottle", "₹20/- per bottle"],
+        summary: "Bisleri soda 750 ml, single bottle.",
+        points: ["750 ML soda", "₹20/- per bottle"]
+    },
+    {
+        id: "bailley-5l",
+        category: "Bailley",
+        name: "Bailley 5 Ltr Packaged Drinking Water",
+        image: "images/bailley/water-5l.png",
+        packs: "5 Ltr – Pack of 1",
+        packList: ["5 Litre", "Pack of 1"],
+        summary: "Bailley 5 litre packaged drinking water with minerals.",
+        points: [
+            "5 Ltr – Pack of 1",
+            "Packaged drinking water with minerals",
+            "Free jar, no deposit"
+        ]
+    },
+    {
+        id: "bailley-2l",
+        category: "Bailley",
+        name: "Bailley 2 Ltr Packaged Drinking Water",
+        image: "images/bailley/water-2l.png",
+        packs: "2 Ltr – Pack of 6",
+        packList: ["2 Litre", "Pack of 6"],
+        summary: "Bailley 2 litre packaged drinking water with minerals, pack of 6.",
+        points: [
+            "2 Ltr – Pack of 6",
+            "Packaged drinking water with minerals"
+        ]
+    },
+    {
+        id: "bailley-1l",
+        category: "Bailley",
+        name: "Bailley 1 Ltr Packaged Drinking Water",
+        image: "images/bailley/water-1l.png",
+        packs: "1 Ltr – Pack of 12",
+        packList: ["1 Litre", "Pack of 12"],
+        summary: "Bailley 1 litre packaged drinking water with minerals, pack of 12.",
+        points: [
+            "1 Ltr – Pack of 12",
+            "Packaged drinking water with minerals"
+        ]
+    },
+    {
+        id: "bailley-one-1l",
+        category: "Bailley",
+        name: "Bailley One 1 Ltr Packaged Drinking Water",
+        image: "images/bailley/bailley-one-1l.png",
+        packs: "1 Ltr – Pack of 12 – Bailley One",
+        packList: ["1 Litre", "Pack of 12", "Bailley One"],
+        summary: "Bailley One 1 litre packaged drinking water with minerals, pack of 12.",
+        points: [
+            "1 Ltr – Pack of 12 – Bailley One",
+            "Packaged drinking water with minerals"
+        ]
+    },
+    {
+        id: "bailley-one-500ml",
+        category: "Bailley",
+        name: "Bailley One 500 ML Packaged Drinking Water",
+        image: "images/bailley/bailley-one-500ml.png",
+        packs: "500 ML – Pack of 24 – Bailley One",
+        packList: ["500 ML", "Pack of 24", "Bailley One"],
+        summary: "Bailley One 500 ml packaged drinking water with minerals, pack of 24.",
+        points: [
+            "500 ML – Pack of 24 – Bailley One",
+            "Packaged drinking water with minerals"
+        ]
+    },
+    {
+        id: "bailley-250ml",
+        category: "Bailley",
+        name: "Bailley 250 ML Packaged Drinking Water",
+        image: "images/bailley/water-250ml.png",
+        packs: "250 ML – Pack of 48",
+        packList: ["250 ML", "Pack of 48"],
+        summary: "Bailley 250 ml packaged drinking water with minerals, pack of 48.",
+        points: [
+            "250 ML – Pack of 48",
+            "Packaged drinking water with minerals"
+        ]
     }
 ];
 
 const PRODUCT_CATEGORIES = [
-    { id: "oils", name: "Edible Oils" },
-    { id: "foods", name: "Soya & Foods" },
-    { id: "staples", name: "Staples" },
-    { id: "rice", name: "Basmati & Kohinoor Rice" },
-    { id: "soap", name: "Fortune Alife Soap" }
+    { id: "bailley", name: "Bailley" },
+    { id: "bisleri", name: "Bisleri" },
+    { id: "fortune", name: "Fortune" }
 ];
+
+const BRAND_FILTERS = {
+    bailley: {
+        title: "Bailley",
+        match: function (item) {
+            return /bailley/i.test(item.name) || item.category === "Bailley";
+        }
+    },
+    bisleri: {
+        title: "Bisleri",
+        match: function (item) {
+            return /bisleri/i.test(item.name)
+                || item.category === "Packaged Drinking Water"
+                || item.category === "Bisleri Soda";
+        }
+    },
+    fortune: {
+        title: "Fortune",
+        match: function (item) {
+            return /fortune|raag gold|alife|kohinoor/i.test(item.name);
+        }
+    }
+};
+
+function getBrandProducts(brand) {
+    const filter = BRAND_FILTERS[brand];
+    if (!filter) return [];
+    return PRODUCTS.filter(filter.match);
+}
+
+const FORTUNE_CATEGORY_ORDER = [
+    "Packaged Drinking Water",
+    "Bisleri Soda",
+    "Edible Oils",
+    "Fortune Xpert Oils",
+    "Soya Products",
+    "Rice Range",
+    "Basmati & Kohinoor Rice",
+    "Staples & Atta",
+    "Alife Hygiene Soap"
+];
+
+function getBrandCategories(brand) {
+    const items = getBrandProducts(brand);
+    const seen = {};
+    items.forEach(function (item) {
+        seen[item.category] = true;
+    });
+    const ordered = FORTUNE_CATEGORY_ORDER.filter(function (name) {
+        return seen[name];
+    });
+    Object.keys(seen).forEach(function (name) {
+        if (ordered.indexOf(name) === -1) ordered.push(name);
+    });
+    return ordered;
+}
+
+function getBrandProductsByCategory(brand, category) {
+    return getBrandProducts(brand).filter(function (item) {
+        return item.category === category;
+    });
+}
+
+function renderBrandCatalog(brand) {
+    const filter = BRAND_FILTERS[brand];
+    if (!filter) return "";
+    const categories = getBrandCategories(brand);
+    if (categories.length <= 1) {
+        const items = getBrandProducts(brand);
+        return '<div class="catalog-group" id="' + brand + '">' +
+            '<div class="section-header"><h2 class="section-title">' + filter.title + '</h2></div>' +
+            '<div class="products-grid">' + items.map(productCard).join("") + '</div>' +
+            '</div>';
+    }
+    return '<div class="catalog-group" id="' + brand + '">' +
+        '<div class="section-header"><h2 class="section-title">' + filter.title + '</h2></div>' +
+        categories.map(function (category) {
+            const items = getBrandProductsByCategory(brand, category);
+            const slug = brand + "-" + category.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+            return '<div class="catalog-subgroup" id="' + slug + '">' +
+                '<h3 class="catalog-subtitle">' + category + '</h3>' +
+                '<div class="products-grid">' + items.map(productCard).join("") + '</div>' +
+                '</div>';
+        }).join("") +
+        '</div>';
+}
 
 function getProduct(id) {
     return PRODUCTS.find(function (item) {
