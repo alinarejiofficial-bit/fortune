@@ -516,6 +516,13 @@ ul {
     background: #0c3326;
 }
 
+@media (min-width: 901px) {
+    .page-banner-video {
+        min-height: 520px;
+        padding: 96px 0;
+    }
+}
+
 .page-banner-media {
     position: absolute;
     inset: 0;
