@@ -33,11 +33,22 @@
         </div>
     </nav>
 
-    <section class="page-banner">
+    <section class="page-banner page-banner-video" id="collection-banner">
+        <div class="page-banner-media" aria-hidden="true">
+            <div class="page-banner-slides">
+                <video class="page-banner-video-el is-active" data-banner-slide="0" src="videos/products-banner-bailley.mp4?v=79" muted loop playsinline preload="auto" aria-label="Bailley"></video>
+                <video class="page-banner-video-el" data-banner-slide="1" src="videos/products-banner-bisleri.mp4?v=38" muted loop playsinline preload="auto" aria-label="Bisleri"></video>
+            </div>
+            <div class="page-banner-shade"></div>
+        </div>
         <div class="container">
             <span class="page-kicker">OUR COLLECTION</span>
             <h1>The product range</h1>
             <p>Bailley, Bisleri, and Fortune — quality brands supplied for homes and trade.</p>
+            <div class="page-banner-dots" role="tablist" aria-label="Banner videos">
+                <button type="button" class="page-banner-dot is-active" data-banner-dot="0" aria-label="Bailley video"></button>
+                <button type="button" class="page-banner-dot" data-banner-dot="1" aria-label="Bisleri video"></button>
+            </div>
         </div>
     </section>
 
@@ -188,6 +199,55 @@
                 chip.classList.toggle("active", chip.dataset.filter === brandParam);
             });
         }
+
+        const banner = document.getElementById("collection-banner");
+        const bannerSlides = Array.prototype.slice.call(document.querySelectorAll("[data-banner-slide]"));
+        const bannerDots = Array.prototype.slice.call(document.querySelectorAll("[data-banner-dot]"));
+        let bannerIndex = 0;
+        let bannerTimer = 0;
+        let bannerVisible = true;
+
+        function setBannerSlide(index) {
+            if (!bannerSlides.length) return;
+            bannerIndex = (index + bannerSlides.length) % bannerSlides.length;
+            bannerSlides.forEach(function (slide, i) {
+                const active = i === bannerIndex;
+                slide.classList.toggle("is-active", active);
+                if (active && bannerVisible) slide.play().catch(function () {});
+                else slide.pause();
+            });
+            bannerDots.forEach(function (dot, i) {
+                dot.classList.toggle("is-active", i === bannerIndex);
+            });
+        }
+
+        function startBannerAutoScroll() {
+            window.clearInterval(bannerTimer);
+            bannerTimer = window.setInterval(function () {
+                if (!bannerVisible) return;
+                setBannerSlide(bannerIndex + 1);
+            }, 5000);
+        }
+
+        bannerDots.forEach(function (dot) {
+            dot.addEventListener("click", function () {
+                setBannerSlide(Number(dot.getAttribute("data-banner-dot")));
+                startBannerAutoScroll();
+            });
+        });
+
+        if (banner && bannerSlides.length && "IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    bannerVisible = entry.isIntersecting && entry.intersectionRatio > 0.2;
+                    setBannerSlide(bannerIndex);
+                });
+            }, { threshold: [0, 0.2, 0.5, 1] });
+            observer.observe(banner);
+        }
+
+        setBannerSlide(0);
+        startBannerAutoScroll();
     </script>
 </body>
 

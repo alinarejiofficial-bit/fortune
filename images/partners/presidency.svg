@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="Hotel Presidency Kochi">
+  <rect width="420" height="240" fill="#ffffff"/>
+  <g transform="translate(210 46)" fill="#c9a227" text-anchor="middle">
+    <path d="M0 0c18 18 34 18 52 0-10 28-24 42-52 54C-24 42-38 28-52 0c18 18 34 18 52 0z" opacity="0.95"/>
+    <path d="M-8 8c8 10 16 10 24 0" fill="none" stroke="#a8881a" stroke-width="2"/>
+  </g>
+  <text x="210" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#1c1917" text-anchor="middle" letter-spacing="4">HOTEL</text>
+  <text x="210" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700" fill="#1c1917" text-anchor="middle" letter-spacing="2">PRESIDENCY</text>
+  <line x1="118" y1="178" x2="168" y2="178" stroke="#1c1917" stroke-width="1.5"/>
+  <text x="210" y="186" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#1c1917" text-anchor="middle" letter-spacing="3">KOCHI</text>
+  <line x1="252" y1="178" x2="302" y2="178" stroke="#1c1917" stroke-width="1.5"/>
+</svg>

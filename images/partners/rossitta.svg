@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" role="img" aria-label="Hotel Rossitta Wood Castle">
+  <rect width="560" height="220" fill="#ffffff"/>
+  <g transform="translate(280 58)" text-anchor="middle">
+    <path d="M0-34l8 14 16 2-12 11 3 16L0-2l-15 11 3-16-12-11 16-2z" fill="#c9a227"/>
+    <path d="M0-18c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18z" fill="none" stroke="#c9a227" stroke-width="3"/>
+    <path d="M-6-6h12v18h-12zM-14 4h28" fill="none" stroke="#c9a227" stroke-width="2.5"/>
+  </g>
+  <text x="120" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#8b6914">HOTEL</text>
+  <text x="380" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#8b6914" text-anchor="end">SINCE 1706</text>
+  <text x="280" y="168" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#6b1d1d" text-anchor="middle">ROSSITTA WOOD CASTLE</text>
+</svg>

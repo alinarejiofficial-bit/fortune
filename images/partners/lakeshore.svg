@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 150" role="img" aria-label="VPS Lakeshore">
+  <rect width="540" height="150" fill="#ffffff"/>
+  <text x="20" y="82" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">
+    <tspan fill="#1f3a8a">vp</tspan><tspan fill="#c41230">s</tspan>
+  </text>
+  <line x1="128" y1="40" x2="128" y2="100" stroke="#b0b8c4" stroke-width="2.5"/>
+  <text x="148" y="78" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="600" fill="#2f86c9">lakeshore</text>
+  <text x="148" y="106" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#8a93a3">Global Lifecare</text>
+  <g transform="translate(455 42)">
+    <circle cx="28" cy="28" r="28" fill="#2f86c9"/>
+    <path d="M28 10v36M10 28h36" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M34 16l12 12-12 12" fill="#c41230"/>
+    <path d="M22 40l-12-12 12-12" fill="#1f3a8a"/>
+  </g>
+</svg>
