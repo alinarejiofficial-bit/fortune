@@ -5518,7 +5518,15 @@ body.is-bisleri .hero-dot.is-active {
 }
 
 .hero-slides .hero-photo-bisleri {
+    object-fit: cover;
     object-position: center center;
+    filter: none;
+    image-rendering: auto;
+    background-color: #c5e4ef;
+}
+
+.hero.is-bisleri {
+    background-color: #c5e4ef;
 }
 
 .hero-slides .hero-photo-fortune {
@@ -5819,10 +5827,6 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
     box-shadow: 0 4px 12px rgba(20, 92, 62, 0.3);
 }
 
-.hero-slides .hero-photo-bisleri {
-    object-position: center center;
-}
-
 @media (max-width: 900px) {
     .hero-overlay-shade {
         background:
@@ -5848,13 +5852,20 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
             linear-gradient(180deg, rgba(54, 36, 4, 0.1) 0%, rgba(54, 36, 4, 0) 24%, rgba(54, 36, 4, 0) 76%, rgba(54, 36, 4, 0.14) 100%) !important;
     }
 
-    .hero-slides .hero-photo,
+    .hero-slides .hero-photo:not(.hero-photo-bisleri),
     .hero-slides .hero-photo-bailley,
-    .hero-slides .hero-photo-bisleri,
     .hero-slides .hero-photo-fortune {
         object-position: center center !important;
         filter: contrast(1.18) saturate(1.12) brightness(1.07) !important;
         image-rendering: -webkit-optimize-contrast !important;
+    }
+
+    .hero-slides .hero-photo-bisleri {
+        object-fit: cover !important;
+        object-position: center center !important;
+        filter: none !important;
+        image-rendering: auto !important;
+        background-color: #c5e4ef;
     }
 }
 
