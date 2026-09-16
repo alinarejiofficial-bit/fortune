@@ -5541,7 +5541,15 @@ body.is-bisleri .hero-dot.is-active {
 }
 
 .hero-slides .hero-photo-fortune {
-    object-position: center 62%;
+    object-fit: cover;
+    object-position: center center;
+    filter: none;
+    image-rendering: auto;
+    background-color: #f5a623;
+}
+
+.hero.is-fortune {
+    background-color: #f5a623;
 }
 
 .hero .hero-kicker,
@@ -5863,8 +5871,7 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
             linear-gradient(180deg, rgba(54, 36, 4, 0.1) 0%, rgba(54, 36, 4, 0) 24%, rgba(54, 36, 4, 0) 76%, rgba(54, 36, 4, 0.14) 100%) !important;
     }
 
-    .hero-slides .hero-photo:not(.hero-photo-bisleri):not(.hero-photo-bailley),
-    .hero-slides .hero-photo-fortune {
+    .hero-slides video.hero-photo {
         object-position: center center !important;
         filter: contrast(1.18) saturate(1.12) brightness(1.07) !important;
         image-rendering: -webkit-optimize-contrast !important;
@@ -5884,6 +5891,14 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         filter: none !important;
         image-rendering: auto !important;
         background-color: #c5e4ef;
+    }
+
+    .hero-slides .hero-photo-fortune {
+        object-fit: cover !important;
+        object-position: center center !important;
+        filter: none !important;
+        image-rendering: auto !important;
+        background-color: #f5a623;
     }
 }
 
