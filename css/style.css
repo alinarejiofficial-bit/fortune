@@ -4823,7 +4823,8 @@ video {
     .footer .container {
         display: grid !important;
         grid-template-columns: 1fr !important;
-        gap: 28px !important;
+        gap: 16px !important;
+        margin-bottom: 24px !important;
     }
 
     #link,
@@ -4849,21 +4850,30 @@ video {
         text-align: center !important;
     }
 
+    .footer {
+        padding-top: 40px !important;
+    }
+
     .footer-col {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 18px;
+        gap: 6px;
+    }
+
+    .footer-col h4 {
+        margin: 0 0 4px !important;
+        font-size: 1.05rem !important;
     }
 
     .footer .logo.light {
         order: 0;
-        margin: 0 auto 6px !important;
+        margin: 0 auto 4px !important;
     }
 
     .footer-col > p {
         margin: 0;
-        padding-top: 4px;
+        padding-top: 0;
     }
 
     .footer .brand-lockup,
@@ -4878,23 +4888,43 @@ video {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 4px;
         padding: 0;
+        margin: 0;
         width: 100%;
     }
 
     .footer-col ul li {
         text-align: center;
         width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.35;
+    }
+
+    .footer-col ul li a {
+        display: inline-block;
+        padding: 2px 0;
+        line-height: 1.35;
     }
 
     .footer-col ul li a:hover {
         padding-left: 0;
     }
 
+    .footer .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin: 0;
+    }
+
     .footer .contact-info,
     .footer .contact-info p {
         justify-content: center;
         text-align: center;
+        margin: 0 !important;
+        line-height: 1.4;
     }
 
     .footer-col .btn {
