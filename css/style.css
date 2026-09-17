@@ -2121,6 +2121,19 @@ ul {
     gap: 10px;
 }
 
+.footer .contact-info p i {
+    flex: 0 0 16px;
+    width: 16px;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.footer .contact-info p span {
+    flex: 1 1 auto;
+    min-width: 0;
+    line-height: 1.45;
+}
+
 .footer .contact-info a,
 #home-contact .contact-facts a,
 .contact-page .contact-info-text a {
@@ -4915,22 +4928,47 @@ video {
     .footer .contact-info {
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        align-items: center;
+        gap: 10px;
         margin: 0;
+        width: 100%;
+        max-width: 320px;
     }
 
-    .footer .contact-info,
     .footer .contact-info p {
-        justify-content: center;
-        text-align: center;
+        display: grid !important;
+        grid-template-columns: 20px minmax(0, 1fr);
+        align-items: start;
+        justify-content: start;
+        column-gap: 10px;
+        width: 100%;
+        max-width: 320px;
         margin: 0 !important;
-        line-height: 1.4;
+        padding: 0 12px;
+        text-align: left !important;
+        line-height: 1.45;
+    }
+
+    .footer .contact-info p i {
+        width: 20px;
+        margin-top: 2px;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .footer .contact-info p span {
+        text-align: left;
+        word-break: break-word;
+    }
+
+    .footer .contact-info p a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 2px;
     }
 
     .footer-col .btn {
         align-self: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 10px auto 0;
     }
 
     .detail {
