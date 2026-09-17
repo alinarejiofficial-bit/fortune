@@ -36,9 +36,18 @@
     <section class="hero is-bailley">
         <div class="hero-bg-container">
             <div class="hero-slides">
-                <img class="hero-photo hero-photo-bailley is-active" src="images/hero/hero-bailley-bg.jpg" alt="Bailley packaged drinking water" decoding="async" fetchpriority="high">
-                <img class="hero-photo hero-photo-bisleri" src="images/hero/hero-bisleri-bg.jpg" alt="Bisleri packaged drinking water" decoding="async">
-                <img class="hero-photo hero-photo-fortune" src="images/hero/hero-fortune-bg.jpg?v=2" alt="Fortune edible oils and foods" decoding="async" fetchpriority="high">
+                <picture class="hero-photo hero-photo-bailley is-active">
+                    <source media="(max-width: 768px)" srcset="images/hero/hero-bailley-mobile.jpg">
+                    <img src="images/hero/hero-bailley-bg.jpg" alt="Bailley packaged drinking water" decoding="async" fetchpriority="high">
+                </picture>
+                <picture class="hero-photo hero-photo-bisleri">
+                    <source media="(max-width: 768px)" srcset="images/hero/hero-bisleri-mobile.jpg">
+                    <img src="images/hero/hero-bisleri-bg.jpg" alt="Bisleri packaged drinking water" decoding="async">
+                </picture>
+                <picture class="hero-photo hero-photo-fortune">
+                    <source media="(max-width: 768px)" srcset="images/hero/hero-fortune-mobile.jpg">
+                    <img src="images/hero/hero-fortune-bg.jpg?v=2" alt="Fortune edible oils and foods" decoding="async" fetchpriority="high">
+                </picture>
             </div>
             <div class="hero-overlay-shade" aria-hidden="true"></div>
         </div>
