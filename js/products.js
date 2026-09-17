@@ -421,7 +421,7 @@ const PRODUCTS = [
         id: "bisleri-10l-jar",
         category: "Packaged Drinking Water",
         name: "Bisleri 10 L Packaged Drinking Water",
-        image: "images/bisleri/water-10l.png?v=2",
+        image: "images/bisleri/water-10l.png?v=3",
         packs: "1 Jar · ₹130/- per jar",
         packList: ["10 Litre jar", "₹130/- per jar"],
         summary: "Bisleri 10 litre packaged drinking water jar.",
