@@ -4836,8 +4836,8 @@ video {
     .footer .container {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        gap: 16px 20px !important;
-        margin-bottom: 24px !important;
+        gap: 14px !important;
+        margin-bottom: 20px !important;
     }
 
     .footer .footer-col:first-child,
@@ -4848,28 +4848,6 @@ video {
     .footer .footer-col:nth-child(2),
     .footer .footer-col:nth-child(3) {
         width: 100%;
-    }
-
-    .footer .footer-col:last-child {
-        align-items: flex-start !important;
-        text-align: left !important;
-    }
-
-    .footer .footer-col:last-child h4 {
-        text-align: left !important;
-        width: 100%;
-    }
-
-    .footer .footer-col:last-child .contact-info {
-        align-items: flex-start;
-        margin-left: 0;
-        margin-right: auto;
-    }
-
-    .footer .footer-col:last-child .btn {
-        align-self: flex-start;
-        margin-left: 0;
-        margin-right: 0;
     }
 
     #link,
@@ -4896,19 +4874,41 @@ video {
     }
 
     .footer {
-        padding-top: 40px !important;
+        padding-top: 36px !important;
+        padding-bottom: 8px;
     }
 
     .footer-col {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 6px;
+        gap: 10px;
+    }
+
+    /* Mobile footer cards: layout like reference, brand greens only */
+    .footer .footer-col:nth-child(2),
+    .footer .footer-col:nth-child(3),
+    .footer .footer-col:last-child {
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(231, 215, 177, 0.35);
+        border-radius: 18px;
+        padding: 22px 16px 20px;
+    }
+
+    .footer .footer-col:first-child {
+        background: transparent;
+        border: none;
+        padding: 4px 0 8px;
     }
 
     .footer-col h4 {
-        margin: 0 0 4px !important;
-        font-size: 1.05rem !important;
+        margin: 0 0 8px !important;
+        font-size: 1.15rem !important;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        color: #ffffff !important;
+        text-align: center !important;
+        width: 100%;
     }
 
     .footer .logo.light {
@@ -4933,10 +4933,11 @@ video {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 4px;
+        gap: 8px;
         padding: 0;
         margin: 0;
         width: 100%;
+        list-style: none;
     }
 
     .footer-col ul li {
@@ -4944,51 +4945,57 @@ video {
         width: 100%;
         margin: 0 !important;
         padding: 0 !important;
-        line-height: 1.35;
+        line-height: 1.4;
     }
 
     .footer-col ul li a {
         display: inline-block;
         padding: 2px 0;
-        line-height: 1.35;
+        line-height: 1.4;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 0.95rem;
     }
 
     .footer-col ul li a:hover {
         padding-left: 0;
+        color: #e7d7b1;
     }
 
     .footer .contact-info {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
         margin: 0;
         width: 100%;
-        max-width: 320px;
+        max-width: 100%;
     }
 
     .footer .contact-info p {
-        display: grid !important;
-        grid-template-columns: 20px minmax(0, 1fr);
-        align-items: start;
-        justify-content: start;
-        column-gap: 10px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
         width: 100%;
-        max-width: 320px;
+        max-width: 100%;
         margin: 0 !important;
-        padding: 0 12px;
-        text-align: left !important;
+        padding: 0 8px;
+        text-align: center !important;
         line-height: 1.45;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 0.92rem;
     }
 
     .footer .contact-info p i {
-        width: 20px;
-        margin-top: 2px;
-        color: rgba(255, 255, 255, 0.9);
+        width: auto;
+        margin: 0;
+        color: #e7d7b1;
+        font-size: 0.95rem;
     }
 
     .footer .contact-info p span {
-        text-align: left;
+        text-align: center;
         word-break: break-word;
     }
 
@@ -4998,9 +5005,9 @@ video {
         text-underline-offset: 2px;
     }
 
-    .footer-col .btn {
-        align-self: center;
-        margin: 10px auto 0;
+    .footer-col .btn,
+    .footer .footer-col:last-child .btn {
+        display: none;
     }
 
     .detail {
