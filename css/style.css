@@ -5193,6 +5193,11 @@ video {
     padding: 0 6px;
 }
 
+.partner-card .partner-logo-lake-manor {
+    max-width: 96%;
+    max-height: 120px;
+}
+
 .partners-close {
     max-width: 760px;
     margin: 44px auto 0;
