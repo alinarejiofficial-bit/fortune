@@ -5549,12 +5549,22 @@ video {
     animation: none !important;
 }
 
+.hero-slides picture.hero-photo img,
+.hero-slides img.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
+    display: block;
+}
+
 .hero-slides video.hero-photo {
     filter: contrast(1.16) saturate(1.1) brightness(1.06);
     image-rendering: -webkit-optimize-contrast;
 }
 
-.hero-slides img.hero-photo {
+.hero-slides img.hero-photo,
+.hero-slides picture.hero-photo img {
     filter: none;
     image-rendering: auto;
     -webkit-backface-visibility: hidden;
@@ -6038,7 +6048,8 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         image-rendering: -webkit-optimize-contrast !important;
     }
 
-    .hero-slides .hero-photo-bailley {
+    .hero-slides .hero-photo-bailley,
+    .hero-slides .hero-photo-bailley img {
         object-fit: cover !important;
         object-position: center center !important;
         filter: none !important;
@@ -6046,7 +6057,8 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         background-color: #4a1a6b;
     }
 
-    .hero-slides .hero-photo-bisleri {
+    .hero-slides .hero-photo-bisleri,
+    .hero-slides .hero-photo-bisleri img {
         object-fit: cover !important;
         object-position: center center !important;
         filter: none !important;
@@ -6054,7 +6066,8 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         background-color: #c5e4ef;
     }
 
-    .hero-slides .hero-photo-fortune {
+    .hero-slides .hero-photo-fortune,
+    .hero-slides .hero-photo-fortune img {
         object-fit: cover !important;
         object-position: center center !important;
         filter: none !important;
