@@ -4546,7 +4546,7 @@ video {
         background: #eef3f4;
         border-radius: 22px;
         padding: 28px 22px 26px;
-        text-align: center;
+        text-align: left;
     }
 
     #home-about .about-visual,
@@ -4588,7 +4588,7 @@ video {
 
     #home-about .about-kicker,
     .about-kicker {
-        justify-content: center;
+        justify-content: flex-start;
         margin: 0 0 12px;
         padding: 0;
         color: #145c3e;
@@ -4607,7 +4607,7 @@ video {
     #home-about .about-title {
         font-size: 1.85rem !important;
         line-height: 1.2;
-        text-align: center !important;
+        text-align: left !important;
         max-width: none !important;
         width: auto !important;
         margin: 0 0 14px !important;
@@ -4625,13 +4625,18 @@ video {
     #home-about .about-content p,
     #home-about .about-desc {
         font-size: 0.98rem !important;
-        text-align: center !important;
+        text-align: left !important;
         max-width: none !important;
         width: auto !important;
-        margin: 0 !important;
+        margin: 0 0 14px !important;
         padding: 0;
         color: #6b7280;
         line-height: 1.65;
+    }
+
+    .about-desc:last-child,
+    #home-about .about-desc:last-child {
+        margin-bottom: 0 !important;
     }
 
     .about-features-grid,
