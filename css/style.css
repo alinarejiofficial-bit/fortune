@@ -6068,16 +6068,16 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         object-position: center center !important;
         filter: none !important;
         image-rendering: auto !important;
-        background-color: #4a1a6b;
+        background-color: #2f6fb5;
     }
 
     .hero-slides .hero-photo-bisleri,
     .hero-slides .hero-photo-bisleri img {
         object-fit: cover !important;
-        object-position: center center !important;
+        object-position: center top !important;
         filter: none !important;
         image-rendering: auto !important;
-        background-color: #c5e4ef;
+        background-color: #00a9a5;
     }
 
     .hero-slides .hero-photo-fortune,
@@ -6086,7 +6086,7 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         object-position: center center !important;
         filter: none !important;
         image-rendering: auto !important;
-        background-color: #f5a623;
+        background-color: #f3efe8;
     }
 }
 
