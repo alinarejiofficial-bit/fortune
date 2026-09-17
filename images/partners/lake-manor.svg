@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" role="img" aria-label="The Lake Manor">
+  <rect width="520" height="320" fill="#ffffff"/>
+  <g fill="none" stroke="#8a7348" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- manor silhouette -->
+    <path d="
+      M90 175
+      L90 120
+      L130 88
+      L170 120
+      L170 100
+      L210 72
+      L260 100
+      L260 72
+      L310 100
+      L310 72
+      L350 100
+      L350 120
+      L390 88
+      L430 120
+      L430 175
+      Z"/>
+    <!-- left gable window -->
+    <circle cx="130" cy="112" r="5"/>
+    <path d="M112 145 h36 v18 h-36 z"/>
+    <path d="M118 163 h24"/>
+    <!-- right gable window -->
+    <circle cx="390" cy="112" r="5"/>
+    <path d="M372 145 h36 v18 h-36 z"/>
+    <path d="M378 163 h24"/>
+    <!-- center upper windows -->
+    <path d="M230 118 h24 v20 h-24 z"/>
+    <path d="M266 118 h24 v20 h-24 z"/>
+    <!-- balcony rail suggestion -->
+    <path d="M210 148 h100"/>
+    <path d="M220 148 v8 M240 148 v8 M260 148 v8 M280 148 v8 M300 148 v8"/>
+    <!-- ground floor arches -->
+    <path d="M110 175 v-22 a12 12 0 0 1 24 0 v22"/>
+    <path d="M150 175 v-22 a12 12 0 0 1 24 0 v22"/>
+    <path d="M190 175 v-22 a12 12 0 0 1 24 0 v22"/>
+    <path d="M248 175 v-28 a16 16 0 0 1 32 0 v28"/>
+    <path d="M306 175 v-22 a12 12 0 0 1 24 0 v22"/>
+    <path d="M346 175 v-22 a12 12 0 0 1 24 0 v22"/>
+    <path d="M386 175 v-22 a12 12 0 0 1 24 0 v22"/>
+    <!-- base line -->
+    <path d="M80 175 h360"/>
+  </g>
+  <text x="260" y="58" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="14" letter-spacing="6" fill="#8a7348">THE</text>
+  <text x="260" y="230" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="36" letter-spacing="8" fill="#8a7348">LAKE MANOR</text>
+</svg>
