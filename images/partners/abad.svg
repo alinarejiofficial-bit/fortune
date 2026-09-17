@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" role="img" aria-label="Abad Hotels and Resorts">
+  <rect width="420" height="320" fill="#ffffff"/>
+  <g transform="translate(210 108)" fill="#1e5a9c" stroke="#1e5a9c">
+    <!-- Classic Abad geometric mark: framed lattice with corner feet -->
+    <rect x="-68" y="-68" width="136" height="136" fill="none" stroke-width="15"/>
+    <!-- corner feet -->
+    <path fill="#1e5a9c" stroke="none" d="
+      M-82,-82 h28 v12 h-16 v16 h-12 z
+      M54,-82 h28 v12 h-12 v16 h-16 z
+      M-82,54 h12 v16 h16 v12 h-28 z
+      M70,54 h12 v28 h-28 v-12 h16 z"/>
+    <!-- diagonals -->
+    <path fill="none" stroke-width="13" stroke-linecap="square" d="M-46,-46 L46,46 M46,-46 L-46,46"/>
+    <!-- inner corner wedges -->
+    <path fill="#1e5a9c" stroke="none" d="
+      M-46,-46 h28 l-28,28 z
+      M46,-46 h-28 l28,28 z
+      M-46,46 h28 l-28,-28 z
+      M46,46 h-28 l28,-28 z"/>
+  </g>
+  <text x="210" y="236" text-anchor="middle"
+        font-family="Arial Black, Helvetica Neue, Arial, sans-serif"
+        font-size="52" font-weight="900" fill="#1e5a9c" letter-spacing="7">ABAD</text>
+  <text x="210" y="270" text-anchor="middle"
+        font-family="Arial, Helvetica Neue, Helvetica, sans-serif"
+        font-size="15" font-weight="700" fill="#1e5a9c" letter-spacing="3.2">HOTELS &amp; RESORTS</text>
+</svg>

@@ -421,7 +421,7 @@ const PRODUCTS = [
         id: "bisleri-10l-jar",
         category: "Packaged Drinking Water",
         name: "Bisleri 10 L Packaged Drinking Water",
-        image: "images/bisleri/water-10l.png",
+        image: "images/bisleri/water-10l.png?v=2",
         packs: "1 Jar · ₹130/- per jar",
         packList: ["10 Litre jar", "₹130/- per jar"],
         summary: "Bisleri 10 litre packaged drinking water jar.",
@@ -481,7 +481,7 @@ const PRODUCTS = [
         id: "bisleri-500ml-case",
         category: "Packaged Drinking Water",
         name: "Bisleri 500 ML Packaged Drinking Water — Case",
-        image: "images/bisleri/water-500ml.png",
+        image: "images/bisleri/water-500ml.png?v=2",
         packs: "Case of 24 bottles · ₹240/-",
         packList: ["Case of 24 bottles", "₹240/- per case"],
         summary: "Bisleri 500 ml packaged drinking water, case of 24 bottles.",
@@ -491,7 +491,7 @@ const PRODUCTS = [
         id: "bisleri-500ml-single",
         category: "Packaged Drinking Water",
         name: "Bisleri 500 ML Packaged Drinking Water — Single",
-        image: "images/bisleri/water-500ml.png",
+        image: "images/bisleri/water-500ml.png?v=2",
         packs: "1 Bottle · ₹10/-",
         packList: ["Single 500 ml bottle", "₹10/- per bottle"],
         summary: "Bisleri 500 ml packaged drinking water, single bottle.",
@@ -580,19 +580,6 @@ const PRODUCTS = [
         summary: "Bailley One 500 ml packaged drinking water with minerals, pack of 24.",
         points: [
             "500 ML – Pack of 24 – Bailley One",
-            "Packaged drinking water with minerals"
-        ]
-    },
-    {
-        id: "bailley-250ml",
-        category: "Bailley",
-        name: "Bailley 250 ML Packaged Drinking Water",
-        image: "images/bailley/water-250ml.png",
-        packs: "250 ML – Pack of 48",
-        packList: ["250 ML", "Pack of 48"],
-        summary: "Bailley 250 ml packaged drinking water with minerals, pack of 48.",
-        points: [
-            "250 ML – Pack of 48",
             "Packaged drinking water with minerals"
         ]
     }
@@ -702,7 +689,6 @@ function productCard(item) {
             '<img src="' + item.image + '" alt="' + item.name + '">' +
         '</div>' +
         '<h4>' + item.name + '</h4>' +
-        '<p class="pack-line">' + item.packs + '</p>' +
-        '<a href="product.html?id=' + item.id + '" class="btn">View Details</a>' +
+        '<a href="product.html?id=' + item.id + '" class="btn">Explore Now</a>' +
         '</div>';
 }
