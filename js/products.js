@@ -1,7 +1,7 @@
 const PRODUCTS = [
     {
         id: "goldnut",
-        category: "Edible Oils",
+        category: "Oils",
         name: "Fortune Goldnut Refined Groundnut Oil",
         image: "images/fortune/goldnut.png?v=4",
         packs: "PET Bottle 1L · Pouch 1L · Jerry Can 5L · Tin 15 kg",
@@ -11,7 +11,7 @@ const PRODUCTS = [
     },
     {
         id: "pehli-dhaar",
-        category: "Edible Oils",
+        category: "Oils",
         name: "Fortune Pehli Dhaar Mustard Oil",
         image: "images/fortune/pehli-dhaar.png?v=4",
         packs: "Pet Bottle 1L · Pouch 1L",
@@ -21,7 +21,7 @@ const PRODUCTS = [
     },
     {
         id: "cottonlite",
-        category: "Edible Oils",
+        category: "Oils",
         name: "Fortune Cottonlite Oil",
         image: "images/fortune/cottonlite.png?v=4",
         packs: "Pouch 1L · Jerry Can 5L · Tin 10 kg · Tin 15L / 15 kg",
@@ -31,7 +31,7 @@ const PRODUCTS = [
     },
     {
         id: "groundnut",
-        category: "Edible Oils",
+        category: "Oils",
         name: "Fortune Filtered Groundnut Oil",
         image: "images/fortune/groundnut.png?v=4",
         packs: "Pouch 1L · Pet Bottle 1L · Jerry Can 5L, 15L · Tin 10 kg, 15L, 15 kg",
@@ -41,7 +41,7 @@ const PRODUCTS = [
     },
     {
         id: "ricebran",
-        category: "Edible Oils",
+        category: "Oils",
         name: "Fortune Rice Bran Health Oil",
         image: "images/fortune/ricebran.png?v=4",
         packs: "Pouch 1L · Pet Bottle 1L · Jerry Can 2L, 5L · Jar 15L · Tap Jar 15L",
@@ -51,7 +51,7 @@ const PRODUCTS = [
     },
     {
         id: "mustard",
-        category: "Edible Oils",
+        category: "Oils",
         name: "Fortune Kachi Ghani Mustard Oil",
         image: "images/fortune/mustard.png?v=4",
         packs: "Pet Bottle 200ml, 500ml · Pouch 500ml, 1L · Jerry Can 2L, 5L, 15L · Pet Barni 2L, 5L · Tin 15 kg",
@@ -60,28 +60,168 @@ const PRODUCTS = [
         points: ["Fortune Kachi Ghani Mustard Oil", "Pet Bottle — 200 ml", "Pouch — 1 litre", "Jerry Can — 5 litres", "Large Jerry Can — 15 litres"]
     },
     {
-        id: "sunflower",
-        category: "Edible Oils",
-        name: "Fortune Sunlite Refined Sunflower Oil",
-        image: "images/fortune/sunflower.png?v=4",
-        packs: "Pouch 500ml, 1L · Pet Bottle 500ml, 1L, 2L, 5L · Jerry Can 5L, 15L · Tin 15L, 15 kg",
-        packList: ["Pouch — 500 ml", "Pouch — 1 litre", "Pet Bottle — 500 ml", "Pet Bottle — 1 litre", "Pet Bottle — 2 litres", "Pet Bottle — 5 litres", "Jerry Can — 5 litres", "Jerry Can — 15 litres", "Tin — 15 litres", "Tin — 15 kg"],
-        summary: "Fortune Sunlite refined sunflower oil.",
-        points: ["Fortune Sunlite", "Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jerry Can — 15 litres"]
+        id: "sunlite-pouch-500ml",
+        category: "Oils",
+        name: "Fortune Sunlite — 500 ml Pouch",
+        image: "images/fortune/sunlite-pouch.png?v=1",
+        packs: "Pouch 500 ml",
+        packList: ["Pouch — 500 ml"],
+        summary: "Fortune Sunlite refined sunflower oil, 500 ml pouch.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Pouch — 500 ml"]
     },
     {
-        id: "soya",
-        category: "Edible Oils",
-        name: "Fortune Soya Health Oil",
-        image: "images/fortune/soya.png?v=4",
-        packs: "Pouch 1L · Pet Bottle 1L, 2L · Jerry Can 5L, 15L",
-        packList: ["Pouch — 1 litre", "Pet Bottle — 1 litre", "Pet Bottle — 2 litres", "Jerry Can — 5 litres", "Jerry Can — 15 litres"],
-        summary: "Fortune Soya Health refined soyabean oil.",
-        points: ["Fortune Soya Health Oil", "Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jerry Can — 15 litres"]
+        id: "sunlite-pouch-1l",
+        category: "Oils",
+        name: "Fortune Sunlite — 1 L Pouch",
+        image: "images/fortune/sunlite-pouch.png?v=1",
+        packs: "Pouch 1 litre",
+        packList: ["Pouch — 1 litre"],
+        summary: "Fortune Sunlite refined sunflower oil, 1 litre pouch.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Pouch — 1 litre"]
+    },
+    {
+        id: "sunlite-bottle-500ml",
+        category: "Oils",
+        name: "Fortune Sunlite — 500 ml Pet Bottle",
+        image: "images/fortune/sunlite-bottle.png?v=1",
+        packs: "Pet Bottle 500 ml",
+        packList: ["Pet Bottle — 500 ml"],
+        summary: "Fortune Sunlite refined sunflower oil, 500 ml pet bottle.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 500 ml"]
+    },
+    {
+        id: "sunlite-bottle-1l",
+        category: "Oils",
+        name: "Fortune Sunlite — 1 L Pet Bottle",
+        image: "images/fortune/sunlite-bottle.png?v=1",
+        packs: "Pet Bottle 1 litre",
+        packList: ["Pet Bottle — 1 litre"],
+        summary: "Fortune Sunlite refined sunflower oil, 1 litre pet bottle.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 1 litre"]
+    },
+    {
+        id: "sunlite-bottle-2l",
+        category: "Oils",
+        name: "Fortune Sunlite — 2 L Pet Bottle",
+        image: "images/fortune/sunlite-bottle.png?v=1",
+        packs: "Pet Bottle 2 litres",
+        packList: ["Pet Bottle — 2 litres"],
+        summary: "Fortune Sunlite refined sunflower oil, 2 litre pet bottle.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 2 litres"]
+    },
+    {
+        id: "sunlite-bottle-5l",
+        category: "Oils",
+        name: "Fortune Sunlite — 5 L Pet Bottle",
+        image: "images/fortune/sunlite-bottle.png?v=1",
+        packs: "Pet Bottle 5 litres",
+        packList: ["Pet Bottle — 5 litres"],
+        summary: "Fortune Sunlite refined sunflower oil, 5 litre pet bottle.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 5 litres"]
+    },
+    {
+        id: "sunlite-jerry-5l",
+        category: "Oils",
+        name: "Fortune Sunlite — 5 L Jerry Can",
+        image: "images/fortune/sunlite-jerry.png?v=1",
+        packs: "Jerry Can 5 litres",
+        packList: ["Jerry Can — 5 litres"],
+        summary: "Fortune Sunlite refined sunflower oil, 5 litre jerry can.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Jerry Can — 5 litres"]
+    },
+    {
+        id: "sunlite-jerry-15l",
+        category: "Oils",
+        name: "Fortune Sunlite — 15 L Jerry Can",
+        image: "images/fortune/sunlite-jerry.png?v=1",
+        packs: "Jerry Can 15 litres",
+        packList: ["Jerry Can — 15 litres"],
+        summary: "Fortune Sunlite refined sunflower oil, 15 litre jerry can.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Jerry Can — 15 litres"]
+    },
+    {
+        id: "sunlite-jerry-15l-tap",
+        category: "Oils",
+        name: "Fortune Sunlite — 15 L Jerry Can Tap",
+        image: "images/fortune/sunlite-jerry.png?v=1",
+        packs: "Jerry Can Tap 15 litres",
+        packList: ["Jerry Can Tap — 15 litres"],
+        summary: "Fortune Sunlite refined sunflower oil, 15 litre tap jerry can.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Jerry Can Tap — 15 litres"]
+    },
+    {
+        id: "sunlite-tin-15l",
+        category: "Oils",
+        name: "Fortune Sunlite — 15 L Tin",
+        image: "images/fortune/sunlite-tin.png?v=1",
+        packs: "Tin 15 litres",
+        packList: ["Tin — 15 litres"],
+        summary: "Fortune Sunlite refined sunflower oil, 15 litre tin.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Tin — 15 litres"]
+    },
+    {
+        id: "sunlite-tin-15kg",
+        category: "Oils",
+        name: "Fortune Sunlite — 15 kg Tin",
+        image: "images/fortune/sunlite-tin.png?v=1",
+        packs: "Tin 15 kg",
+        packList: ["Tin — 15 kg"],
+        summary: "Fortune Sunlite refined sunflower oil, 15 kg tin.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Tin — 15 kg"]
+    },
+    {
+        id: "soya-pouch-1l",
+        category: "Oils",
+        name: "Fortune Soya Health Oil — 1 L Pouch",
+        image: "images/fortune/soya-pouch-1l.png?v=2",
+        packs: "Pouch 1 litre",
+        packList: ["Pouch — 1 litre"],
+        summary: "Fortune Soya Health refined soyabean oil, 1 litre pouch.",
+        points: ["Fortune Soya Health Oil", "Pouch — 1 litre"]
+    },
+    {
+        id: "soya-bottle-1l",
+        category: "Oils",
+        name: "Fortune Soya Health Oil — 1 L Pet Bottle",
+        image: "images/fortune/soya-bottle-1l.png?v=2",
+        packs: "Pet Bottle 1 litre",
+        packList: ["Pet Bottle — 1 litre"],
+        summary: "Fortune Soya Health refined soyabean oil, 1 litre pet bottle.",
+        points: ["Fortune Soya Health Oil", "Pet Bottle — 1 litre"]
+    },
+    {
+        id: "soya-bottle-2l",
+        category: "Oils",
+        name: "Fortune Soya Health Oil — 2 L Pet Bottle",
+        image: "images/fortune/soya-bottle-2l.png?v=2",
+        packs: "Pet Bottle 2 litres",
+        packList: ["Pet Bottle — 2 litres"],
+        summary: "Fortune Soya Health refined soyabean oil, 2 litre pet bottle.",
+        points: ["Fortune Soya Health Oil", "Pet Bottle — 2 litres"]
+    },
+    {
+        id: "soya-jerry-5l",
+        category: "Oils",
+        name: "Fortune Soya Health Oil — 5 L Jerry Can",
+        image: "images/fortune/soya-jerry-5l.png?v=2",
+        packs: "Jerry Can 5 litres",
+        packList: ["Jerry Can — 5 litres"],
+        summary: "Fortune Soya Health refined soyabean oil, 5 litre jerry can.",
+        points: ["Fortune Soya Health Oil", "Jerry Can — 5 litres"]
+    },
+    {
+        id: "soya-jerry-15l",
+        category: "Oils",
+        name: "Fortune Soya Health Oil — 15 L Jerry Can",
+        image: "images/fortune/soya-jerry-15l.png?v=2",
+        packs: "Jerry Can 15 litres",
+        packList: ["Jerry Can — 15 litres"],
+        summary: "Fortune Soya Health refined soyabean oil, 15 litre jerry can.",
+        points: ["Fortune Soya Health Oil", "Jerry Can — 15 litres"]
     },
     {
         id: "xpert-active",
-        category: "Fortune Xpert Oils",
+        category: "Fortune Xpert",
         name: "Fortune Xpert Active Oil",
         image: "images/fortune/xpert-active.png?v=4",
         packs: "850 g",
@@ -91,7 +231,7 @@ const PRODUCTS = [
     },
     {
         id: "xpert-total",
-        category: "Fortune Xpert Oils",
+        category: "Fortune Xpert",
         name: "Fortune Xpert Total Balance Oil",
         image: "images/fortune/xpert-total.png?v=4",
         packs: "Pouch 1L · Jar 5L",
@@ -101,7 +241,7 @@ const PRODUCTS = [
     },
     {
         id: "xpert-immunity",
-        category: "Fortune Xpert Oils",
+        category: "Fortune Xpert",
         name: "Fortune Xpert Pro Immunity Oil",
         image: "images/fortune/xpert-immunity.png?v=4",
         packs: "Pouch 1L · Jerry Can 5L",
@@ -111,7 +251,7 @@ const PRODUCTS = [
     },
     {
         id: "xpert-sugar",
-        category: "Fortune Xpert Oils",
+        category: "Fortune Xpert",
         name: "Fortune Xpert Pro Sugar Conscious Oil",
         image: "images/fortune/xpert-sugar.png?v=4",
         packs: "Pouch 1L · Jerry Can 5L",
@@ -181,7 +321,7 @@ const PRODUCTS = [
     },
     {
         id: "soya-granules",
-        category: "Soya Products",
+        category: "Soya Chunks",
         name: "Fortune Soya Granules",
         image: "images/fortune-foods/soya-granules.png?v=2",
         packs: "Packs 200 gms",
@@ -191,7 +331,7 @@ const PRODUCTS = [
     },
     {
         id: "soya-mini-chunks",
-        category: "Soya Products",
+        category: "Soya Chunks",
         name: "Fortune Soya Mini Chunks",
         image: "images/fortune-foods/soya-mini-chunks.png?v=2",
         packs: "Pouch 44 gms · Packs 200 gms",
@@ -201,7 +341,7 @@ const PRODUCTS = [
     },
     {
         id: "soya-chunks",
-        category: "Soya Products",
+        category: "Soya Chunks",
         name: "Fortune Soya Chunks",
         image: "images/fortune-foods/soya-chunks.png?v=2",
         packs: "Pouch 44 gms · Packs 200 gms · Pouch 1 kg",
@@ -211,7 +351,7 @@ const PRODUCTS = [
     },
     {
         id: "besan",
-        category: "Staples",
+        category: "Besan",
         name: "Fortune Besan",
         image: "images/fortune-foods/besan.png?v=2",
         packs: "Pouches 200 g, 500 g, 1 kg, 10 kg",
@@ -221,7 +361,7 @@ const PRODUCTS = [
     },
     {
         id: "sugar",
-        category: "Staples",
+        category: "Sugar",
         name: "Fortune Sugar",
         image: "images/fortune-foods/sugar.png?v=2",
         packs: "Sugar Pouch 1 kg · Fine Sugar Pouch 1 kg · Sugar Pouch 5 kg · Fine Sugar Pouch 5 kg",
@@ -321,7 +461,7 @@ const PRODUCTS = [
     },
     {
         id: "rawa",
-        category: "Staples",
+        category: "Rawa",
         name: "Fortune Rawa",
         image: "images/fortune-foods/rawa.png?v=2",
         packs: "Pack 1 kg",
@@ -331,7 +471,7 @@ const PRODUCTS = [
     },
     {
         id: "maida",
-        category: "Staples",
+        category: "Maida",
         name: "Fortune Maida",
         image: "images/fortune-foods/maida.png?v=2",
         packs: "Pouch 500 grams · Pouch 1 kg",
@@ -361,7 +501,7 @@ const PRODUCTS = [
     },
     {
         id: "suji",
-        category: "Staples",
+        category: "Suji",
         name: "Fortune Suji",
         image: "images/fortune-foods/suji.png?v=2",
         packs: "Pouch 200 g · Pouch 1 kg",
@@ -411,7 +551,7 @@ const PRODUCTS = [
     },
     {
         id: "chana-sattu",
-        category: "Staples",
+        category: "Chana Sattu",
         name: "Fortune Chana Sattu",
         image: "images/fortune-foods/chana-sattu.png?v=2",
         packs: "Pouch 200g, 500g",
@@ -673,19 +813,61 @@ function getBrandProducts(brand) {
 }
 
 const FORTUNE_CATEGORY_ORDER = [
-    "Packaged Drinking Water",
-    "Bisleri Soda",
-    "Edible Oils",
-    "Fortune Xpert Oils",
+    "Oils",
+    "Fortune Xpert",
     "Atta",
     "Rice",
-    "Soya Products",
-    "Staples",
+    "Soya Chunks",
+    "Besan",
+    "Sugar",
     "Pulses",
+    "Rawa",
+    "Maida",
     "Poha",
+    "Suji",
     "Wheat",
-    "Alife Hygiene Soap"
+    "Chana Sattu"
 ];
+
+const FORTUNE_FAMILY = {
+    Oils: ["Oils", "Fortune Xpert"],
+    Foods: [
+        "Atta",
+        "Rice",
+        "Soya Chunks",
+        "Besan",
+        "Sugar",
+        "Pulses",
+        "Rawa",
+        "Maida",
+        "Poha",
+        "Suji",
+        "Wheat",
+        "Chana Sattu"
+    ]
+};
+
+const FORTUNE_OIL_SUBCATEGORIES = [
+    { id: "soya-health", label: "Fortune Soya Health Oil", productIds: ["soya-pouch-1l", "soya-bottle-1l", "soya-bottle-2l", "soya-jerry-5l", "soya-jerry-15l"] },
+    { id: "sunlite", label: "Fortune Sunlite Refined Sunflower Oil", productIds: ["sunlite-pouch-500ml", "sunlite-pouch-1l", "sunlite-bottle-500ml", "sunlite-bottle-1l", "sunlite-bottle-2l", "sunlite-bottle-5l", "sunlite-jerry-5l", "sunlite-jerry-15l", "sunlite-jerry-15l-tap", "sunlite-tin-15l", "sunlite-tin-15kg"] },
+    { id: "kachi-ghani", label: "Fortune Kachi Ghani Mustard Oil", productIds: ["mustard"] },
+    { id: "rice-bran", label: "Fortune Rice Bran Health Oil", productIds: ["ricebran"] },
+    { id: "filtered-groundnut", label: "Fortune Filtered Groundnut Oil", productIds: ["groundnut"] },
+    { id: "cottonlite", label: "Fortune Cottonlite Oil", productIds: ["cottonlite"] },
+    { id: "goldnut", label: "Fortune Goldnut Refined Groundnut Oil", productIds: ["goldnut"] },
+    { id: "xpert", label: "Fortune Xpert", productIds: ["xpert-active", "xpert-total", "xpert-immunity", "xpert-sugar"] },
+    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar"] }
+];
+
+function getProductsByIds(ids) {
+    return ids.map(function (id) {
+        return getProduct(id);
+    }).filter(Boolean);
+}
+
+function categorySlug(brand, category) {
+    return brand + "-" + category.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+}
 
 function getBrandCategories(brand) {
     const items = getBrandProducts(brand);
@@ -693,7 +875,8 @@ function getBrandCategories(brand) {
     items.forEach(function (item) {
         seen[item.category] = true;
     });
-    const ordered = FORTUNE_CATEGORY_ORDER.filter(function (name) {
+    const preferred = brand === "fortune" ? FORTUNE_CATEGORY_ORDER : [];
+    const ordered = preferred.filter(function (name) {
         return seen[name];
     });
     Object.keys(seen).forEach(function (name) {
@@ -708,9 +891,83 @@ function getBrandProductsByCategory(brand, category) {
     });
 }
 
+function renderSubcategory(brand, category) {
+    const items = getBrandProductsByCategory(brand, category);
+    if (!items.length) return "";
+    return '<div class="catalog-subgroup" id="' + categorySlug(brand, category) + '" data-subcategory="' + category + '">' +
+        '<h3 class="catalog-subtitle">' + category + '</h3>' +
+        '<div class="products-grid">' + items.map(productCard).join("") + '</div>' +
+        '</div>';
+}
+
+function renderOilSubcategory(sub) {
+    const items = getProductsByIds(sub.productIds);
+    if (!items.length) return "";
+    return items.map(function (item) {
+        return '<div class="product-card" data-oil-sub="' + sub.id + '">' +
+            productCardInner(item) +
+            '</div>';
+    }).join("");
+}
+
+function productCardInner(item) {
+    return '<div class="product-img-box">' +
+            '<img src="' + item.image + '" alt="' + item.name + '">' +
+        '</div>' +
+        '<h4>' + item.name + '</h4>' +
+        '<p class="pack-line">' + item.packs + '</p>' +
+        '<a href="product.html?id=' + item.id + '" class="btn">Explore Now</a>';
+}
+
+function renderFortuneCatalog() {
+    const foodItems = FORTUNE_FAMILY.Foods.reduce(function (list, name) {
+        return list.concat(getBrandProductsByCategory("fortune", name));
+    }, []);
+
+    const chips = [
+        '<button type="button" class="catalog-subchip active" data-subfilter="all">All</button>',
+        '<button type="button" class="catalog-subchip" data-subfilter="Oils">Oils</button>',
+        '<button type="button" class="catalog-subchip" data-subfilter="Foods">Foods</button>'
+    ].join("");
+
+    const oilChips = FORTUNE_OIL_SUBCATEGORIES.map(function (sub) {
+        return '<button type="button" class="catalog-oilchip" data-oil-filter="' + sub.id + '">' + sub.label + '</button>';
+    }).join("");
+
+    const oilCards = FORTUNE_OIL_SUBCATEGORIES.map(renderOilSubcategory).join("");
+
+    let body = "";
+    if (oilCards) {
+        body += '<div class="catalog-family" data-family="Oils">' +
+            '<h3 class="catalog-family-title">Oils</h3>' +
+            '<div class="catalog-oilnav" role="tablist" aria-label="Fortune oil subcategories">' +
+            '<button type="button" class="catalog-oilchip active" data-oil-filter="all">All Oils</button>' +
+            oilChips +
+            '</div>' +
+            '<div class="catalog-subgroup">' +
+            '<div class="products-grid">' + oilCards + '</div>' +
+            '</div></div>';
+    }
+    if (foodItems.length) {
+        body += '<div class="catalog-family" data-family="Foods">' +
+            '<h3 class="catalog-family-title">Foods</h3>' +
+            '<div class="catalog-subgroup"><div class="products-grid">' +
+            foodItems.map(productCard).join("") +
+            '</div></div></div>';
+    }
+
+    return '<div class="catalog-group" id="fortune">' +
+        '<div class="section-header"><h2 class="section-title">Fortune</h2></div>' +
+        '<div class="catalog-subnav" role="tablist" aria-label="Fortune subcategories">' + chips + '</div>' +
+        body +
+        '</div>';
+}
+
 function renderBrandCatalog(brand) {
     const filter = BRAND_FILTERS[brand];
     if (!filter) return "";
+    if (brand === "fortune") return renderFortuneCatalog();
+
     const categories = getBrandCategories(brand);
     if (categories.length <= 1) {
         const items = getBrandProducts(brand);
@@ -722,12 +979,7 @@ function renderBrandCatalog(brand) {
     return '<div class="catalog-group" id="' + brand + '">' +
         '<div class="section-header"><h2 class="section-title">' + filter.title + '</h2></div>' +
         categories.map(function (category) {
-            const items = getBrandProductsByCategory(brand, category);
-            const slug = brand + "-" + category.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-            return '<div class="catalog-subgroup" id="' + slug + '">' +
-                '<h3 class="catalog-subtitle">' + category + '</h3>' +
-                '<div class="products-grid">' + items.map(productCard).join("") + '</div>' +
-                '</div>';
+            return renderSubcategory(brand, category);
         }).join("") +
         '</div>';
 }
@@ -739,12 +991,5 @@ function getProduct(id) {
 }
 
 function productCard(item) {
-    return '<div class="product-card">' +
-        '<div class="product-img-box">' +
-            '<img src="' + item.image + '" alt="' + item.name + '">' +
-        '</div>' +
-        '<h4>' + item.name + '</h4>' +
-        '<p class="pack-line">' + item.packs + '</p>' +
-        '<a href="product.html?id=' + item.id + '" class="btn">Explore Now</a>' +
-        '</div>';
+    return '<div class="product-card">' + productCardInner(item) + '</div>';
 }

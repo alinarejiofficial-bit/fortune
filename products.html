@@ -250,6 +250,69 @@
         }
 
         setBannerSlide(0);
+
+        (function initFortuneSubnav() {
+            const fortuneGroup = document.getElementById("fortune");
+            if (!fortuneGroup) return;
+            const subchips = fortuneGroup.querySelectorAll(".catalog-subchip");
+            const oilchips = fortuneGroup.querySelectorAll(".catalog-oilchip");
+            const families = fortuneGroup.querySelectorAll(".catalog-family");
+            const oilsFamily = fortuneGroup.querySelector('.catalog-family[data-family="Oils"]');
+            const oilSubs = fortuneGroup.querySelectorAll(".product-card[data-oil-sub]");
+
+            function setOilsNavVisible(visible) {
+                fortuneGroup.classList.toggle("is-oils-view", visible);
+                if (oilsFamily) oilsFamily.classList.toggle("is-oils-active", visible);
+            }
+
+            function showOilSub(name) {
+                oilchips.forEach(function (chip) {
+                    chip.classList.toggle("active", chip.getAttribute("data-oil-filter") === name);
+                });
+                oilSubs.forEach(function (el) {
+                    el.classList.toggle(
+                        "is-subfiltered-out",
+                        name !== "all" && el.getAttribute("data-oil-sub") !== name
+                    );
+                });
+            }
+
+            function showFortuneSub(name) {
+                subchips.forEach(function (chip) {
+                    chip.classList.toggle("active", chip.getAttribute("data-subfilter") === name);
+                });
+                if (name === "all") {
+                    families.forEach(function (el) { el.classList.remove("is-subfiltered-out"); });
+                    setOilsNavVisible(false);
+                    showOilSub("all");
+                    return;
+                }
+                families.forEach(function (family) {
+                    family.classList.toggle(
+                        "is-subfiltered-out",
+                        family.getAttribute("data-family") !== name
+                    );
+                });
+                setOilsNavVisible(name === "Oils");
+                if (name === "Oils") showOilSub("all");
+                const target = fortuneGroup.querySelector('.catalog-family[data-family="' + name + '"]');
+                if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+
+            subchips.forEach(function (chip) {
+                chip.addEventListener("click", function () {
+                    showFortuneSub(chip.getAttribute("data-subfilter"));
+                });
+            });
+            oilchips.forEach(function (chip) {
+                chip.addEventListener("click", function () {
+                    showFortuneSub("Oils");
+                    showOilSub(chip.getAttribute("data-oil-filter"));
+                });
+            });
+
+            setOilsNavVisible(false);
+        })();
     </script>
 </body>
 

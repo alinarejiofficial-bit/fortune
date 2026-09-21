@@ -800,6 +800,90 @@ ul {
     text-align: center;
 }
 
+.catalog-subnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 8px auto 36px;
+    max-width: 920px;
+}
+
+.catalog-subchip,
+.catalog-oilchip {
+    appearance: none;
+    border: 1px solid rgba(20, 92, 62, 0.18);
+    background: #f4f7f5;
+    color: #1c1917;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.86rem;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: 10px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.catalog-subchip:hover,
+.catalog-subchip.active,
+.catalog-oilchip:hover,
+.catalog-oilchip.active {
+    background: #145c3e;
+    border-color: #145c3e;
+    color: #fff;
+}
+
+.catalog-oilnav {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto 32px;
+    max-width: 980px;
+}
+
+.catalog-family[data-family="Oils"].is-oils-active .catalog-oilnav,
+.catalog-group.is-oils-view .catalog-oilnav {
+    display: flex;
+}
+
+.catalog-oilchip {
+    font-size: 0.78rem;
+    padding: 8px 12px;
+    background: #fff;
+    border-color: rgba(20, 92, 62, 0.22);
+}
+
+.catalog-family {
+    margin-bottom: 48px;
+}
+
+.catalog-family:last-child {
+    margin-bottom: 0;
+}
+
+.catalog-family-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: #1c1917;
+    text-align: center;
+    margin: 0 0 24px;
+    letter-spacing: -0.3px;
+}
+
+.catalog-subgroup-nested {
+    margin-top: 36px;
+    padding-top: 8px;
+}
+
+.catalog-subgroup.is-subfiltered-out,
+.catalog-family.is-subfiltered-out,
+.product-card.is-subfiltered-out {
+    display: none;
+}
+
 /* Product Detail Page */
 .crumb {
     font-family: 'Inter', sans-serif;
@@ -5502,6 +5586,31 @@ video {
     .partner-card img {
         max-width: 90%;
         max-height: 72px;
+    }
+
+    .catalog-subnav {
+        gap: 8px;
+        margin-bottom: 28px;
+    }
+
+    .catalog-subchip {
+        font-size: 0.8rem;
+        padding: 9px 12px;
+    }
+
+    .catalog-oilnav {
+        gap: 6px;
+        margin-bottom: 24px;
+    }
+
+    .catalog-oilchip {
+        font-size: 0.72rem;
+        padding: 7px 10px;
+    }
+
+    .catalog-family-title {
+        font-size: 1.35rem;
+        margin-bottom: 18px;
     }
 }
 
