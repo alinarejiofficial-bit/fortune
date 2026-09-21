@@ -1,173 +1,337 @@
 const PRODUCTS = [
     {
-        id: "goldnut",
+        id: "goldnut-pet-bottle-1-l",
         category: "Oils",
-        name: "Fortune Goldnut Refined Groundnut Oil",
-        image: "images/fortune/goldnut.png?v=4",
-        packs: "PET Bottle 1L · Pouch 1L · Jerry Can 5L · Tin 15 kg",
-        packList: ["PET Bottle — 1 litre", "Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 15 kg"],
-        summary: "Fortune Goldnut refined groundnut oil.",
-        points: ["Fortune Goldnut", "PET Bottle — 1 litre", "Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 15 kg"]
+        name: "Fortune Goldnut — PET Bottle 1 Litre",
+        image: "images/fortune/goldnut-pet-bottle-1-l.png?v=2",
+        packs: "PET Bottle 1 Litre",
+        packList: ["PET Bottle — 1 Litre"],
+        summary: "Fortune Goldnut refined groundnut oil, PET bottle 1 litre.",
+        points: ["Fortune Goldnut Refined Groundnut Oil", "PET Bottle — 1 Litre"]
     },
     {
-        id: "pehli-dhaar",
+        id: "goldnut-pouch-1-l",
         category: "Oils",
-        name: "Fortune Pehli Dhaar Mustard Oil",
-        image: "images/fortune/pehli-dhaar.png?v=4",
-        packs: "Pet Bottle 1L · Pouch 1L",
-        packList: ["Pet Bottle — 1 litre", "Pouch — 1 litre"],
-        summary: "Fortune Pehli Dhaar first pressed kachi ghani mustard oil.",
-        points: ["Fortune Pehli Dhaar", "Pet Bottle — 1 litre", "Pouch — 1 litre"]
+        name: "Fortune Goldnut — Pouch 1 Litre",
+        image: "images/fortune/goldnut-pouch-1-l.png?v=2",
+        packs: "Pouch 1 Litre",
+        packList: ["Pouch — 1 Litre"],
+        summary: "Fortune Goldnut refined groundnut oil, pouch 1 litre.",
+        points: ["Fortune Goldnut Refined Groundnut Oil", "Pouch — 1 Litre"]
     },
     {
-        id: "cottonlite",
+        id: "goldnut-jerry-can-5-l",
         category: "Oils",
-        name: "Fortune Cottonlite Oil",
-        image: "images/fortune/cottonlite.png?v=4",
-        packs: "Pouch 1L · Jerry Can 5L · Tin 10 kg · Tin 15L / 15 kg",
-        packList: ["Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 10 kg", "Tin — 15 litres", "Tin — 15 kg"],
-        summary: "Fortune Cottonlite refined cottonseed oil.",
-        points: ["Fortune Cottonlite", "Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 10 kg"]
+        name: "Fortune Goldnut — Jerry Can 5 Litres",
+        image: "images/fortune/goldnut-jerry-can-5-l.png?v=2",
+        packs: "Jerry Can 5 Litres",
+        packList: ["Jerry Can — 5 Litres"],
+        summary: "Fortune Goldnut refined groundnut oil, jerry can 5 litres.",
+        points: ["Fortune Goldnut Refined Groundnut Oil", "Jerry Can — 5 Litres"]
     },
     {
-        id: "groundnut",
+        id: "goldnut-tin-15-kg",
         category: "Oils",
-        name: "Fortune Filtered Groundnut Oil",
-        image: "images/fortune/groundnut.png?v=4",
-        packs: "Pouch 1L · Pet Bottle 1L · Jerry Can 5L, 15L · Tin 10 kg, 15L, 15 kg",
-        packList: ["Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jerry Can — 15 litres", "Tin — 10 kg", "Tin — 15 litres", "Tin — 15 kg"],
-        summary: "Fortune filtered groundnut oil.",
-        points: ["Fortune Filtered Groundnut Oil", "Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jerry Can — 15 litres"]
+        name: "Fortune Goldnut — Tin 15 Kg",
+        image: "images/fortune/goldnut-tin-15-kg.png?v=2",
+        packs: "Tin 15 Kg",
+        packList: ["Tin — 15 Kg"],
+        summary: "Fortune Goldnut refined groundnut oil, tin 15 kg.",
+        points: ["Fortune Goldnut Refined Groundnut Oil", "Tin — 15 Kg"]
     },
     {
-        id: "ricebran",
+        id: "pehli-dhaar-pet-bottle-1-l",
         category: "Oils",
-        name: "Fortune Rice Bran Health Oil",
-        image: "images/fortune/ricebran.png?v=4",
-        packs: "Pouch 1L · Pet Bottle 1L · Jerry Can 2L, 5L · Jar 15L · Tap Jar 15L",
-        packList: ["Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 2 litres", "Jerry Can — 5 litres", "Jar — 15 litres", "Tap Jar — 15 litres"],
-        summary: "Fortune rice bran health oil.",
-        points: ["Fortune Rice Bran Health Oil", "Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jar — 15 litres"]
+        name: "Fortune Pehli Dhaar Mustard Oil — 1 L Pet Bottle",
+        image: "images/fortune/pehli-dhaar-pet-bottle-1-l.png?v=1",
+        packs: "Pet Bottle 1 L",
+        packList: ["Pet Bottle \u2014 1 L"],
+        summary: "Fortune Pehli Dhaar Mustard Oil, Pet Bottle 1 L.",
+        points: ["Fortune Pehli Dhaar Mustard Oil", "Pet Bottle \u2014 1 L"]
     },
     {
-        id: "mustard",
+        id: "pehli-dhaar-pouch-1-l",
         category: "Oils",
-        name: "Fortune Kachi Ghani Mustard Oil",
-        image: "images/fortune/mustard.png?v=4",
-        packs: "Pet Bottle 200ml, 500ml · Pouch 500ml, 1L · Jerry Can 2L, 5L, 15L · Pet Barni 2L, 5L · Tin 15 kg",
-        packList: ["Pet Bottle — 200 ml", "Pouch — 500 ml", "Pet Bottle — 500 ml", "Pouch — 1 litre", "Jerry Can — 2 litres", "Jerry Can — 5 litres", "Pet Barni — 2 litres", "Pet Barni — 5 litres", "Large Jerry Can — 15 litres", "Tin — 15 kg"],
-        summary: "Fortune kachi ghani mustard oil.",
-        points: ["Fortune Kachi Ghani Mustard Oil", "Pet Bottle — 200 ml", "Pouch — 1 litre", "Jerry Can — 5 litres", "Large Jerry Can — 15 litres"]
+        name: "Fortune Pehli Dhaar Mustard Oil — 1 L Pouch",
+        image: "images/fortune/pehli-dhaar-pouch-1-l.png?v=1",
+        packs: "Pouch 1 L",
+        packList: ["Pouch \u2014 1 L"],
+        summary: "Fortune Pehli Dhaar Mustard Oil, Pouch 1 L.",
+        points: ["Fortune Pehli Dhaar Mustard Oil", "Pouch \u2014 1 L"]
     },
     {
-        id: "sunlite-pouch-500ml",
+        id: "cottonlite-pouch-1-l",
         category: "Oils",
-        name: "Fortune Sunlite — 500 ml Pouch",
-        image: "images/fortune/sunlite-pouch.png?v=1",
-        packs: "Pouch 500 ml",
-        packList: ["Pouch — 500 ml"],
-        summary: "Fortune Sunlite refined sunflower oil, 500 ml pouch.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Pouch — 500 ml"]
-    },
-    {
-        id: "sunlite-pouch-1l",
-        category: "Oils",
-        name: "Fortune Sunlite — 1 L Pouch",
-        image: "images/fortune/sunlite-pouch.png?v=1",
+        name: "Fortune Cottonlite — Pouch 1 Litre",
+        image: "images/fortune/cottonlite-pouch-1-l.png?v=2",
         packs: "Pouch 1 litre",
         packList: ["Pouch — 1 litre"],
-        summary: "Fortune Sunlite refined sunflower oil, 1 litre pouch.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Pouch — 1 litre"]
+        summary: "Fortune Cottonlite Oil, pouch 1 litre.",
+        points: ["Fortune Cottonlite Oil", "Pouch — 1 litre"]
     },
     {
-        id: "sunlite-bottle-500ml",
+        id: "cottonlite-jerry-cans-5-l",
         category: "Oils",
-        name: "Fortune Sunlite — 500 ml Pet Bottle",
-        image: "images/fortune/sunlite-bottle.png?v=1",
-        packs: "Pet Bottle 500 ml",
-        packList: ["Pet Bottle — 500 ml"],
-        summary: "Fortune Sunlite refined sunflower oil, 500 ml pet bottle.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 500 ml"]
-    },
-    {
-        id: "sunlite-bottle-1l",
-        category: "Oils",
-        name: "Fortune Sunlite — 1 L Pet Bottle",
-        image: "images/fortune/sunlite-bottle.png?v=1",
-        packs: "Pet Bottle 1 litre",
-        packList: ["Pet Bottle — 1 litre"],
-        summary: "Fortune Sunlite refined sunflower oil, 1 litre pet bottle.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 1 litre"]
-    },
-    {
-        id: "sunlite-bottle-2l",
-        category: "Oils",
-        name: "Fortune Sunlite — 2 L Pet Bottle",
-        image: "images/fortune/sunlite-bottle.png?v=1",
-        packs: "Pet Bottle 2 litres",
-        packList: ["Pet Bottle — 2 litres"],
-        summary: "Fortune Sunlite refined sunflower oil, 2 litre pet bottle.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 2 litres"]
-    },
-    {
-        id: "sunlite-bottle-5l",
-        category: "Oils",
-        name: "Fortune Sunlite — 5 L Pet Bottle",
-        image: "images/fortune/sunlite-bottle.png?v=1",
-        packs: "Pet Bottle 5 litres",
-        packList: ["Pet Bottle — 5 litres"],
-        summary: "Fortune Sunlite refined sunflower oil, 5 litre pet bottle.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 5 litres"]
-    },
-    {
-        id: "sunlite-jerry-5l",
-        category: "Oils",
-        name: "Fortune Sunlite — 5 L Jerry Can",
-        image: "images/fortune/sunlite-jerry.png?v=1",
+        name: "Fortune Cottonlite — Jerry Can 5 Litres",
+        image: "images/fortune/cottonlite-jerry-cans-5-l.png?v=2",
         packs: "Jerry Can 5 litres",
         packList: ["Jerry Can — 5 litres"],
-        summary: "Fortune Sunlite refined sunflower oil, 5 litre jerry can.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Jerry Can — 5 litres"]
+        summary: "Fortune Cottonlite Oil, jerry can 5 litres.",
+        points: ["Fortune Cottonlite Oil", "Jerry Can — 5 litres"]
     },
     {
-        id: "sunlite-jerry-15l",
+        id: "cottonlite-tin-10-kg",
         category: "Oils",
-        name: "Fortune Sunlite — 15 L Jerry Can",
-        image: "images/fortune/sunlite-jerry.png?v=1",
-        packs: "Jerry Can 15 litres",
-        packList: ["Jerry Can — 15 litres"],
-        summary: "Fortune Sunlite refined sunflower oil, 15 litre jerry can.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Jerry Can — 15 litres"]
+        name: "Fortune Cottonlite — Tin 10 kg",
+        image: "images/fortune/cottonlite-tin-10-kg.png?v=2",
+        packs: "Tin 10 kg",
+        packList: ["Tin — 10 kg"],
+        summary: "Fortune Cottonlite Oil, tin 10 kg.",
+        points: ["Fortune Cottonlite Oil", "Tin — 10 kg"]
     },
     {
-        id: "sunlite-jerry-15l-tap",
-        category: "Oils",
-        name: "Fortune Sunlite — 15 L Jerry Can Tap",
-        image: "images/fortune/sunlite-jerry.png?v=1",
-        packs: "Jerry Can Tap 15 litres",
-        packList: ["Jerry Can Tap — 15 litres"],
-        summary: "Fortune Sunlite refined sunflower oil, 15 litre tap jerry can.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Jerry Can Tap — 15 litres"]
+        image: "images/fortune/cottonlite-tins.png?v=1",
+        packs: "Tin 15 litres · 15 kg",
+        packList: ["Tin — 15 litres", "Tin — 15 kg"],
+        summary: "Fortune Cottonlite Oil tins.",
+        points: ["Fortune Cottonlite Oil", "Tin — 15 litres", "Tin — 15 kg"]
     },
     {
-        id: "sunlite-tin-15l",
+        id: "groundnut-pouch-1-l",
         category: "Oils",
-        name: "Fortune Sunlite — 15 L Tin",
-        image: "images/fortune/sunlite-tin.png?v=1",
-        packs: "Tin 15 litres",
-        packList: ["Tin — 15 litres"],
-        summary: "Fortune Sunlite refined sunflower oil, 15 litre tin.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Tin — 15 litres"]
+        name: "Fortune Filtered Groundnut — Pouch 1 Litre",
+        image: "images/fortune/groundnut-pouch-1-l.png?v=2",
+        packs: "Pouch 1 litre",
+        packList: ["Pouch — 1 litre"],
+        summary: "Fortune Filtered Groundnut Oil, pouch 1 litre.",
+        points: ["Fortune Filtered Groundnut Oil", "Pouch — 1 litre"]
     },
     {
-        id: "sunlite-tin-15kg",
+        id: "groundnut-pet-bottle-1-l",
         category: "Oils",
-        name: "Fortune Sunlite — 15 kg Tin",
-        image: "images/fortune/sunlite-tin.png?v=1",
+        name: "Fortune Filtered Groundnut — Pet Bottle 1 Litre",
+        image: "images/fortune/groundnut-pet-bottle-1-l.png?v=2",
+        packs: "Pet Bottle 1 litre",
+        packList: ["Pet Bottle — 1 litre"],
+        summary: "Fortune Filtered Groundnut Oil, pet bottle 1 litre.",
+        points: ["Fortune Filtered Groundnut Oil", "Pet Bottle — 1 litre"]
+    },
+    {
+        id: "groundnut-jerry-can",
+        category: "Oils",
+        name: "Fortune Filtered Groundnut — Jerry Can",
+        image: "images/fortune/groundnut-jerry-can-5-l.png?v=2",
+        packs: "Jerry Can 5 litres · 15 litres",
+        packList: ["Jerry Can — 5 litres", "Jerry Can — 15 litres"],
+        summary: "Fortune Filtered Groundnut Oil jerry cans.",
+        points: ["Fortune Filtered Groundnut Oil", "Jerry Can — 5 litres", "Jerry Can — 15 litres"]
+    },
+    {
+        id: "groundnut-tin-10-kg",
+        category: "Oils",
+        name: "Fortune Filtered Groundnut — Tin 10 kg",
+        image: "images/fortune/groundnut-tin-10-kg.png?v=2",
+        packs: "Tin 10 kg",
+        packList: ["Tin — 10 kg"],
+        summary: "Fortune Filtered Groundnut Oil, tin 10 kg.",
+        points: ["Fortune Filtered Groundnut Oil", "Tin — 10 kg"]
+    },
+    {
+        image: "images/fortune/groundnut-tins.png?v=1",
+        packs: "Tin 15 litres · 15 kg",
+        packList: ["Tin — 15 litres", "Tin — 15 kg"],
+        summary: "Fortune Filtered Groundnut Oil tins.",
+        points: ["Fortune Filtered Groundnut Oil", "Tin — 15 litres", "Tin — 15 kg"]
+    },
+    {
+        id: "ricebran-pet-1-l",
+        category: "Oils",
+        name: "Fortune Rice Bran Health Oil — 1 L Pet Bottle",
+        image: "images/fortune/ricebran-pet-1-l.png?v=1",
+        packs: "Pet Bottle 1 L",
+        packList: ["Pet Bottle \u2014 1 L"],
+        summary: "Fortune Rice Bran Health Oil, Pet Bottle 1 L.",
+        points: ["Fortune Rice Bran Health Oil", "Pet Bottle \u2014 1 L"]
+    },
+    {
+        id: "ricebran-pouch-1-l",
+        category: "Oils",
+        name: "Fortune Rice Bran Health Oil — 1 L Pouch",
+        image: "images/fortune/ricebran-pouch-1-l.png?v=1",
+        packs: "Pouch 1 L",
+        packList: ["Pouch \u2014 1 L"],
+        summary: "Fortune Rice Bran Health Oil, Pouch 1 L.",
+        points: ["Fortune Rice Bran Health Oil", "Pouch \u2014 1 L"]
+    },
+    {
+        id: "ricebran-jerry-can",
+        category: "Oils",
+        name: "Fortune Rice Bran — Jerry Can",
+        image: "images/fortune/ricebran-jerry-can-2-l.png?v=2",
+        packs: "Jerry Can 2 litres · 5 litres",
+        packList: ["Jerry Can — 2 litres", "Jerry Can — 5 litres"],
+        summary: "Fortune Rice Bran Health Oil jerry cans.",
+        points: ["Fortune Rice Bran Health Oil", "Jerry Can — 2 litres", "Jerry Can — 5 litres"]
+    },
+    {
+        id: "ricebran-jar-15-l",
+        category: "Oils",
+        name: "Fortune Rice Bran Health Oil — 15 L Jar",
+        image: "images/fortune/ricebran-jar-15-l.png?v=1",
+        packs: "Jar 15 L",
+        packList: ["Jar \u2014 15 L"],
+        summary: "Fortune Rice Bran Health Oil, Jar 15 L.",
+        points: ["Fortune Rice Bran Health Oil", "Jar \u2014 15 L"]
+    },
+    {
+        id: "ricebran-tap-jar-15-l",
+        category: "Oils",
+        name: "Fortune Rice Bran Health Oil — 15 L Tap Jar",
+        image: "images/fortune/ricebran-tap-jar-15-l.png?v=1",
+        packs: "Tap Jar 15 L",
+        packList: ["Tap Jar \u2014 15 L"],
+        summary: "Fortune Rice Bran Health Oil, Tap Jar 15 L.",
+        points: ["Fortune Rice Bran Health Oil", "Tap Jar \u2014 15 L"]
+    },
+    {
+        id: "mustard-bottle-200ml",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 200 ml Pet Bottle",
+        image: "images/fortune/mustard-bottle-200ml.png?v=1",
+        packs: "Pet Bottle 200 ml",
+        packList: ["Pet Bottle — 200 ml"],
+        summary: "Fortune Kachi Ghani mustard oil, 200 ml pet bottle.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Pet Bottle — 200 ml"]
+    },
+    {
+        id: "mustard-pouch-500ml",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 500 ml Pouch",
+        image: "images/fortune/mustard-pouch-500ml.png?v=1",
+        packs: "Pouch 500 ml",
+        packList: ["Pouch — 500 ml"],
+        summary: "Fortune Kachi Ghani mustard oil, 500 ml pouch.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Pouch — 500 ml"]
+    },
+    {
+        id: "mustard-bottle-500ml",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 500 ml Pet Bottle",
+        image: "images/fortune/mustard-bottle-500ml.png?v=1",
+        packs: "Pet Bottle 500 ml",
+        packList: ["Pet Bottle — 500 ml"],
+        summary: "Fortune Kachi Ghani mustard oil, 500 ml pet bottle.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Pet Bottle — 500 ml"]
+    },
+    {
+        id: "mustard-pouch-1l",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 1 L Pouch",
+        image: "images/fortune/mustard-pouch-1l.png?v=1",
+        packs: "Pouch 1 litre",
+        packList: ["Pouch — 1 litre"],
+        summary: "Fortune Kachi Ghani mustard oil, 1 litre pouch.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Pouch — 1 litre"]
+    },
+    {
+        id: "mustard-jerry-2l",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 2 L Jerry Can",
+        image: "images/fortune/mustard-jerry-2l.png?v=1",
+        packs: "Jerry Can 2 litres",
+        packList: ["Jerry Can — 2 litres"],
+        summary: "Fortune Kachi Ghani mustard oil, 2 litre jerry can.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Jerry Can — 2 litres"]
+    },
+    {
+        id: "mustard-jerry-5l",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 5 L Jerry Can",
+        image: "images/fortune/mustard-jerry-5l.png?v=1",
+        packs: "Jerry Can 5 litres",
+        packList: ["Jerry Can — 5 litres"],
+        summary: "Fortune Kachi Ghani mustard oil, 5 litre jerry can.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Jerry Can — 5 litres"]
+    },
+    {
+        id: "mustard-barni-2l",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 2 L Pet Barni",
+        image: "images/fortune/mustard-barni-2l.png?v=1",
+        packs: "Pet Barni 2 litres",
+        packList: ["Pet Barni — 2 litres"],
+        summary: "Fortune Kachi Ghani mustard oil, 2 litre pet barni.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Pet Barni — 2 litres"]
+    },
+    {
+        id: "mustard-barni-5l",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 5 L Pet Barni",
+        image: "images/fortune/mustard-barni-5l.png?v=1",
+        packs: "Pet Barni 5 litres",
+        packList: ["Pet Barni — 5 litres"],
+        summary: "Fortune Kachi Ghani mustard oil, 5 litre pet barni.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Pet Barni — 5 litres"]
+    },
+    {
+        id: "mustard-jerry-15l",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 15 L Jerry Can",
+        image: "images/fortune/mustard-jerry-15l.png?v=1",
+        packs: "Large Jerry Can 15 litres",
+        packList: ["Large Jerry Can — 15 litres"],
+        summary: "Fortune Kachi Ghani mustard oil, 15 litre jerry can.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Large Jerry Can — 15 litres"]
+    },
+    {
+        id: "mustard-tin-15kg",
+        category: "Oils",
+        name: "Fortune Kachi Ghani — 15 kg Tin",
+        image: "images/fortune/mustard-tin-15kg.png?v=1",
         packs: "Tin 15 kg",
         packList: ["Tin — 15 kg"],
-        summary: "Fortune Sunlite refined sunflower oil, 15 kg tin.",
-        points: ["Fortune Sunlite Refined Sunflower Oil", "Tin — 15 kg"]
+        summary: "Fortune Kachi Ghani mustard oil, 15 kg tin.",
+        points: ["Fortune Kachi Ghani Mustard Oil", "Tin — 15 kg"]
+    },
+    {
+        id: "sunlite-pouch",
+        category: "Oils",
+        name: "Fortune Sunlite — Pouch",
+        image: "images/fortune/sunlite-pouch.png?v=2",
+        packs: "Pouch 500 ml · 1 litre",
+        packList: ["Pouch — 500 ml", "Pouch — 1 litre"],
+        summary: "Fortune Sunlite refined sunflower oil pouches.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Pouch — 500 ml", "Pouch — 1 litre"]
+    },
+    {
+        id: "sunlite-bottle",
+        category: "Oils",
+        name: "Fortune Sunlite — Pet Bottle",
+        image: "images/fortune/sunlite-bottle.png?v=2",
+        packs: "Pet Bottle 500 ml · 1 L · 2 L · 5 L",
+        packList: ["Pet Bottle — 500 ml", "Pet Bottle — 1 litre", "Pet Bottle — 2 litres", "Pet Bottle — 5 litres"],
+        summary: "Fortune Sunlite refined sunflower oil pet bottles.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Pet Bottle — 500 ml", "Pet Bottle — 1 litre", "Pet Bottle — 2 litres", "Pet Bottle — 5 litres"]
+    },
+    {
+        id: "sunlite-jerry",
+        category: "Oils",
+        name: "Fortune Sunlite — Jerry Can",
+        image: "images/fortune/sunlite-jerry.png?v=2",
+        packs: "Jerry Can 5 L · 15 L · 15 L Tap",
+        packList: ["Jerry Can — 5 litres", "Jerry Can — 15 litres", "Jerry Can Tap — 15 litres"],
+        summary: "Fortune Sunlite refined sunflower oil jerry cans.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Jerry Can — 5 litres", "Jerry Can — 15 litres", "Jerry Can Tap — 15 litres"]
+    },
+    {
+        id: "sunlite-tin",
+        category: "Oils",
+        name: "Fortune Sunlite — Tin",
+        image: "images/fortune/sunlite-tin.png?v=2",
+        packs: "Tin 15 litres · 15 kg",
+        packList: ["Tin — 15 litres", "Tin — 15 kg"],
+        summary: "Fortune Sunlite refined sunflower oil tins.",
+        points: ["Fortune Sunlite Refined Sunflower Oil", "Tin — 15 litres", "Tin — 15 kg"]
     },
     {
         id: "soya-pouch-1l",
@@ -220,44 +384,74 @@ const PRODUCTS = [
         points: ["Fortune Soya Health Oil", "Jerry Can — 15 litres"]
     },
     {
-        id: "xpert-active",
+        id: "xpert-active-pouch-850g",
         category: "Fortune Xpert",
-        name: "Fortune Xpert Active Oil",
-        image: "images/fortune/xpert-active.png?v=4",
-        packs: "850 g",
-        packList: ["850 g"],
-        summary: "Fortune Xpert Active oil.",
-        points: ["Fortune Xpert Active Oil", "850 g"]
+        name: "Fortune Xpert Active Oil — 850g Pouch",
+        image: "images/fortune/xpert-active-pouch-850g.png?v=1",
+        packs: "Pouch 850g",
+        packList: ["Pouch \u2014 850g"],
+        summary: "Fortune Xpert Active Oil, Pouch 850g.",
+        points: ["Fortune Xpert Active Oil", "Pouch \u2014 850g"]
     },
     {
-        id: "xpert-total",
+        id: "xpert-total-pouch-1-l",
         category: "Fortune Xpert",
-        name: "Fortune Xpert Total Balance Oil",
-        image: "images/fortune/xpert-total.png?v=4",
-        packs: "Pouch 1L · Jar 5L",
-        packList: ["Pouch — 1 litre", "Jar — 5 litres"],
-        summary: "Fortune Xpert Total Balance oil.",
-        points: ["Fortune Xpert Total Balance Oil", "Pouch — 1 litre", "Jar — 5 litres"]
+        name: "Fortune Xpert Total Balance Oil — 1 L Pouch",
+        image: "images/fortune/xpert-total-pouch-1-l.png?v=1",
+        packs: "Pouch 1 L",
+        packList: ["Pouch \u2014 1 L"],
+        summary: "Fortune Xpert Total Balance Oil, Pouch 1 L.",
+        points: ["Fortune Xpert Total Balance Oil", "Pouch \u2014 1 L"]
     },
     {
-        id: "xpert-immunity",
+        id: "xpert-total-jar-5-l",
         category: "Fortune Xpert",
-        name: "Fortune Xpert Pro Immunity Oil",
-        image: "images/fortune/xpert-immunity.png?v=4",
-        packs: "Pouch 1L · Jerry Can 5L",
-        packList: ["Pouch — 1 litre", "Jerry Can — 5 litres"],
-        summary: "Fortune Xpert Pro Immunity oil.",
-        points: ["Fortune Xpert Pro Immunity Oil", "Pouch — 1 litre", "Jerry Can — 5 litres"]
+        name: "Fortune Xpert Total Balance Oil — 5 L Jar",
+        image: "images/fortune/xpert-total-jar-5-l.png?v=1",
+        packs: "Jar 5 L",
+        packList: ["Jar \u2014 5 L"],
+        summary: "Fortune Xpert Total Balance Oil, Jar 5 L.",
+        points: ["Fortune Xpert Total Balance Oil", "Jar \u2014 5 L"]
     },
     {
-        id: "xpert-sugar",
+        id: "xpert-immunity-pouch-1-l",
         category: "Fortune Xpert",
-        name: "Fortune Xpert Pro Sugar Conscious Oil",
-        image: "images/fortune/xpert-sugar.png?v=4",
-        packs: "Pouch 1L · Jerry Can 5L",
-        packList: ["Pouch — 1 litre", "Jerry Can — 5 litres"],
-        summary: "Fortune Xpert Pro Sugar Conscious oil.",
-        points: ["Fortune Xpert Pro Sugar Conscious Oil", "Pouch — 1 litre", "Jerry Can — 5 litres"]
+        name: "Fortune Xpert Pro Immunity Oil — 1 L Pouch",
+        image: "images/fortune/xpert-immunity-pouch-1-l.png?v=1",
+        packs: "Pouch 1 L",
+        packList: ["Pouch \u2014 1 L"],
+        summary: "Fortune Xpert Pro Immunity Oil, Pouch 1 L.",
+        points: ["Fortune Xpert Pro Immunity Oil", "Pouch \u2014 1 L"]
+    },
+    {
+        id: "xpert-immunity-jerry-cans-5-l",
+        category: "Fortune Xpert",
+        name: "Fortune Xpert Pro Immunity Oil — 5 L Jerry Can",
+        image: "images/fortune/xpert-immunity-jerry-cans-5-l.png?v=1",
+        packs: "Jerry Can 5 L",
+        packList: ["Jerry Can \u2014 5 L"],
+        summary: "Fortune Xpert Pro Immunity Oil, Jerry Can 5 L.",
+        points: ["Fortune Xpert Pro Immunity Oil", "Jerry Can \u2014 5 L"]
+    },
+    {
+        id: "xpert-sugar-pouch-1-l",
+        category: "Fortune Xpert",
+        name: "Fortune Xpert Pro Sugar Conscious Oil — 1 L Pouch",
+        image: "images/fortune/xpert-sugar-pouch-1-l.png?v=1",
+        packs: "Pouch 1 L",
+        packList: ["Pouch \u2014 1 L"],
+        summary: "Fortune Xpert Pro Sugar Conscious Oil, Pouch 1 L.",
+        points: ["Fortune Xpert Pro Sugar Conscious Oil", "Pouch \u2014 1 L"]
+    },
+    {
+        id: "xpert-sugar-jerry-cans-5-l",
+        category: "Fortune Xpert",
+        name: "Fortune Xpert Pro Sugar Conscious Oil — 5 L Jerry Can",
+        image: "images/fortune/xpert-sugar-jerry-cans-5-l.png?v=1",
+        packs: "Jerry Can 5 L",
+        packList: ["Jerry Can \u2014 5 L"],
+        summary: "Fortune Xpert Pro Sugar Conscious Oil, Jerry Can 5 L.",
+        points: ["Fortune Xpert Pro Sugar Conscious Oil", "Jerry Can \u2014 5 L"]
     },
     {
         id: "chakki-fresh-atta",
@@ -849,14 +1043,14 @@ const FORTUNE_FAMILY = {
 
 const FORTUNE_OIL_SUBCATEGORIES = [
     { id: "soya-health", label: "Fortune Soya Health Oil", productIds: ["soya-pouch-1l", "soya-bottle-1l", "soya-bottle-2l", "soya-jerry-5l", "soya-jerry-15l"] },
-    { id: "sunlite", label: "Fortune Sunlite Refined Sunflower Oil", productIds: ["sunlite-pouch-500ml", "sunlite-pouch-1l", "sunlite-bottle-500ml", "sunlite-bottle-1l", "sunlite-bottle-2l", "sunlite-bottle-5l", "sunlite-jerry-5l", "sunlite-jerry-15l", "sunlite-jerry-15l-tap", "sunlite-tin-15l", "sunlite-tin-15kg"] },
-    { id: "kachi-ghani", label: "Fortune Kachi Ghani Mustard Oil", productIds: ["mustard"] },
-    { id: "rice-bran", label: "Fortune Rice Bran Health Oil", productIds: ["ricebran"] },
-    { id: "filtered-groundnut", label: "Fortune Filtered Groundnut Oil", productIds: ["groundnut"] },
-    { id: "cottonlite", label: "Fortune Cottonlite Oil", productIds: ["cottonlite"] },
-    { id: "goldnut", label: "Fortune Goldnut Refined Groundnut Oil", productIds: ["goldnut"] },
-    { id: "xpert", label: "Fortune Xpert", productIds: ["xpert-active", "xpert-total", "xpert-immunity", "xpert-sugar"] },
-    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar"] }
+    { id: "sunlite", label: "Fortune Sunlite Refined Sunflower Oil", productIds: ["sunlite-pouch", "sunlite-bottle", "sunlite-jerry", "sunlite-tin"] },
+    { id: "kachi-ghani", label: "Fortune Kachi Ghani Mustard Oil", productIds: ["mustard-bottle-200ml", "mustard-pouch-500ml", "mustard-bottle-500ml", "mustard-pouch-1l", "mustard-jerry-2l", "mustard-jerry-5l", "mustard-barni-2l", "mustard-barni-5l", "mustard-jerry-15l", "mustard-tin-15kg"] },
+    { id: "rice-bran", label: "Fortune Rice Bran Health Oil", productIds: ["ricebran-pet-1-l", "ricebran-pouch-1-l", "ricebran-jerry-can", "ricebran-jar-15-l", "ricebran-tap-jar-15-l"] },
+    { id: "filtered-groundnut", label: "Fortune Filtered Groundnut Oil", productIds: ["groundnut-pouch-1-l", "groundnut-pet-bottle-1-l", "groundnut-jerry-can", "groundnut-tin-10-kg", "groundnut-tins"] },
+    { id: "cottonlite", label: "Fortune Cottonlite Oil", productIds: ["cottonlite-pouch-1-l", "cottonlite-jerry-cans-5-l", "cottonlite-tin-10-kg", "cottonlite-tins"] },
+    { id: "goldnut", label: "Fortune Goldnut Refined Groundnut Oil", productIds: ["goldnut-pet-bottle-1-l", "goldnut-pouch-1-l", "goldnut-jerry-can-5-l", "goldnut-tin-15-kg"] },
+    { id: "xpert", label: "Fortune Xpert", productIds: ["xpert-active-pouch-850g", "xpert-total-pouch-1-l", "xpert-total-jar-5-l", "xpert-immunity-pouch-1-l", "xpert-immunity-jerry-cans-5-l", "xpert-sugar-pouch-1-l", "xpert-sugar-jerry-cans-5-l"] },
+    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar-pet-bottle-1-l", "pehli-dhaar-pouch-1-l"] }
 ];
 
 function getProductsByIds(ids) {
