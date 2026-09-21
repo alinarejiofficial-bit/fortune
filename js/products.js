@@ -4,70 +4,70 @@ const PRODUCTS = [
         category: "Edible Oils",
         name: "Fortune Goldnut Refined Groundnut Oil",
         image: "images/fortune/goldnut.png?v=4",
-        packs: "Fortune edible oil",
-        packList: ["Refined groundnut oil"],
+        packs: "PET Bottle 1L · Pouch 1L · Jerry Can 5L · Tin 15 kg",
+        packList: ["PET Bottle — 1 litre", "Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 15 kg"],
         summary: "Fortune Goldnut refined groundnut oil.",
-        points: ["Fortune Goldnut", "Refined groundnut oil"]
+        points: ["Fortune Goldnut", "PET Bottle — 1 litre", "Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 15 kg"]
     },
     {
         id: "pehli-dhaar",
         category: "Edible Oils",
         name: "Fortune Pehli Dhaar Mustard Oil",
         image: "images/fortune/pehli-dhaar.png?v=4",
-        packs: "Fortune edible oil",
-        packList: ["First pressed kachi ghani mustard oil"],
+        packs: "Pet Bottle 1L · Pouch 1L",
+        packList: ["Pet Bottle — 1 litre", "Pouch — 1 litre"],
         summary: "Fortune Pehli Dhaar first pressed kachi ghani mustard oil.",
-        points: ["Fortune Pehli Dhaar", "First pressed kachi ghani mustard oil"]
+        points: ["Fortune Pehli Dhaar", "Pet Bottle — 1 litre", "Pouch — 1 litre"]
     },
     {
         id: "cottonlite",
         category: "Edible Oils",
         name: "Fortune Cottonlite Oil",
         image: "images/fortune/cottonlite.png?v=4",
-        packs: "Fortune edible oil",
-        packList: ["Refined cottonseed oil"],
+        packs: "Pouch 1L · Jerry Can 5L · Tin 10 kg · Tin 15L / 15 kg",
+        packList: ["Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 10 kg", "Tin — 15 litres", "Tin — 15 kg"],
         summary: "Fortune Cottonlite refined cottonseed oil.",
-        points: ["Fortune Cottonlite", "Refined cottonseed oil"]
+        points: ["Fortune Cottonlite", "Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 10 kg"]
     },
     {
         id: "groundnut",
         category: "Edible Oils",
         name: "Fortune Filtered Groundnut Oil",
         image: "images/fortune/groundnut.png?v=4",
-        packs: "Fortune edible oil",
-        packList: ["Filtered groundnut oil"],
+        packs: "Pouch 1L · Pet Bottle 1L · Jerry Can 5L, 15L · Tin 10 kg, 15L, 15 kg",
+        packList: ["Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jerry Can — 15 litres", "Tin — 10 kg", "Tin — 15 litres", "Tin — 15 kg"],
         summary: "Fortune filtered groundnut oil.",
-        points: ["Fortune Filtered Groundnut Oil"]
+        points: ["Fortune Filtered Groundnut Oil", "Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jerry Can — 15 litres"]
     },
     {
         id: "ricebran",
         category: "Edible Oils",
         name: "Fortune Rice Bran Health Oil",
         image: "images/fortune/ricebran.png?v=4",
-        packs: "Fortune edible oil",
-        packList: ["Rice bran health oil"],
+        packs: "Pouch 1L · Pet Bottle 1L · Jerry Can 2L, 5L · Jar 15L · Tap Jar 15L",
+        packList: ["Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 2 litres", "Jerry Can — 5 litres", "Jar — 15 litres", "Tap Jar — 15 litres"],
         summary: "Fortune rice bran health oil.",
-        points: ["Fortune Rice Bran Health Oil"]
+        points: ["Fortune Rice Bran Health Oil", "Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jar — 15 litres"]
     },
     {
         id: "mustard",
         category: "Edible Oils",
         name: "Fortune Kachi Ghani Mustard Oil",
         image: "images/fortune/mustard.png?v=4",
-        packs: "Fortune edible oil",
-        packList: ["Kachi ghani mustard oil"],
+        packs: "Pet Bottle 200ml, 500ml · Pouch 500ml, 1L · Jerry Can 2L, 5L, 15L · Pet Barni 2L, 5L · Tin 15 kg",
+        packList: ["Pet Bottle — 200 ml", "Pouch — 500 ml", "Pet Bottle — 500 ml", "Pouch — 1 litre", "Jerry Can — 2 litres", "Jerry Can — 5 litres", "Pet Barni — 2 litres", "Pet Barni — 5 litres", "Large Jerry Can — 15 litres", "Tin — 15 kg"],
         summary: "Fortune kachi ghani mustard oil.",
-        points: ["Fortune Kachi Ghani Mustard Oil"]
+        points: ["Fortune Kachi Ghani Mustard Oil", "Pet Bottle — 200 ml", "Pouch — 1 litre", "Jerry Can — 5 litres", "Large Jerry Can — 15 litres"]
     },
     {
         id: "sunflower",
         category: "Edible Oils",
         name: "Fortune Sunlite Refined Sunflower Oil",
         image: "images/fortune/sunflower.png?v=4",
-        packs: "Fortune edible oil",
-        packList: ["Refined sunflower oil"],
+        packs: "Pouch 500ml, 1L · Pet Bottle 500ml, 1L, 2L, 5L · Jerry Can 5L, 15L · Tin 15L, 15 kg",
+        packList: ["Pouch — 500 ml", "Pouch — 1 litre", "Pet Bottle — 500 ml", "Pet Bottle — 1 litre", "Pet Bottle — 2 litres", "Pet Bottle — 5 litres", "Jerry Can — 5 litres", "Jerry Can — 15 litres", "Tin — 15 litres", "Tin — 15 kg"],
         summary: "Fortune Sunlite refined sunflower oil.",
-        points: ["Fortune Sunlite", "Refined sunflower oil"]
+        points: ["Fortune Sunlite", "Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jerry Can — 15 litres"]
     },
     {
         id: "soya",
@@ -77,57 +77,57 @@ const PRODUCTS = [
         packs: "Pouch 1L · Pet Bottle 1L, 2L · Jerry Can 5L, 15L",
         packList: ["Pouch — 1 litre", "Pet Bottle — 1 litre", "Pet Bottle — 2 litres", "Jerry Can — 5 litres", "Jerry Can — 15 litres"],
         summary: "Fortune Soya Health refined soyabean oil.",
-        points: ["Fortune Soya Health Oil", "Pouch, pet bottle and jerry can packs"]
+        points: ["Fortune Soya Health Oil", "Pouch — 1 litre", "Pet Bottle — 1 litre", "Jerry Can — 5 litres", "Jerry Can — 15 litres"]
     },
     {
         id: "xpert-active",
         category: "Fortune Xpert Oils",
         name: "Fortune Xpert Active Oil",
         image: "images/fortune/xpert-active.png?v=4",
-        packs: "Fortune Xpert oil",
-        packList: ["Xpert Active"],
+        packs: "850 g",
+        packList: ["850 g"],
         summary: "Fortune Xpert Active oil.",
-        points: ["Fortune Xpert Active Oil"]
+        points: ["Fortune Xpert Active Oil", "850 g"]
     },
     {
         id: "xpert-total",
         category: "Fortune Xpert Oils",
         name: "Fortune Xpert Total Balance Oil",
         image: "images/fortune/xpert-total.png?v=4",
-        packs: "Fortune Xpert oil",
-        packList: ["Xpert Total Balance"],
+        packs: "Pouch 1L · Jar 5L",
+        packList: ["Pouch — 1 litre", "Jar — 5 litres"],
         summary: "Fortune Xpert Total Balance oil.",
-        points: ["Fortune Xpert Total Balance Oil"]
+        points: ["Fortune Xpert Total Balance Oil", "Pouch — 1 litre", "Jar — 5 litres"]
     },
     {
         id: "xpert-immunity",
         category: "Fortune Xpert Oils",
         name: "Fortune Xpert Pro Immunity Oil",
         image: "images/fortune/xpert-immunity.png?v=4",
-        packs: "Fortune Xpert oil",
-        packList: ["Xpert Pro Immunity"],
+        packs: "Pouch 1L · Jerry Can 5L",
+        packList: ["Pouch — 1 litre", "Jerry Can — 5 litres"],
         summary: "Fortune Xpert Pro Immunity oil.",
-        points: ["Fortune Xpert Pro Immunity Oil"]
+        points: ["Fortune Xpert Pro Immunity Oil", "Pouch — 1 litre", "Jerry Can — 5 litres"]
     },
     {
         id: "xpert-sugar",
         category: "Fortune Xpert Oils",
         name: "Fortune Xpert Pro Sugar Conscious Oil",
         image: "images/fortune/xpert-sugar.png?v=4",
-        packs: "Fortune Xpert oil",
-        packList: ["Xpert Pro Sugar Conscious"],
+        packs: "Pouch 1L · Jerry Can 5L",
+        packList: ["Pouch — 1 litre", "Jerry Can — 5 litres"],
         summary: "Fortune Xpert Pro Sugar Conscious oil.",
-        points: ["Fortune Xpert Pro Sugar Conscious Oil"]
+        points: ["Fortune Xpert Pro Sugar Conscious Oil", "Pouch — 1 litre", "Jerry Can — 5 litres"]
     },
     {
         id: "chakki-fresh-atta",
         category: "Atta",
         name: "Fortune Chakki Fresh Atta",
         image: "images/fortune-foods/chakki-fresh-atta.png?v=2",
-        packs: "Pouch 1kg, 5kg, 10kg",
-        packList: ["Pouch — 1kg, 5kg, 10kg"],
+        packs: "Pouch 1 kg · Pouch 5 kg · Pouch 10 kg",
+        packList: ["Pouch — 1 kg", "Pouch — 5 kg", "Pouch — 10 kg"],
         summary: "Fortune Chakki Fresh Atta.",
-        points: ["Fortune Chakki Fresh Atta", "Pouch — 1kg, 5kg, 10kg"]
+        points: ["Fortune Chakki Fresh Atta", "Pouch — 1 kg", "Pouch — 5 kg", "Pouch — 10 kg"]
     },
     {
         id: "premium-sharbati-atta",
@@ -573,7 +573,7 @@ const PRODUCTS = [
         id: "bailley-20l",
         category: "Bailley",
         name: "Bailley 20 Ltr Packaged Drinking Water",
-        image: "images/bailley/water-20l.png?v=2",
+        image: "images/bailley/water-20l.png?v=4",
         packs: "20 Ltr – Pack of 1",
         packList: ["20 Litre", "Pack of 1"],
         summary: "Bailley 20 litre packaged drinking water with minerals.",
@@ -744,6 +744,7 @@ function productCard(item) {
             '<img src="' + item.image + '" alt="' + item.name + '">' +
         '</div>' +
         '<h4>' + item.name + '</h4>' +
+        '<p class="pack-line">' + item.packs + '</p>' +
         '<a href="product.html?id=' + item.id + '" class="btn">Explore Now</a>' +
         '</div>';
 }
