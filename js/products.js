@@ -1,141 +1,123 @@
 const PRODUCTS = [
     {
-        id: "sunflower",
+        id: "goldnut",
         category: "Edible Oils",
-        name: "Fortune Refined Sunflower Oil",
-        image: "images/oil-sunflower-exact.png",
-        packs: "Pet Bottles 1L · Jerry Can 5L · Pouch 1L",
-        packList: ["Pet Bottles — 1 litre", "Jerry Can — 5 litres", "Pouch — 1 litre"],
-        summary: "Light, everyday refined sunflower oil from the Fortune range.",
-        points: [
-            "A staple oil for daily cooking",
-            "Pet Bottles — 1 litre",
-            "Jerry Can — 5 litres",
-            "Pouch — 1 litre"
-        ]
+        name: "Fortune Goldnut Refined Groundnut Oil",
+        image: "images/fortune/goldnut.png?v=2",
+        packs: "Fortune edible oil",
+        packList: ["Refined groundnut oil"],
+        summary: "Fortune Goldnut refined groundnut oil.",
+        points: ["Fortune Goldnut", "Refined groundnut oil"]
     },
     {
-        id: "mustard",
+        id: "pehli-dhaar",
         category: "Edible Oils",
-        name: "Fortune Kachi Ghani Mustard Oil",
-        image: "images/oil-mustard-exact.png",
-        packs: "Pet Bottles 1L, 500ml · Pouch 1L",
-        packList: ["Pet Bottles — 1 litre", "Pet Bottles — 500 ml", "Pet Bottles — 200 ml", "Pouch — 1 litre"],
-        summary: "Traditional kachi ghani mustard oil with a deep amber colour.",
-        points: [
-            "Traditional kachi ghani mustard oil",
-            "Deep amber oil for a classic pungent flavour",
-            "Pet Bottles — 1 litre, 500 ml and 200 ml",
-            "Pouch — 1 litre"
-        ]
+        name: "Fortune Pehli Dhaar Mustard Oil",
+        image: "images/fortune/pehli-dhaar.png?v=2",
+        packs: "Fortune edible oil",
+        packList: ["First pressed kachi ghani mustard oil"],
+        summary: "Fortune Pehli Dhaar first pressed kachi ghani mustard oil.",
+        points: ["Fortune Pehli Dhaar", "First pressed kachi ghani mustard oil"]
     },
     {
-        id: "ricebran",
+        id: "cottonlite",
         category: "Edible Oils",
-        name: "Fortune Rice Bran Health Oil",
-        image: "images/oil-ricebran.png",
-        packs: "Jerry Can 5 litres · Pouch 1 litre",
-        packList: ["Jerry Can — 5 litres", "Pouch — 1 litre"],
-        summary: "Fortune rice bran health oil in a gold jerry can and pouch.",
-        points: [
-            "Fortune rice bran health oil",
-            "Gold jerry can for the family kitchen",
-            "Jerry Can — 5 litres",
-            "Pouch — 1 litre"
-        ]
+        name: "Fortune Cottonlite Oil",
+        image: "images/fortune/cottonlite.png?v=2",
+        packs: "Fortune edible oil",
+        packList: ["Refined cottonseed oil"],
+        summary: "Fortune Cottonlite refined cottonseed oil.",
+        points: ["Fortune Cottonlite", "Refined cottonseed oil"]
     },
     {
         id: "groundnut",
         category: "Edible Oils",
         name: "Fortune Filtered Groundnut Oil",
-        image: "images/oil-groundnut.png",
-        packs: "Jerry Can 5 litres · Pouch 1 litre",
-        packList: ["Jerry Can — 5 litres", "Pouch — 1 litre"],
-        summary: "Filtered groundnut oil for everyday cooking.",
-        points: [
-            "Filtered groundnut oil",
-            "Warm gold jerry can and pouch",
-            "Jerry Can — 5 litres",
-            "Pouch — 1 litre"
-        ]
+        image: "images/fortune/groundnut.png?v=2",
+        packs: "Fortune edible oil",
+        packList: ["Filtered groundnut oil"],
+        summary: "Fortune filtered groundnut oil.",
+        points: ["Fortune Filtered Groundnut Oil"]
     },
     {
-        id: "palmolein",
+        id: "ricebran",
         category: "Edible Oils",
-        name: "Raag Gold Palmolein",
-        image: "images/oil-palmolein.png",
-        packs: "Pouch 1 litre · Available in 5 litres Jerry Can",
-        packList: ["Pouch — 1 litre", "Jerry Can — 5 litres"],
-        summary: "Raag Gold palmolein from the Fortune range, in a pouch and a 5 litre jerry can.",
-        points: [
-            "Raag Gold palmolein",
-            "Bright pouch for daily use",
-            "Pouch — 1 litre",
-            "Also available in a 5 litres jerry can"
-        ]
+        name: "Fortune Rice Bran Health Oil",
+        image: "images/fortune/ricebran.png?v=2",
+        packs: "Fortune edible oil",
+        packList: ["Rice bran health oil"],
+        summary: "Fortune rice bran health oil.",
+        points: ["Fortune Rice Bran Health Oil"]
+    },
+    {
+        id: "mustard",
+        category: "Edible Oils",
+        name: "Fortune Kachi Ghani Mustard Oil",
+        image: "images/fortune/mustard.png?v=2",
+        packs: "Fortune edible oil",
+        packList: ["Kachi ghani mustard oil"],
+        summary: "Fortune kachi ghani mustard oil.",
+        points: ["Fortune Kachi Ghani Mustard Oil"]
+    },
+    {
+        id: "sunflower",
+        category: "Edible Oils",
+        name: "Fortune Sunlite Refined Sunflower Oil",
+        image: "images/fortune/sunflower.png?v=2",
+        packs: "Fortune edible oil",
+        packList: ["Refined sunflower oil"],
+        summary: "Fortune Sunlite refined sunflower oil.",
+        points: ["Fortune Sunlite", "Refined sunflower oil"]
     },
     {
         id: "soya",
         category: "Edible Oils",
         name: "Fortune Soya Health Oil",
-        image: "images/oil-soya.png",
-        packs: "Jerry Can 5 litres · Pouch 1 litre",
-        packList: ["Jerry Can — 5 litres", "Pouch — 1 litre"],
-        summary: "Fortune soya health oil in a green jerry can and matching pouch.",
-        points: [
-            "Fortune soya health oil",
-            "Green jerry can and matching pouch",
-            "Jerry Can — 5 litres",
-            "Pouch — 1 litre"
-        ]
+        image: "images/fortune/soya.png?v=2",
+        packs: "Fortune edible oil",
+        packList: ["Soya health oil"],
+        summary: "Fortune soya health oil.",
+        points: ["Fortune Soya Health Oil"]
     },
     {
-        id: "xpert-sugar",
+        id: "xpert-active",
         category: "Fortune Xpert Oils",
-        name: "Fortune Xpert - Pro Sugar Conscious",
-        image: "images/oil-xpert-sugar.png",
-        packs: "Jerry Can 5 litres · Pouch 1 litre",
-        packList: ["Jerry Can — 5 litres", "Pouch — 1 litre"],
-        summary: "Fortune Xpert health oil, Pro Sugar Conscious, in a blue jerry can and pouch.",
-        points: [
-            "Fortune Xpert health oil",
-            "Pro Sugar Conscious variant",
-            "Blue jerry can and pouch",
-            "Jerry Can — 5 litres",
-            "Pouch — 1 litre"
-        ]
-    },
-    {
-        id: "xpert-immunity",
-        category: "Fortune Xpert Oils",
-        name: "Fortune Xpert - Pro Immunity",
-        image: "images/oil-xpert-immunity.png",
-        packs: "Jerry Can 5 litres · Pouch 1 litre",
-        packList: ["Jerry Can — 5 litres", "Pouch — 1 litre"],
-        summary: "Fortune Xpert health oil, Pro Immunity, in an orange jerry can and pouch.",
-        points: [
-            "Fortune Xpert health oil",
-            "Pro Immunity variant",
-            "Orange jerry can and pouch",
-            "Jerry Can — 5 litres",
-            "Pouch — 1 litre"
-        ]
+        name: "Fortune Xpert Active Oil",
+        image: "images/fortune/xpert-active.png?v=2",
+        packs: "Fortune Xpert oil",
+        packList: ["Xpert Active"],
+        summary: "Fortune Xpert Active oil.",
+        points: ["Fortune Xpert Active Oil"]
     },
     {
         id: "xpert-total",
         category: "Fortune Xpert Oils",
-        name: "Fortune Xpert - Total",
-        image: "images/oil-xpert-total.png",
-        packs: "Jerry Can 5 litres · Pouch 1 litre",
-        packList: ["Jerry Can — 5 litres", "Pouch — 1 litre"],
-        summary: "Fortune Xpert health oil, Total, in a purple jerry can and pouch.",
-        points: [
-            "Fortune Xpert health oil",
-            "Total variant",
-            "Purple jerry can and pouch",
-            "Jerry Can — 5 litres",
-            "Pouch — 1 litre"
-        ]
+        name: "Fortune Xpert Total Balance Oil",
+        image: "images/fortune/xpert-total.png?v=2",
+        packs: "Fortune Xpert oil",
+        packList: ["Xpert Total Balance"],
+        summary: "Fortune Xpert Total Balance oil.",
+        points: ["Fortune Xpert Total Balance Oil"]
+    },
+    {
+        id: "xpert-immunity",
+        category: "Fortune Xpert Oils",
+        name: "Fortune Xpert Pro Immunity Oil",
+        image: "images/fortune/xpert-immunity.png?v=2",
+        packs: "Fortune Xpert oil",
+        packList: ["Xpert Pro Immunity"],
+        summary: "Fortune Xpert Pro Immunity oil.",
+        points: ["Fortune Xpert Pro Immunity Oil"]
+    },
+    {
+        id: "xpert-sugar",
+        category: "Fortune Xpert Oils",
+        name: "Fortune Xpert Pro Sugar Conscious Oil",
+        image: "images/fortune/xpert-sugar.png?v=2",
+        packs: "Fortune Xpert oil",
+        packList: ["Xpert Pro Sugar Conscious"],
+        summary: "Fortune Xpert Pro Sugar Conscious oil.",
+        points: ["Fortune Xpert Pro Sugar Conscious Oil"]
     },
     {
         id: "soya-granules",
@@ -518,6 +500,19 @@ const PRODUCTS = [
         points: ["750 ML soda", "₹20/- per bottle"]
     },
     {
+        id: "bailley-20l",
+        category: "Bailley",
+        name: "Bailley 20 Ltr Packaged Drinking Water",
+        image: "images/bailley/water-20l.png?v=2",
+        packs: "20 Ltr – Pack of 1",
+        packList: ["20 Litre", "Pack of 1"],
+        summary: "Bailley 20 litre packaged drinking water with minerals.",
+        points: [
+            "20 Ltr – Pack of 1",
+            "Packaged drinking water with minerals"
+        ]
+    },
+    {
         id: "bailley-5l",
         category: "Bailley",
         name: "Bailley 5 Ltr Packaged Drinking Water",
@@ -554,19 +549,6 @@ const PRODUCTS = [
         summary: "Bailley 1 litre packaged drinking water with minerals, pack of 12.",
         points: [
             "1 Ltr – Pack of 12",
-            "Packaged drinking water with minerals"
-        ]
-    },
-    {
-        id: "bailley-one-1l",
-        category: "Bailley",
-        name: "Bailley One 1 Ltr Packaged Drinking Water",
-        image: "images/bailley/bailley-one-1l.png?v=3",
-        packs: "1 Ltr – Pack of 12 – Bailley One",
-        packList: ["1 Litre", "Pack of 12", "Bailley One"],
-        summary: "Bailley One 1 litre packaged drinking water with minerals, pack of 12.",
-        points: [
-            "1 Ltr – Pack of 12 – Bailley One",
             "Packaged drinking water with minerals"
         ]
     },
