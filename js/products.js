@@ -120,234 +120,304 @@ const PRODUCTS = [
         points: ["Fortune Xpert Pro Sugar Conscious Oil"]
     },
     {
+        id: "chakki-fresh-atta",
+        category: "Atta",
+        name: "Fortune Chakki Fresh Atta",
+        image: "images/fortune-foods/chakki-fresh-atta.png?v=1",
+        packs: "Fortune atta",
+        packList: ["Chakki Fresh Atta"],
+        summary: "Fortune Chakki Fresh Atta.",
+        points: ["Fortune Chakki Fresh Atta"]
+    },
+    {
+        id: "premium-sharbati-atta",
+        category: "Atta",
+        name: "Fortune Premium Sharbati Atta",
+        image: "images/fortune-foods/premium-sharbati-atta.png?v=1",
+        packs: "Fortune atta",
+        packList: ["Premium Sharbati Atta"],
+        summary: "Fortune Premium Sharbati Atta.",
+        points: ["Fortune Premium Sharbati Atta"]
+    },
+    {
+        id: "atta-multigrains",
+        category: "Atta",
+        name: "Fortune Atta With Multigrains",
+        image: "images/fortune-foods/atta-multigrains.png?v=1",
+        packs: "Fortune atta",
+        packList: ["Atta with Multigrains"],
+        summary: "Fortune Atta with Multigrains.",
+        points: ["Fortune Atta With Multigrains"]
+    },
+    {
+        id: "biryani-special",
+        category: "Rice",
+        name: "Fortune Biryani Special Basmati Rice",
+        image: "images/fortune-foods/biryani-special.png?v=1",
+        packs: "Fortune rice",
+        packList: ["Biryani Special Basmati Rice"],
+        summary: "Fortune Biryani Special Basmati Rice.",
+        points: ["Fortune Biryani Special Basmati Rice"]
+    },
+    {
+        id: "everyday-basmati",
+        category: "Rice",
+        name: "Fortune Everyday Basmati Rice",
+        image: "images/fortune-foods/everyday-basmati.png?v=1",
+        packs: "Fortune rice",
+        packList: ["Everyday Basmati Rice"],
+        summary: "Fortune Everyday Basmati Rice.",
+        points: ["Fortune Everyday Basmati Rice"]
+    },
+    {
+        id: "rozana-basmati",
+        category: "Rice",
+        name: "Fortune Rozana Basmati Rice",
+        image: "images/fortune-foods/rozana-basmati.png?v=1",
+        packs: "Fortune rice",
+        packList: ["Rozana Basmati Rice"],
+        summary: "Fortune Rozana Basmati Rice.",
+        points: ["Fortune Rozana Basmati Rice"]
+    },
+    {
         id: "soya-granules",
         category: "Soya Products",
-        name: "Fortune Soya Granules / Chura",
-        image: "images/soya-granules-premium.png",
-        packs: "₹10, ₹20, 200 gms and 1 kg packs",
-        packList: ["₹10 pack", "₹20 pack", "200 gms", "1 kg"],
-        summary: "Fortune soya granules, also labelled chura, from the foods range.",
-        points: ["Soya granules / chura", "Available in ₹10, ₹20, 200 gms and 1 kg packs"]
+        name: "Fortune Soya Granules",
+        image: "images/fortune-foods/soya-granules.png?v=1",
+        packs: "Fortune soya",
+        packList: ["Soya Granules"],
+        summary: "Fortune Soya Granules.",
+        points: ["Fortune Soya Granules"]
+    },
+    {
+        id: "soya-mini-chunks",
+        category: "Soya Products",
+        name: "Fortune Soya Mini Chunks",
+        image: "images/fortune-foods/soya-mini-chunks.png?v=1",
+        packs: "Fortune soya",
+        packList: ["Soya Mini Chunks"],
+        summary: "Fortune Soya Mini Chunks.",
+        points: ["Fortune Soya Mini Chunks"]
     },
     {
         id: "soya-chunks",
         category: "Soya Products",
         name: "Fortune Soya Chunks",
-        image: "images/soya-chunks-exact.png",
-        packs: "₹10, ₹20, 200g and 1kg packs",
-        packList: ["₹10 pack", "₹20 pack", "200 gms", "1 kg"],
-        summary: "Fortune soya chunks from the foods range.",
-        points: ["Soya chunks", "Available in ₹10, ₹20, 200 gms and 1 kg packs"]
-    },
-    {
-        id: "soya-mini",
-        category: "Soya Products",
-        name: "Fortune Mini Soya Chunks",
-        image: "images/soya-mini-premium.png",
-        packs: "₹10, ₹20, 200 gms and 1 kg packs",
-        packList: ["₹10 pack", "₹20 pack", "200 gms", "1 kg"],
-        summary: "Fortune mini soya chunks from the foods range.",
-        points: ["Mini soya chunks", "Available in ₹10, ₹20, 200 gms and 1 kg packs"]
-    },
-    {
-        id: "wada-kolam",
-        category: "Rice Range",
-        name: "Fortune Wada Kolam Rice",
-        image: "images/wada-kolam-premium.png",
-        packs: "Shown in the Fortune foods range",
-        packList: ["Fortune Wada Kolam Rice"],
-        summary: "Fortune Wada Kolam rice from the foods range.",
-        points: ["Fortune Wada Kolam Rice", "Part of the Fortune rice and foods line"]
-    },
-    {
-        id: "sona-regular",
-        category: "Rice Range",
-        name: "Fortune Sona Masoori Rice Regular",
-        image: "images/sona-regular-premium.png",
-        packs: "Shown in the Fortune foods range",
-        packList: ["Fortune Sona Masoori Rice Regular"],
-        summary: "Fortune Sona Masoori rice, regular.",
-        points: ["Sona Masoori Rice Regular", "Part of the Fortune rice and foods line"]
-    },
-    {
-        id: "sona-supreme",
-        category: "Rice Range",
-        name: "Fortune Sona Masoori Rice Supreme",
-        image: "images/sona-supreme-premium.png",
-        packs: "Shown in the Fortune foods range",
-        packList: ["Fortune Sona Masoori Rice Supreme"],
-        summary: "Fortune Sona Masoori rice, supreme.",
-        points: ["Sona Masoori Rice Supreme", "Part of the Fortune rice and foods line"]
-    },
-    {
-        id: "biryani-kit",
-        category: "Rice Range",
-        name: "Kohinoor Biryani Kit",
-        image: "images/biryani-kit-premium.png",
-        packs: "Biryani kit",
-        packList: ["Kohinoor Biryani Kit"],
-        summary: "Kohinoor biryani kit from the Fortune foods range.",
-        points: ["Kohinoor Biryani Kit", "Shown alongside the Fortune foods range"]
-    },
-    {
-        id: "chakki-atta",
-        category: "Staples & Atta",
-        name: "Fortune Chakki Fresh Atta",
-        image: "images/chakki-atta-premium.png",
-        packs: "Pouches: 1 kg, 5 kg, 10 kg",
-        packList: ["Pouch — 1 kg", "Pouch — 5 kg", "Pouch — 10 kg"],
-        summary: "Fortune chakki fresh atta in pouches.",
-        points: ["Chakki fresh atta", "Available in pouches of 1 kg, 5 kg and 10 kg"]
-    },
-    {
-        id: "suji",
-        category: "Staples & Atta",
-        name: "Fortune Suji",
-        image: "images/suji-premium.png",
-        packs: "Pouch 500 g",
-        packList: ["Pouch — 500 g"],
-        summary: "Fortune suji in a 500 g pouch.",
-        points: ["Fortune suji", "Available in a 500 g pouch"]
-    },
-    {
-        id: "rawa",
-        category: "Staples & Atta",
-        name: "Fortune Rawa",
-        image: "images/rawa-premium.png",
-        packs: "Pouch 500 g",
-        packList: ["Pouch — 500 g"],
-        summary: "Fortune rawa in a 500 g pouch.",
-        points: ["Fortune rawa", "Available in a 500 g pouch"]
-    },
-    {
-        id: "maida",
-        category: "Staples & Atta",
-        name: "Fortune Maida",
-        image: "images/maida-premium.png",
-        packs: "Pouch 500 g",
-        packList: ["Pouch — 500 g"],
-        summary: "Fortune maida in a 500 g pouch.",
-        points: ["Fortune maida", "Available in a 500 g pouch"]
+        image: "images/fortune-foods/soya-chunks.png?v=1",
+        packs: "Fortune soya",
+        packList: ["Soya Chunks"],
+        summary: "Fortune Soya Chunks.",
+        points: ["Fortune Soya Chunks"]
     },
     {
         id: "besan",
-        category: "Staples & Atta",
-        name: "Fortune Chana Dal Besan",
-        image: "images/besan-premium.png",
-        packs: "Pouches: 200 g, 500 g, 1 kg",
-        packList: ["Pouch — 200 g", "Pouch — 500 g", "Pouch — 1 kg"],
-        summary: "Fortune chana dal besan in pouches.",
-        points: ["Chana dal besan", "Available in pouches of 200 g, 500 g and 1 kg"]
+        category: "Staples",
+        name: "Fortune Besan",
+        image: "images/fortune-foods/besan.png?v=1",
+        packs: "Fortune staple",
+        packList: ["Besan"],
+        summary: "Fortune Besan.",
+        points: ["Fortune Besan"]
     },
     {
         id: "sugar",
-        category: "Staples & Atta",
+        category: "Staples",
         name: "Fortune Sugar",
-        image: "images/sugar-premium.png",
-        packs: "Pouches: 500 g, 1 kg, 5 kg",
-        packList: ["Pouch — 500 g", "Pouch — 1 kg", "Pouch — 5 kg"],
-        summary: "Fortune sugar in pouches.",
-        points: ["Fortune sugar", "Available in pouches of 500 g, 1 kg and 5 kg"]
+        image: "images/fortune-foods/sugar.png?v=1",
+        packs: "Fortune staple",
+        packList: ["Sugar"],
+        summary: "Fortune Sugar.",
+        points: ["Fortune Sugar"]
+    },
+    {
+        id: "rawa",
+        category: "Staples",
+        name: "Fortune Rawa",
+        image: "images/fortune-foods/rawa.png?v=1",
+        packs: "Fortune staple",
+        packList: ["Rawa"],
+        summary: "Fortune Rawa.",
+        points: ["Fortune Rawa"]
+    },
+    {
+        id: "maida",
+        category: "Staples",
+        name: "Fortune Maida",
+        image: "images/fortune-foods/maida.png?v=1",
+        packs: "Fortune staple",
+        packList: ["Maida"],
+        summary: "Fortune Maida.",
+        points: ["Fortune Maida"]
+    },
+    {
+        id: "suji",
+        category: "Staples",
+        name: "Fortune Suji",
+        image: "images/fortune-foods/suji.png?v=1",
+        packs: "Fortune staple",
+        packList: ["Suji"],
+        summary: "Fortune Suji.",
+        points: ["Fortune Suji"]
+    },
+    {
+        id: "chana-sattu",
+        category: "Staples",
+        name: "Fortune Chana Sattu",
+        image: "images/fortune-foods/chana-sattu.png?v=1",
+        packs: "Fortune staple",
+        packList: ["Chana Sattu"],
+        summary: "Fortune Chana Sattu.",
+        points: ["Fortune Chana Sattu"]
+    },
+    {
+        id: "chana-dal",
+        category: "Pulses",
+        name: "Fortune Unpolished Chana Dal",
+        image: "images/fortune-foods/chana-dal.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Chana Dal"],
+        summary: "Fortune Unpolished Chana Dal.",
+        points: ["Fortune Unpolished Chana Dal"]
+    },
+    {
+        id: "arhar-dal",
+        category: "Pulses",
+        name: "Fortune Unpolished Arhar Dal",
+        image: "images/fortune-foods/arhar-dal.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Arhar Dal"],
+        summary: "Fortune Unpolished Arhar Dal.",
+        points: ["Fortune Unpolished Arhar Dal"]
+    },
+    {
+        id: "moong-dal",
+        category: "Pulses",
+        name: "Fortune Unpolished Moong Dal",
+        image: "images/fortune-foods/moong-dal.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Moong Dal"],
+        summary: "Fortune Unpolished Moong Dal.",
+        points: ["Fortune Unpolished Moong Dal"]
+    },
+    {
+        id: "sona-moong-dal",
+        category: "Pulses",
+        name: "Fortune Unpolished Sona Moong Dal",
+        image: "images/fortune-foods/sona-moong-dal.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Sona Moong Dal"],
+        summary: "Fortune Unpolished Sona Moong Dal.",
+        points: ["Fortune Unpolished Sona Moong Dal"]
+    },
+    {
+        id: "desi-masoor",
+        category: "Pulses",
+        name: "Fortune Unpolished Desi Masoor Malka Dal",
+        image: "images/fortune-foods/desi-masoor.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Desi Masoor Malka Dal"],
+        summary: "Fortune Unpolished Desi Masoor Malka Dal.",
+        points: ["Fortune Unpolished Desi Masoor Malka Dal"]
+    },
+    {
+        id: "big-masoor",
+        category: "Pulses",
+        name: "Fortune Unpolished Big Masoor Malka Dal",
+        image: "images/fortune-foods/big-masoor.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Big Masoor Malka Dal"],
+        summary: "Fortune Unpolished Big Masoor Malka Dal.",
+        points: ["Fortune Unpolished Big Masoor Malka Dal"]
+    },
+    {
+        id: "kabuli-chana",
+        category: "Pulses",
+        name: "Fortune Unpolished Kabuli Chana",
+        image: "images/fortune-foods/kabuli-chana.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Kabuli Chana"],
+        summary: "Fortune Unpolished Kabuli Chana.",
+        points: ["Fortune Unpolished Kabuli Chana"]
+    },
+    {
+        id: "kala-chana",
+        category: "Pulses",
+        name: "Fortune Unpolished Kala Chana Whole",
+        image: "images/fortune-foods/kala-chana.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Kala Chana Whole"],
+        summary: "Fortune Unpolished Kala Chana Whole.",
+        points: ["Fortune Unpolished Kala Chana Whole"]
+    },
+    {
+        id: "rajma-chitra",
+        category: "Pulses",
+        name: "Fortune Unpolished Rajma Chitra",
+        image: "images/fortune-foods/rajma-chitra.png?v=1",
+        packs: "Fortune pulses",
+        packList: ["Unpolished Rajma Chitra"],
+        summary: "Fortune Unpolished Rajma Chitra.",
+        points: ["Fortune Unpolished Rajma Chitra"]
+    },
+    {
+        id: "regular-poha",
+        category: "Poha",
+        name: "Fortune Regular Poha",
+        image: "images/fortune-foods/regular-poha.png?v=1",
+        packs: "Fortune poha",
+        packList: ["Regular Poha"],
+        summary: "Fortune Regular Poha.",
+        points: ["Fortune Regular Poha"]
     },
     {
         id: "indori-poha",
-        category: "Staples & Atta",
+        category: "Poha",
         name: "Fortune Indori Poha",
-        image: "images/indori-poha-premium.png",
-        packs: "Pouch 500 g",
-        packList: ["Pouch — 500 g"],
-        summary: "Fortune Indori poha in a 500 g pouch.",
-        points: ["Indori poha", "Available in a 500 g pouch"]
+        image: "images/fortune-foods/indori-poha.png?v=1",
+        packs: "Fortune poha",
+        packList: ["Indori Poha"],
+        summary: "Fortune Indori Poha.",
+        points: ["Fortune Indori Poha"]
     },
     {
-        id: "thick-poha",
-        category: "Staples & Atta",
-        name: "Fortune Thick Poha",
-        image: "images/thick-poha-premium.png",
-        packs: "Pouch 500 g",
-        packList: ["Pouch — 500 g"],
-        summary: "Fortune thick poha in a 500 g pouch.",
-        points: ["Thick poha", "Available in a 500 g pouch"]
+        id: "wheat-sharbati",
+        category: "Wheat",
+        name: "Fortune Pure Sharbati Wheat",
+        image: "images/fortune-foods/wheat-sharbati.png?v=1",
+        packs: "Fortune wheat",
+        packList: ["Pure Sharbati Wheat"],
+        summary: "Fortune Pure Sharbati Wheat.",
+        points: ["Fortune Pure Sharbati Wheat"]
     },
     {
-        id: "super-basmati",
-        category: "Basmati & Kohinoor Rice",
-        name: "Fortune Super Basmati Rice",
-        image: "images/super-basmati-premium.png",
-        packs: "Packs: 1 kg, 5 kg",
-        packList: ["1 kg", "5 kg"],
-        summary: "Fortune Super basmati rice.",
-        points: ["Fortune Super Basmati Rice", "Available in 1 kg and 5 kg packs"]
+        id: "wheat-lokwan",
+        category: "Wheat",
+        name: "Fortune Pure Lokwan Wheat",
+        image: "images/fortune-foods/wheat-lokwan.png?v=1",
+        packs: "Fortune wheat",
+        packList: ["Pure Lokwan Wheat"],
+        summary: "Fortune Pure Lokwan Wheat.",
+        points: ["Fortune Pure Lokwan Wheat"]
     },
     {
-        id: "biryani-classic",
-        category: "Basmati & Kohinoor Rice",
-        name: "Fortune Biryani Classic Basmati Rice",
-        image: "images/biryani-classic-premium.png",
-        packs: "Packs: 1 kg, 5 kg",
-        packList: ["1 kg", "5 kg"],
-        summary: "Fortune Biryani Classic basmati rice.",
-        points: ["Biryani Classic Basmati Rice", "Available in 1 kg and 5 kg packs"]
+        id: "wheat-1544",
+        category: "Wheat",
+        name: "Fortune Pure 1544 (Poorna) Wheat",
+        image: "images/fortune-foods/wheat-1544.png?v=1",
+        packs: "Fortune wheat",
+        packList: ["Pure 1544 (Poorna) Wheat"],
+        summary: "Fortune Pure 1544 (Poorna) Wheat.",
+        points: ["Fortune Pure 1544 (Poorna) Wheat"]
     },
     {
-        id: "biryani-special",
-        category: "Basmati & Kohinoor Rice",
-        name: "Fortune Biryani Special Basmati Rice",
-        image: "images/biryani-special-premium.png",
-        packs: "Packs: 1 kg, 5 kg",
-        packList: ["1 kg", "5 kg"],
-        summary: "Fortune Biryani Special basmati rice.",
-        points: ["Biryani Special Basmati Rice", "Available in 1 kg and 5 kg packs"]
-    },
-    {
-        id: "everyday-basmati",
-        category: "Basmati & Kohinoor Rice",
-        name: "Fortune Everyday Basmati Rice",
-        image: "images/everyday-basmati-premium.png",
-        packs: "Packs: 1 kg, 5 kg",
-        packList: ["1 kg", "5 kg"],
-        summary: "Fortune Everyday basmati rice.",
-        points: ["Everyday Basmati Rice", "Available in 1 kg and 5 kg packs"]
-    },
-    {
-        id: "rozana-basmati",
-        category: "Basmati & Kohinoor Rice",
-        name: "Fortune Everyday Rozana Basmati Rice",
-        image: "images/rozana-basmati-premium.png",
-        packs: "Packs: 1 kg, 5 kg",
-        packList: ["1 kg", "5 kg"],
-        summary: "Fortune Everyday Rozana basmati rice.",
-        points: ["Everyday Rozana Basmati Rice", "Available in 1 kg and 5 kg packs"]
-    },
-    {
-        id: "kohinoor-silver",
-        category: "Basmati & Kohinoor Rice",
-        name: "Kohinoor Super Silver",
-        image: "images/kohinoor-silver-premium.png",
-        packs: "Packs: 1 kg, 5 kg",
-        packList: ["1 kg", "5 kg"],
-        summary: "Kohinoor Super Silver rice.",
-        points: ["Kohinoor Super Silver", "Available in 1 kg and 5 kg packs"]
-    },
-    {
-        id: "kohinoor-trophy",
-        category: "Basmati & Kohinoor Rice",
-        name: "Kohinoor Trophy Royale",
-        image: "images/kohinoor-trophy-premium.png",
-        packs: "Packs: 1 kg, 5 kg",
-        packList: ["1 kg", "5 kg"],
-        summary: "Kohinoor Trophy Royale rice.",
-        points: ["Kohinoor Trophy Royale", "Available in 1 kg and 5 kg packs"]
-    },
-    {
-        id: "kohinoor-charminar",
-        category: "Basmati & Kohinoor Rice",
-        name: "Kohinoor Charminar",
-        image: "images/kohinoor-charminar-premium.png",
-        packs: "Packs: 1 kg, 5 kg",
-        packList: ["1 kg", "5 kg"],
-        summary: "Kohinoor Charminar rice.",
-        points: ["Kohinoor Charminar", "Available in 1 kg and 5 kg packs"]
+        id: "wheat-mp-grade1",
+        category: "Wheat",
+        name: "Fortune MP Grade 1 Wheat",
+        image: "images/fortune-foods/wheat-mp-grade1.png?v=1",
+        packs: "Fortune wheat",
+        packList: ["MP Grade 1 Wheat"],
+        summary: "Fortune MP Grade 1 Wheat.",
+        points: ["Fortune MP Grade 1 Wheat"]
     },
     {
         id: "soap-sandalwood",
@@ -591,7 +661,7 @@ const BRAND_FILTERS = {
     fortune: {
         title: "Fortune",
         match: function (item) {
-            return /fortune|raag gold|alife|kohinoor/i.test(item.name);
+            return /fortune|alife/i.test(item.name);
         }
     }
 };
@@ -607,10 +677,13 @@ const FORTUNE_CATEGORY_ORDER = [
     "Bisleri Soda",
     "Edible Oils",
     "Fortune Xpert Oils",
+    "Atta",
+    "Rice",
     "Soya Products",
-    "Rice Range",
-    "Basmati & Kohinoor Rice",
-    "Staples & Atta",
+    "Staples",
+    "Pulses",
+    "Poha",
+    "Wheat",
     "Alife Hygiene Soap"
 ];
 
