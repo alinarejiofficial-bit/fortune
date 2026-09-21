@@ -70,14 +70,54 @@ const PRODUCTS = [
         points: ["Fortune Sunlite", "Refined sunflower oil"]
     },
     {
-        id: "soya",
+        id: "soya-pouch-1l",
         category: "Edible Oils",
-        name: "Fortune Soya Health Oil",
-        image: "images/fortune/soya.png?v=2",
-        packs: "Fortune edible oil",
-        packList: ["Soya health oil"],
-        summary: "Fortune soya health oil.",
-        points: ["Fortune Soya Health Oil"]
+        name: "Fortune Soya Health Oil — 1 L Pouch",
+        image: "images/fortune/soya-pouch-1l.png?v=1",
+        packs: "Pouch 1 litre",
+        packList: ["Pouch — 1 litre"],
+        summary: "Fortune Soya Health refined soyabean oil, 1 litre pouch.",
+        points: ["Fortune Soya Health Oil", "Pouch — 1 litre"]
+    },
+    {
+        id: "soya-bottle-1l",
+        category: "Edible Oils",
+        name: "Fortune Soya Health Oil — 1 L Pet Bottle",
+        image: "images/fortune/soya-bottle-1l.png?v=1",
+        packs: "Pet Bottle 1 litre",
+        packList: ["Pet Bottle — 1 litre"],
+        summary: "Fortune Soya Health refined soyabean oil, 1 litre pet bottle.",
+        points: ["Fortune Soya Health Oil", "Pet Bottle — 1 litre"]
+    },
+    {
+        id: "soya-bottle-2l",
+        category: "Edible Oils",
+        name: "Fortune Soya Health Oil — 2 L Pet Bottle",
+        image: "images/fortune/soya-bottle-2l.png?v=1",
+        packs: "Pet Bottle 2 litres",
+        packList: ["Pet Bottle — 2 litres"],
+        summary: "Fortune Soya Health refined soyabean oil, 2 litre pet bottle.",
+        points: ["Fortune Soya Health Oil", "Pet Bottle — 2 litres"]
+    },
+    {
+        id: "soya-jerry-5l",
+        category: "Edible Oils",
+        name: "Fortune Soya Health Oil — 5 L Jerry Can",
+        image: "images/fortune/soya-jerry-5l.png?v=1",
+        packs: "Jerry Can 5 litres",
+        packList: ["Jerry Can — 5 litres"],
+        summary: "Fortune Soya Health refined soyabean oil, 5 litre jerry can.",
+        points: ["Fortune Soya Health Oil", "Jerry Can — 5 litres"]
+    },
+    {
+        id: "soya-jerry-15l",
+        category: "Edible Oils",
+        name: "Fortune Soya Health Oil — 15 L Jerry Can",
+        image: "images/fortune/soya-jerry-15l.png?v=1",
+        packs: "Jerry Can 15 litres",
+        packList: ["Jerry Can — 15 litres"],
+        summary: "Fortune Soya Health refined soyabean oil, 15 litre jerry can.",
+        points: ["Fortune Soya Health Oil", "Jerry Can — 15 litres"]
     },
     {
         id: "xpert-active",
