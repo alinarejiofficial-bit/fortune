@@ -810,7 +810,8 @@ ul {
 }
 
 .catalog-subchip,
-.catalog-oilchip {
+.catalog-oilchip,
+.catalog-foodchip {
     appearance: none;
     border: 1px solid rgba(20, 92, 62, 0.18);
     background: #f4f7f5;
@@ -828,13 +829,16 @@ ul {
 .catalog-subchip:hover,
 .catalog-subchip.active,
 .catalog-oilchip:hover,
-.catalog-oilchip.active {
+.catalog-oilchip.active,
+.catalog-foodchip:hover,
+.catalog-foodchip.active {
     background: #145c3e;
     border-color: #145c3e;
     color: #fff;
 }
 
-.catalog-oilnav {
+.catalog-oilnav,
+.catalog-foodnav {
     display: none;
     flex-wrap: wrap;
     justify-content: center;
@@ -844,11 +848,14 @@ ul {
 }
 
 .catalog-family[data-family="Oils"].is-oils-active .catalog-oilnav,
-.catalog-group.is-oils-view .catalog-oilnav {
+.catalog-group.is-oils-view .catalog-oilnav,
+.catalog-family[data-family="Foods"].is-foods-active .catalog-foodnav,
+.catalog-group.is-foods-view .catalog-foodnav {
     display: flex;
 }
 
-.catalog-oilchip {
+.catalog-oilchip,
+.catalog-foodchip {
     font-size: 0.78rem;
     padding: 8px 12px;
     background: #fff;
@@ -5598,12 +5605,14 @@ video {
         padding: 9px 12px;
     }
 
-    .catalog-oilnav {
+    .catalog-oilnav,
+    .catalog-foodnav {
         gap: 6px;
         margin-bottom: 24px;
     }
 
-    .catalog-oilchip {
+    .catalog-oilchip,
+    .catalog-foodchip {
         font-size: 0.72rem;
         padding: 7px 10px;
     }

@@ -90,6 +90,9 @@ const PRODUCTS = [
         points: ["Fortune Cottonlite Oil", "Tin — 10 kg"]
     },
     {
+        id: "cottonlite-tins",
+        category: "Oils",
+        name: "Fortune Cottonlite — Tin 15 L / 15 kg",
         image: "images/fortune/cottonlite-tins.png?v=1",
         packs: "Tin 15 litres · 15 kg",
         packList: ["Tin — 15 litres", "Tin — 15 kg"],
@@ -137,6 +140,9 @@ const PRODUCTS = [
         points: ["Fortune Filtered Groundnut Oil", "Tin — 10 kg"]
     },
     {
+        id: "groundnut-tins",
+        category: "Oils",
+        name: "Fortune Filtered Groundnut — Tin 15 L / 15 kg",
         image: "images/fortune/groundnut-tins.png?v=1",
         packs: "Tin 15 litres · 15 kg",
         packList: ["Tin — 15 litres", "Tin — 15 kg"],
@@ -1053,6 +1059,21 @@ const FORTUNE_OIL_SUBCATEGORIES = [
     { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar-pet-bottle-1-l", "pehli-dhaar-pouch-1-l"] }
 ];
 
+const FORTUNE_FOOD_SUBCATEGORIES = [
+    { id: "atta", label: "Fortune Atta", category: "Atta" },
+    { id: "rice", label: "Fortune Rice", category: "Rice" },
+    { id: "soya-chunks", label: "Fortune Soya Chunks", category: "Soya Chunks" },
+    { id: "besan", label: "Fortune Besan", category: "Besan" },
+    { id: "sugar", label: "Fortune Sugar", category: "Sugar" },
+    { id: "pulses", label: "Fortune Unpolished Pulses", category: "Pulses" },
+    { id: "rawa", label: "Fortune Rawa", category: "Rawa" },
+    { id: "maida", label: "Fortune Maida", category: "Maida" },
+    { id: "poha", label: "Fortune Poha", category: "Poha" },
+    { id: "suji", label: "Fortune Suji", category: "Suji" },
+    { id: "wheat", label: "Fortune Wheat", category: "Wheat" },
+    { id: "chana-sattu", label: "Fortune Chana Sattu", category: "Chana Sattu" }
+];
+
 function getProductsByIds(ids) {
     return ids.map(function (id) {
         return getProduct(id);
@@ -1104,6 +1125,16 @@ function renderOilSubcategory(sub) {
     }).join("");
 }
 
+function renderFoodSubcategory(sub) {
+    const items = getBrandProductsByCategory("fortune", sub.category);
+    if (!items.length) return "";
+    return items.map(function (item) {
+        return '<div class="product-card" data-food-sub="' + sub.id + '">' +
+            productCardInner(item) +
+            '</div>';
+    }).join("");
+}
+
 function productCardInner(item) {
     return '<div class="product-img-box">' +
             '<img src="' + item.image + '" alt="' + item.name + '">' +
@@ -1114,10 +1145,6 @@ function productCardInner(item) {
 }
 
 function renderFortuneCatalog() {
-    const foodItems = FORTUNE_FAMILY.Foods.reduce(function (list, name) {
-        return list.concat(getBrandProductsByCategory("fortune", name));
-    }, []);
-
     const chips = [
         '<button type="button" class="catalog-subchip active" data-subfilter="all">All</button>',
         '<button type="button" class="catalog-subchip" data-subfilter="Oils">Oils</button>',
@@ -1127,8 +1154,15 @@ function renderFortuneCatalog() {
     const oilChips = FORTUNE_OIL_SUBCATEGORIES.map(function (sub) {
         return '<button type="button" class="catalog-oilchip" data-oil-filter="' + sub.id + '">' + sub.label + '</button>';
     }).join("");
-
     const oilCards = FORTUNE_OIL_SUBCATEGORIES.map(renderOilSubcategory).join("");
+
+    const foodSubs = FORTUNE_FOOD_SUBCATEGORIES.filter(function (sub) {
+        return getBrandProductsByCategory("fortune", sub.category).length > 0;
+    });
+    const foodChips = foodSubs.map(function (sub) {
+        return '<button type="button" class="catalog-foodchip" data-food-filter="' + sub.id + '">' + sub.label + '</button>';
+    }).join("");
+    const foodCards = foodSubs.map(renderFoodSubcategory).join("");
 
     let body = "";
     if (oilCards) {
@@ -1142,12 +1176,16 @@ function renderFortuneCatalog() {
             '<div class="products-grid">' + oilCards + '</div>' +
             '</div></div>';
     }
-    if (foodItems.length) {
+    if (foodCards) {
         body += '<div class="catalog-family" data-family="Foods">' +
             '<h3 class="catalog-family-title">Foods</h3>' +
-            '<div class="catalog-subgroup"><div class="products-grid">' +
-            foodItems.map(productCard).join("") +
-            '</div></div></div>';
+            '<div class="catalog-foodnav" role="tablist" aria-label="Fortune food subcategories">' +
+            '<button type="button" class="catalog-foodchip active" data-food-filter="all">All Foods</button>' +
+            foodChips +
+            '</div>' +
+            '<div class="catalog-subgroup">' +
+            '<div class="products-grid">' + foodCards + '</div>' +
+            '</div></div>';
     }
 
     return '<div class="catalog-group" id="fortune">' +
