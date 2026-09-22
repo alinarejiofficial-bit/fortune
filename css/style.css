@@ -5571,6 +5571,11 @@ video {
     max-height: 110px;
 }
 
+.partner-card .partner-logo-alsaj {
+    max-width: 88%;
+    max-height: 112px;
+}
+
 .partners-close {
     max-width: 760px;
     margin: 44px auto 0;
