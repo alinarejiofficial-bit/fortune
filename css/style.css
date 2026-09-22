@@ -5533,6 +5533,16 @@ video {
     max-height: 120px;
 }
 
+.partner-card .partner-logo-compact {
+    max-width: 70%;
+    max-height: 64px;
+}
+
+.partner-card .partner-logo-farsa {
+    max-width: 92%;
+    max-height: 110px;
+}
+
 .partners-close {
     max-width: 760px;
     margin: 44px auto 0;
@@ -5603,6 +5613,11 @@ video {
     .partner-card img {
         max-width: 90%;
         max-height: 72px;
+    }
+
+    .partner-card .partner-logo-compact {
+        max-width: 68%;
+        max-height: 48px;
     }
 
     .catalog-subnav {
