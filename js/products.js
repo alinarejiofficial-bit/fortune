@@ -1253,9 +1253,13 @@ function renderFortuneCatalog() {
     }).join("");
     const oilCards = FORTUNE_OIL_SUBCATEGORIES.map(renderOilSubcategory).join("");
 
-    const foodItems = FORTUNE_FAMILY.Foods.reduce(function (list, name) {
-        return list.concat(getBrandProductsByCategory("fortune", name));
-    }, []);
+    const foodSubs = FORTUNE_FOOD_SUBCATEGORIES.filter(function (sub) {
+        return getBrandProductsByCategory("fortune", sub.category).length > 0;
+    });
+    const foodChips = foodSubs.map(function (sub) {
+        return '<button type="button" class="catalog-foodchip" data-food-filter="' + sub.id + '">' + sub.label + '</button>';
+    }).join("");
+    const foodCards = foodSubs.map(renderFoodSubcategory).join("");
 
     let body = "";
     if (oilCards) {
@@ -1269,11 +1273,15 @@ function renderFortuneCatalog() {
             '<div class="products-grid">' + oilCards + '</div>' +
             '</div></div>';
     }
-    if (foodItems.length) {
+    if (foodCards) {
         body += '<div class="catalog-family" data-family="Foods">' +
             '<h3 class="catalog-family-title">Foods</h3>' +
+            '<div class="catalog-foodnav" role="tablist" aria-label="Fortune food subcategories">' +
+            '<button type="button" class="catalog-foodchip active" data-food-filter="all">All Foods</button>' +
+            foodChips +
+            '</div>' +
             '<div class="catalog-subgroup">' +
-            '<div class="products-grid">' + foodItems.map(productCard).join("") + '</div>' +
+            '<div class="products-grid">' + foodCards + '</div>' +
             '</div></div>';
     }
 

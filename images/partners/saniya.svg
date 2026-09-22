@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-label="Saniya">
+  <rect width="420" height="160" fill="#ffffff"/>
+  <!-- soft ticket corners -->
+  <g transform="translate(210 34)" fill="none" stroke="#5b2d6e" stroke-width="1.8">
+    <rect x="-28" y="0" width="56" height="22" rx="3"/>
+    <circle cx="-28" cy="11" r="4" fill="#ffffff"/>
+    <circle cx="28" cy="11" r="4" fill="#ffffff"/>
+  </g>
+  <text x="210" y="100" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="48" font-weight="700" fill="#5b2d6e"
+        letter-spacing="3">Saniya</text>
+  <text x="210" y="128" text-anchor="middle"
+        font-family="'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="700" fill="#b8954a"
+        letter-spacing="6">THEATRE</text>
+</svg>
