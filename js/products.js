@@ -1068,32 +1068,6 @@ const PRODUCTS = [
             "2 Ltr – Pack of 6",
             "Packaged drinking water with minerals"
         ]
-    },
-    {
-        id: "bailley-1l",
-        category: "Bailley",
-        name: "Bailley 1 Ltr Packaged Drinking Water",
-        image: "images/bailley/water-1l.png?v=3",
-        packs: "1 Ltr – Pack of 12",
-        packList: ["1 Litre", "Pack of 12"],
-        summary: "Bailley 1 litre packaged drinking water with minerals, pack of 12.",
-        points: [
-            "1 Ltr – Pack of 12",
-            "Packaged drinking water with minerals"
-        ]
-    },
-    {
-        id: "bailley-one-500ml",
-        category: "Bailley",
-        name: "Bailley One 500 ML Packaged Drinking Water",
-        image: "images/bailley/bailley-one-500ml.png?v=3",
-        packs: "500 ML – Pack of 24 – Bailley One",
-        packList: ["500 ML", "Pack of 24", "Bailley One"],
-        summary: "Bailley One 500 ml packaged drinking water with minerals, pack of 24.",
-        points: [
-            "500 ML – Pack of 24 – Bailley One",
-            "Packaged drinking water with minerals"
-        ]
     }
 ];
 
