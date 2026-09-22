@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-label="Asma Emarath">
+  <rect width="420" height="160" fill="#ffffff"/>
+  <!-- crescent + diamond -->
+  <g transform="translate(210 36)">
+    <circle cx="0" cy="8" r="12" fill="none" stroke="#0f3d2e" stroke-width="2.2"/>
+    <circle cx="4" cy="6" r="10" fill="#ffffff"/>
+    <path d="M0 22 L3 28 L0 34 L-3 28 Z" fill="#c4a35a"/>
+  </g>
+  <text x="210" y="98" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="40" font-weight="700" fill="#0f3d2e"
+        letter-spacing="5">Asma</text>
+  <text x="210" y="126" text-anchor="middle"
+        font-family="'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="12" font-weight="600" fill="#9a7a4a"
+        letter-spacing="5.5">EMARATH</text>
+</svg>

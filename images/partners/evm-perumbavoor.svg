@@ -1,20 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-label="EVM Perumbavoor">
-  <rect width="420" height="160" fill="#ffffff"/>
-  <!-- split-tone EVM block matching chain blue -->
-  <defs>
-    <linearGradient id="evmBlue" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#4aa3e0"/>
-      <stop offset="48%" stop-color="#4aa3e0"/>
-      <stop offset="52%" stop-color="#143a6b"/>
-      <stop offset="100%" stop-color="#143a6b"/>
-    </linearGradient>
-  </defs>
-  <text x="210" y="78" text-anchor="middle"
-        font-family="'Arial Black', 'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="54" font-weight="900" fill="url(#evmBlue)"
-        letter-spacing="2">evm</text>
-  <text x="210" y="118" text-anchor="middle"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 180" role="img" aria-label="EVM Perumbavoor">
+  <rect width="440" height="180" fill="#ffffff"/>
+  <!-- location-first layout: different from EVM Cinemas filmstrip mark -->
+  <text x="220" y="72" text-anchor="middle"
         font-family="'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="15" font-weight="700" fill="#143a6b"
-        letter-spacing="4">PERUMBAVOOR</text>
+        font-size="28" font-weight="800" fill="#0d2f5c"
+        letter-spacing="5">PERUMBAVOOR</text>
+  <line x1="118" y1="88" x2="322" y2="88" stroke="#c4a35a" stroke-width="2"/>
+  <rect x="168" y="104" width="104" height="36" rx="18" fill="#143a6b"/>
+  <text x="220" y="128" text-anchor="middle"
+        font-family="'Arial Black', 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="18" font-weight="900" fill="#ffffff"
+        letter-spacing="4">EVM</text>
 </svg>
