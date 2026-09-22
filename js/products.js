@@ -1145,15 +1145,15 @@ const FORTUNE_FAMILY = {
 };
 
 const FORTUNE_OIL_SUBCATEGORIES = [
-    { id: "soya-health", label: "Fortune Soya Health Oil", productIds: ["soya"] },
-    { id: "sunlite", label: "Fortune Sunlite Refined Sunflower Oil", productIds: ["sunflower"] },
-    { id: "kachi-ghani", label: "Fortune Kachi Ghani Mustard Oil", productIds: ["mustard"] },
-    { id: "rice-bran", label: "Fortune Rice Bran Health Oil", productIds: ["ricebran"] },
-    { id: "filtered-groundnut", label: "Fortune Filtered Groundnut Oil", productIds: ["groundnut"] },
-    { id: "cottonlite", label: "Fortune Cottonlite Oil", productIds: ["cottonlite"] },
-    { id: "goldnut", label: "Fortune Goldnut Refined Groundnut Oil", productIds: ["goldnut"] },
-    { id: "xpert", label: "Fortune Xpert", productIds: ["xpert"] },
-    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar"] }
+    { id: "soya-health", label: "Fortune Soya Health Oil", productIds: ["soya-pouch-1l", "soya-bottle-1l", "soya-bottle-2l", "soya-jerry-5l", "soya-jerry-15l"] },
+    { id: "sunlite", label: "Fortune Sunlite Refined Sunflower Oil", productIds: ["sunlite-pouch", "sunlite-bottle", "sunlite-jerry", "sunlite-tin"] },
+    { id: "kachi-ghani", label: "Fortune Kachi Ghani Mustard Oil", productIds: ["mustard-bottle-200ml", "mustard-pouch-500ml", "mustard-bottle-500ml", "mustard-pouch-1l", "mustard-jerry-2l", "mustard-jerry-5l", "mustard-barni-2l", "mustard-barni-5l", "mustard-jerry-15l", "mustard-tin-15kg"] },
+    { id: "rice-bran", label: "Fortune Rice Bran Health Oil", productIds: ["ricebran-pet-1-l", "ricebran-pouch-1-l", "ricebran-jerry-can", "ricebran-jar-15-l", "ricebran-tap-jar-15-l"] },
+    { id: "filtered-groundnut", label: "Fortune Filtered Groundnut Oil", productIds: ["groundnut-pouch-1-l", "groundnut-pet-bottle-1-l", "groundnut-jerry-can", "groundnut-tin-10-kg", "groundnut-tins"] },
+    { id: "cottonlite", label: "Fortune Cottonlite Oil", productIds: ["cottonlite-pouch-1-l", "cottonlite-jerry-cans-5-l", "cottonlite-tin-10-kg", "cottonlite-tins"] },
+    { id: "goldnut", label: "Fortune Goldnut Refined Groundnut Oil", productIds: ["goldnut-pet-bottle-1-l", "goldnut-pouch-1-l", "goldnut-jerry-can-5-l", "goldnut-tin-15-kg"] },
+    { id: "xpert", label: "Fortune Xpert", productIds: ["xpert-active-pouch-850g", "xpert-total-pouch-1-l", "xpert-total-jar-5-l", "xpert-immunity-pouch-1-l", "xpert-immunity-jerry-cans-5-l", "xpert-sugar-pouch-1-l", "xpert-sugar-jerry-cans-5-l"] },
+    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar-pet-bottle-1-l", "pehli-dhaar-pouch-1-l"] }
 ];
 
 const FORTUNE_FOOD_SUBCATEGORIES = [
@@ -1232,12 +1232,12 @@ function renderFoodSubcategory(sub) {
     }).join("");
 }
 
-function productCardInner(item) {
+function productCardInner(item, options) {
+    options = options || {};
     return '<div class="product-img-box">' +
             '<img src="' + item.image + '" alt="' + item.name + '">' +
         '</div>' +
         '<h4>' + item.name + '</h4>' +
-        '<p class="pack-line">' + item.packs + '</p>' +
         '<a href="product.html?id=' + item.id + '" class="btn">Explore Now</a>';
 }
 
