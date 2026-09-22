@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-label="Casino Aluva">
+  <rect width="420" height="160" fill="#ffffff"/>
+  <!-- art-deco fan -->
+  <g transform="translate(210 36)" fill="none" stroke="#8b6914" stroke-width="1.6" stroke-linecap="round">
+    <path d="M0,18 L-42,0"/>
+    <path d="M0,18 L-28,-8"/>
+    <path d="M0,18 L-10,-14"/>
+    <path d="M0,18 L10,-14"/>
+    <path d="M0,18 L28,-8"/>
+    <path d="M0,18 L42,0"/>
+    <circle cx="0" cy="18" r="3.5" fill="#8b6914" stroke="none"/>
+  </g>
+  <text x="210" y="92" text-anchor="middle"
+        font-family="'Copperplate Gothic', 'Trajan Pro', 'Segoe UI', Georgia, serif"
+        font-size="36" font-weight="700" fill="#1f1a12"
+        letter-spacing="7">CASINO</text>
+  <text x="210" y="122" text-anchor="middle"
+        font-family="'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="14" font-weight="600" fill="#8b6914"
+        letter-spacing="5.5">ALUVA</text>
+</svg>

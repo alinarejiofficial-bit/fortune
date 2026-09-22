@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-label="Shafaz">
+  <rect width="420" height="160" fill="#ffffff"/>
+  <text x="210" y="88" text-anchor="middle"
+        font-family="'Avenir Next', 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="58" font-weight="700" fill="#2f2d2b"
+        letter-spacing="5">Shafaz</text>
+  <g transform="translate(210 118)">
+    <line x1="-52" y1="0" x2="-10" y2="0" stroke="#b8954a" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="3.2" fill="#b8954a"/>
+    <line x1="10" y1="0" x2="52" y2="0" stroke="#b8954a" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>
