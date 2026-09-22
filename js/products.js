@@ -470,22 +470,44 @@ const PRODUCTS = [
         points: ["Fortune Soya Health Oil", "Jerry Can — 15 litres"]
     },
     {
-        id: "xpert",
+        id: "xpert-active",
         category: "Oils",
-        name: "Fortune Xpert",
-        image: "images/fortune/xpert-total-pouch-1-l.png?v=1",
-        packs: "Active · Total Balance · Pro Immunity · Pro Sugar Conscious",
-        packList: [
-            "Xpert Active — Pouch 850g",
-            "Xpert Total Balance — Pouch 1 L",
-            "Xpert Total Balance — Jar 5 L",
-            "Xpert Pro Immunity — Pouch 1 L",
-            "Xpert Pro Immunity — Jerry Can 5 L",
-            "Xpert Pro Sugar Conscious — Pouch 1 L",
-            "Xpert Pro Sugar Conscious — Jerry Can 5 L"
-        ],
-        summary: "Fortune Xpert specialty cooking oils.",
-        points: ["Fortune Xpert", "Active", "Total Balance", "Pro Immunity", "Pro Sugar Conscious"]
+        name: "Fortune Xpert Active Oil",
+        image: "images/fortune/xpert-active.png?v=2",
+        packs: "Pouch 850g",
+        packList: ["Pouch — 850g"],
+        summary: "Fortune Xpert Active Oil.",
+        points: ["Fortune Xpert Active Oil", "Pouch — 850g"]
+    },
+    {
+        id: "xpert-total",
+        category: "Oils",
+        name: "Fortune Xpert Total Balance Oil",
+        image: "images/fortune/xpert-total.png?v=2",
+        packs: "Pouch 1 L · Jar 5 L",
+        packList: ["Pouch — 1 L", "Jar — 5 L"],
+        summary: "Fortune Xpert Total Balance Oil.",
+        points: ["Fortune Xpert Total Balance Oil", "Pouch — 1 L", "Jar — 5 L"]
+    },
+    {
+        id: "xpert-immunity",
+        category: "Oils",
+        name: "Fortune Xpert Pro Immunity Oil",
+        image: "images/fortune/xpert-immunity.png?v=2",
+        packs: "Pouch 1 L · Jerry Can 5 L",
+        packList: ["Pouch — 1 L", "Jerry Can — 5 L"],
+        summary: "Fortune Xpert Pro Immunity Oil.",
+        points: ["Fortune Xpert Pro Immunity Oil", "Pouch — 1 L", "Jerry Can — 5 L"]
+    },
+    {
+        id: "xpert-sugar",
+        category: "Oils",
+        name: "Fortune Xpert Pro Sugar Conscious Oil",
+        image: "images/fortune/xpert-sugar.png?v=2",
+        packs: "Pouch 1 L · Jerry Can 5 L",
+        packList: ["Pouch — 1 L", "Jerry Can — 5 L"],
+        summary: "Fortune Xpert Pro Sugar Conscious Oil.",
+        points: ["Fortune Xpert Pro Sugar Conscious Oil", "Pouch — 1 L", "Jerry Can — 5 L"]
     },
     {
         id: "xpert-active-pouch-850g",
@@ -1145,15 +1167,18 @@ const FORTUNE_FAMILY = {
 };
 
 const FORTUNE_OIL_SUBCATEGORIES = [
-    { id: "soya-health", label: "Fortune Soya Health Oil", productIds: ["soya-pouch-1l", "soya-bottle-1l", "soya-bottle-2l", "soya-jerry-5l", "soya-jerry-15l"] },
-    { id: "sunlite", label: "Fortune Sunlite Refined Sunflower Oil", productIds: ["sunlite-pouch", "sunlite-bottle", "sunlite-jerry", "sunlite-tin"] },
-    { id: "kachi-ghani", label: "Fortune Kachi Ghani Mustard Oil", productIds: ["mustard-bottle-200ml", "mustard-pouch-500ml", "mustard-bottle-500ml", "mustard-pouch-1l", "mustard-jerry-2l", "mustard-jerry-5l", "mustard-barni-2l", "mustard-barni-5l", "mustard-jerry-15l", "mustard-tin-15kg"] },
-    { id: "rice-bran", label: "Fortune Rice Bran Health Oil", productIds: ["ricebran-pet-1-l", "ricebran-pouch-1-l", "ricebran-jerry-can", "ricebran-jar-15-l", "ricebran-tap-jar-15-l"] },
-    { id: "filtered-groundnut", label: "Fortune Filtered Groundnut Oil", productIds: ["groundnut-pouch-1-l", "groundnut-pet-bottle-1-l", "groundnut-jerry-can", "groundnut-tin-10-kg", "groundnut-tins"] },
-    { id: "cottonlite", label: "Fortune Cottonlite Oil", productIds: ["cottonlite-pouch-1-l", "cottonlite-jerry-cans-5-l", "cottonlite-tin-10-kg", "cottonlite-tins"] },
-    { id: "goldnut", label: "Fortune Goldnut Refined Groundnut Oil", productIds: ["goldnut-pet-bottle-1-l", "goldnut-pouch-1-l", "goldnut-jerry-can-5-l", "goldnut-tin-15-kg"] },
-    { id: "xpert", label: "Fortune Xpert", productIds: ["xpert-active-pouch-850g", "xpert-total-pouch-1-l", "xpert-total-jar-5-l", "xpert-immunity-pouch-1-l", "xpert-immunity-jerry-cans-5-l", "xpert-sugar-pouch-1-l", "xpert-sugar-jerry-cans-5-l"] },
-    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar-pet-bottle-1-l", "pehli-dhaar-pouch-1-l"] }
+    { id: "soya-health", label: "Fortune Soya Health Oil", productIds: ["soya"] },
+    { id: "sunlite", label: "Fortune Sunlite Refined Sunflower Oil", productIds: ["sunflower"] },
+    { id: "kachi-ghani", label: "Fortune Kachi Ghani Mustard Oil", productIds: ["mustard"] },
+    { id: "rice-bran", label: "Fortune Rice Bran Health Oil", productIds: ["ricebran"] },
+    { id: "filtered-groundnut", label: "Fortune Filtered Groundnut Oil", productIds: ["groundnut"] },
+    { id: "cottonlite", label: "Fortune Cottonlite Oil", productIds: ["cottonlite"] },
+    { id: "goldnut", label: "Fortune Goldnut Refined Groundnut Oil", productIds: ["goldnut"] },
+    { id: "xpert-active", label: "Fortune Xpert Active Oil", productIds: ["xpert-active"] },
+    { id: "xpert-total", label: "Fortune Xpert Total Balance Oil", productIds: ["xpert-total"] },
+    { id: "xpert-immunity", label: "Fortune Xpert Pro Immunity Oil", productIds: ["xpert-immunity"] },
+    { id: "xpert-sugar", label: "Fortune Xpert Pro Sugar Conscious Oil", productIds: ["xpert-sugar"] },
+    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar"] }
 ];
 
 const FORTUNE_FOOD_SUBCATEGORIES = [
@@ -1248,9 +1273,6 @@ function renderFortuneCatalog() {
         '<button type="button" class="catalog-subchip" data-subfilter="Foods">Foods</button>'
     ].join("");
 
-    const oilChips = FORTUNE_OIL_SUBCATEGORIES.map(function (sub) {
-        return '<button type="button" class="catalog-oilchip" data-oil-filter="' + sub.id + '">' + sub.label + '</button>';
-    }).join("");
     const oilCards = FORTUNE_OIL_SUBCATEGORIES.map(renderOilSubcategory).join("");
 
     const foodSubs = FORTUNE_FOOD_SUBCATEGORIES.filter(function (sub) {
@@ -1265,10 +1287,6 @@ function renderFortuneCatalog() {
     if (oilCards) {
         body += '<div class="catalog-family" data-family="Oils">' +
             '<h3 class="catalog-family-title">Oils</h3>' +
-            '<div class="catalog-oilnav" role="tablist" aria-label="Fortune oil subcategories">' +
-            '<button type="button" class="catalog-oilchip active" data-oil-filter="all">All Oils</button>' +
-            oilChips +
-            '</div>' +
             '<div class="catalog-subgroup">' +
             '<div class="products-grid">' + oilCards + '</div>' +
             '</div></div>';
