@@ -1,18 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" role="img" aria-label="Roman Traders">
-  <rect width="420" height="160" fill="#ffffff"/>
-  <!-- classical column mark -->
-  <g transform="translate(70 44)" fill="#1f3d2f">
-    <rect x="10" y="0" width="28" height="6" rx="1"/>
-    <rect x="14" y="8" width="6" height="48"/>
-    <rect x="28" y="8" width="6" height="48"/>
-    <rect x="8" y="58" width="32" height="6" rx="1"/>
-  </g>
-  <text x="250" y="72" text-anchor="middle"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 180" role="img" aria-label="Roman Traders">
+  <rect width="440" height="180" fill="#ffffff"/>
+  <!-- double hairline frame -->
+  <rect x="78" y="36" width="284" height="108" rx="2"
+        fill="none" stroke="#1c1917" stroke-width="1.4"/>
+  <rect x="86" y="44" width="268" height="92" rx="1"
+        fill="none" stroke="#c4a35a" stroke-width="1"/>
+  <text x="220" y="88" text-anchor="middle"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="34" font-weight="700" fill="#1f3d2f"
-        letter-spacing="4">ROMAN</text>
-  <text x="250" y="108" text-anchor="middle"
+        font-size="36" font-weight="700" fill="#1c1917"
+        letter-spacing="6">ROMAN</text>
+  <line x1="140" y1="102" x2="300" y2="102" stroke="#c4a35a" stroke-width="1.2"/>
+  <text x="220" y="126" text-anchor="middle"
         font-family="'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="16" font-weight="600" fill="#9a7a4a"
-        letter-spacing="6.5">TRADERS</text>
+        font-size="12" font-weight="600" fill="#1c1917"
+        letter-spacing="8">TRADERS</text>
 </svg>
