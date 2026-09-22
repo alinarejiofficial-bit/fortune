@@ -4917,6 +4917,16 @@ video {
         font-size: 0.98rem;
     }
 
+    #collection-banner .page-kicker,
+    #collection-banner h1,
+    #collection-banner p {
+        display: none;
+    }
+
+    #collection-banner .page-banner-dots {
+        display: none;
+    }
+
     .section-title {
         font-size: 1.8rem !important;
     }
@@ -5476,10 +5486,10 @@ video {
     min-height: 148px;
     padding: 18px 16px;
     background: #ffffff;
-    border: 1px solid #e8e2d8;
+    border: none;
     border-radius: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
-    transition: box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+    transition: box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     overflow: hidden;
     position: relative;
 }
@@ -5487,7 +5497,6 @@ video {
 .partner-card:hover {
     background: #ffffff;
     box-shadow: 0 14px 30px rgba(20, 92, 62, 0.12);
-    border-color: rgba(20, 92, 62, 0.3);
 }
 
 .partner-card img {
