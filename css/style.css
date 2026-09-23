@@ -570,6 +570,13 @@ ul {
     z-index: 3;
 }
 
+#collection-banner .page-kicker,
+#collection-banner h1,
+#collection-banner p,
+#collection-banner .page-banner-dots {
+    display: none;
+}
+
 .page-banner-dots {
     display: flex;
     align-items: center;
@@ -4946,16 +4953,6 @@ video {
 
     .page-banner p {
         font-size: 0.98rem;
-    }
-
-    #collection-banner .page-kicker,
-    #collection-banner h1,
-    #collection-banner p {
-        display: none;
-    }
-
-    #collection-banner .page-banner-dots {
-        display: none;
     }
 
     .page-banner.page-banner-video {
