@@ -1458,6 +1458,18 @@ ul {
         grid-template-columns: 1fr;
     }
 
+    .contact-quick-card {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact-quick-card .contact-link {
+        justify-content: center;
+        text-align: center;
+        word-break: break-word;
+    }
+
     .contact-layout {
         grid-template-columns: 1fr;
     }
