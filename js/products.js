@@ -920,16 +920,6 @@ const PRODUCTS = [
         points: ["Fortune Alife Soap", "Rose"]
     },
     {
-        id: "bisleri-20l-jar",
-        category: "Packaged Drinking Water",
-        name: "Bisleri 20 L Packaged Drinking Water",
-        image: "images/bisleri/water-20l.png?v=5",
-        packs: "1 Jar · ₹100/- per jar",
-        packList: ["20 Litre jar", "₹100/- per jar"],
-        summary: "Bisleri 20 litre packaged drinking water jar.",
-        points: ["20 Litre jar", "₹100/- per jar"]
-    },
-    {
         id: "bisleri-10l-jar",
         category: "Packaged Drinking Water",
         name: "Bisleri 10 L Packaged Drinking Water",
@@ -1043,6 +1033,19 @@ const PRODUCTS = [
         ]
     },
     {
+        id: "bailley-10l",
+        category: "Bailley",
+        name: "Bailley 10 Ltr Packaged Drinking Water",
+        image: "images/bailley/water-10l.png?v=1",
+        packs: "10 Ltr – Pack of 1",
+        packList: ["10 Litre", "Pack of 1"],
+        summary: "Bailley 10 litre packaged drinking water with minerals.",
+        points: [
+            "10 Ltr – Pack of 1",
+            "Packaged drinking water with minerals"
+        ]
+    },
+    {
         id: "bailley-5l",
         category: "Bailley",
         name: "Bailley 5 Ltr Packaged Drinking Water",
@@ -1052,8 +1055,7 @@ const PRODUCTS = [
         summary: "Bailley 5 litre packaged drinking water with minerals.",
         points: [
             "5 Ltr – Pack of 1",
-            "Packaged drinking water with minerals",
-            "Free jar, no deposit"
+            "Packaged drinking water with minerals"
         ]
     },
     {
@@ -1067,6 +1069,32 @@ const PRODUCTS = [
         points: [
             "2 Ltr – Pack of 6",
             "Packaged drinking water with minerals"
+        ]
+    },
+    {
+        id: "bailley-1l",
+        category: "Bailley",
+        name: "Bailley 1 Ltr Packaged Drinking Water",
+        image: "images/bailley/water-1l.png?v=3",
+        packs: "1 Ltr – Pack of 12",
+        packList: ["1 Litre", "Pack of 12"],
+        summary: "Bailley 1 litre packaged drinking water with minerals, pack of 12.",
+        points: [
+            "1 Ltr – Pack of 12",
+            "Packaged drinking water with minerals"
+        ]
+    },
+    {
+        id: "bailley-one-500ml",
+        category: "Bailley",
+        name: "Bailley One 500 ML Packaged Drinking Water",
+        image: "images/bailley/bailley-one-500ml.png?v=3",
+        packs: "500 ML – Pack of 24",
+        packList: ["500 ML", "Pack of 24"],
+        summary: "Bailley One 500 ml packaged drinking water with minerals, pack of 24.",
+        points: [
+            "500 ML – Pack of 24",
+            "Bailley One with minerals"
         ]
     }
 ];
