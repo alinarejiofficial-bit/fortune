@@ -6665,7 +6665,7 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
     .hero-slides .hero-photo-bisleri,
     .hero-slides .hero-photo-bisleri img {
         object-fit: cover !important;
-        object-position: center 42% !important;
+        object-position: 62% 40% !important;
         filter: none !important;
         image-rendering: auto !important;
         background-color: #0a6b8a;
