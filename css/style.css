@@ -6665,10 +6665,10 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
     .hero-slides .hero-photo-bisleri,
     .hero-slides .hero-photo-bisleri img {
         object-fit: cover !important;
-        object-position: center top !important;
+        object-position: center 42% !important;
         filter: none !important;
         image-rendering: auto !important;
-        background-color: #00a9a5;
+        background-color: #0a6b8a;
         max-width: none !important;
         min-width: 100% !important;
         min-height: 100% !important;
@@ -6679,7 +6679,7 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
     .hero-slides .hero-photo-fortune,
     .hero-slides .hero-photo-fortune img {
         object-fit: cover !important;
-        object-position: center center !important;
+        object-position: center 40% !important;
         filter: none !important;
         image-rendering: auto !important;
         background-color: #f3efe8;
