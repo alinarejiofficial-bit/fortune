@@ -4928,8 +4928,8 @@ video {
         grid-template-columns: 1fr !important;
         align-items: start;
         width: 100%;
-        gap: 16px;
-        margin: 0;
+        gap: 26px;
+        margin: 0 0 28px;
         padding: 0;
         text-align: left;
     }
