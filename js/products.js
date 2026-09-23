@@ -942,7 +942,7 @@ const PRODUCTS = [
     {
         id: "bisleri-2l-case",
         category: "Packaged Drinking Water",
-        name: "Bisleri 2 L Packaged Drinking Water — Case",
+        name: "Bisleri 2 L Packaged Drinking Water",
         image: "images/bisleri/water-2l.png?v=2",
         packs: "Case of 9 bottles · ₹270/-",
         packList: ["Case of 9 bottles", "₹270/- per case"],
@@ -950,19 +950,9 @@ const PRODUCTS = [
         points: ["2 Litre bottle", "Case of 9 bottles", "₹270/- per case"]
     },
     {
-        id: "bisleri-2l-single",
-        category: "Packaged Drinking Water",
-        name: "Bisleri 2 L Packaged Drinking Water — Single",
-        image: "images/bisleri/water-2l.png?v=2",
-        packs: "1 Bottle · ₹30/-",
-        packList: ["Single 2 litre bottle", "₹30/- per bottle"],
-        summary: "Bisleri 2 litre packaged drinking water, single bottle.",
-        points: ["2 Litre bottle", "₹30/- per bottle"]
-    },
-    {
         id: "bisleri-1l-case",
         category: "Packaged Drinking Water",
-        name: "Bisleri 1 L Packaged Drinking Water — Case",
+        name: "Bisleri 1 L Packaged Drinking Water",
         image: "images/bisleri/water-1l.png?v=2",
         packs: "Case of 12 bottles · ₹240/-",
         packList: ["Case of 12 bottles", "₹240/- per case"],
@@ -970,19 +960,9 @@ const PRODUCTS = [
         points: ["1 Litre bottle", "Case of 12 bottles", "₹240/- per case"]
     },
     {
-        id: "bisleri-1l-single",
-        category: "Packaged Drinking Water",
-        name: "Bisleri 1 L Packaged Drinking Water — Single",
-        image: "images/bisleri/water-1l.png?v=2",
-        packs: "1 Bottle · ₹20/-",
-        packList: ["Single 1 litre bottle", "₹20/- per bottle"],
-        summary: "Bisleri 1 litre packaged drinking water, single bottle.",
-        points: ["1 Litre bottle", "₹20/- per bottle"]
-    },
-    {
         id: "bisleri-500ml-case",
         category: "Packaged Drinking Water",
-        name: "Bisleri 500 ML Packaged Drinking Water — Case",
+        name: "Bisleri 500 ML Packaged Drinking Water",
         image: "images/bisleri/water-500ml.png?v=3",
         packs: "Case of 24 bottles · ₹240/-",
         packList: ["Case of 24 bottles", "₹240/- per case"],
@@ -990,34 +970,14 @@ const PRODUCTS = [
         points: ["500 ML bottle", "Case of 24 bottles", "₹240/- per case"]
     },
     {
-        id: "bisleri-500ml-single",
-        category: "Packaged Drinking Water",
-        name: "Bisleri 500 ML Packaged Drinking Water — Single",
-        image: "images/bisleri/water-500ml.png?v=3",
-        packs: "1 Bottle · ₹10/-",
-        packList: ["Single 500 ml bottle", "₹10/- per bottle"],
-        summary: "Bisleri 500 ml packaged drinking water, single bottle.",
-        points: ["500 ML bottle", "₹10/- per bottle"]
-    },
-    {
         id: "bisleri-soda-750ml-case",
         category: "Bisleri Soda",
-        name: "Bisleri Soda 750 ML — Case",
+        name: "Bisleri Soda 750 ML",
         image: "images/bisleri/soda-750ml.png?v=2",
         packs: "Case of 12 bottles · ₹240/-",
         packList: ["Case of 12 bottles", "₹240/- per case"],
         summary: "Bisleri soda 750 ml, case of 12 bottles.",
         points: ["750 ML soda", "Case of 12 bottles", "₹240/- per case"]
-    },
-    {
-        id: "bisleri-soda-750ml-single",
-        category: "Bisleri Soda",
-        name: "Bisleri Soda 750 ML — Single",
-        image: "images/bisleri/soda-750ml.png?v=2",
-        packs: "1 Bottle · ₹20/-",
-        packList: ["Single 750 ml bottle", "₹20/- per bottle"],
-        summary: "Bisleri soda 750 ml, single bottle.",
-        points: ["750 ML soda", "₹20/- per bottle"]
     },
     {
         id: "bailley-20l",
@@ -1082,6 +1042,32 @@ const PRODUCTS = [
         points: [
             "1 Ltr – Pack of 12",
             "Packaged drinking water with minerals"
+        ]
+    },
+    {
+        id: "bailley-500ml",
+        category: "Bailley",
+        name: "Bailley 500 ML Packaged Drinking Water",
+        image: "images/bailley/water-500ml.png?v=1",
+        packs: "500 ML – Pack of 24",
+        packList: ["500 ML", "Pack of 24"],
+        summary: "Bailley 500 ml packaged drinking water with minerals, pack of 24.",
+        points: [
+            "500 ML – Pack of 24",
+            "Packaged drinking water with minerals"
+        ]
+    },
+    {
+        id: "bailley-one-1l",
+        category: "Bailley",
+        name: "Bailley One 1 Ltr Packaged Drinking Water",
+        image: "images/bailley/bailley-one-1l.png?v=4",
+        packs: "1 Ltr – Pack of 12",
+        packList: ["1 Litre", "Pack of 12"],
+        summary: "Bailley One 1 litre packaged drinking water with minerals, pack of 12.",
+        points: [
+            "1 Ltr – Pack of 12",
+            "Bailley One with minerals"
         ]
     },
     {
