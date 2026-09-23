@@ -4449,9 +4449,6 @@ video {
     .page-banner h1,
     .page-banner p,
     .page-kicker,
-    .catalog-group .section-header,
-    .catalog-group .section-title,
-    .catalog-subtitle,
     .contact-card,
     .contact-card h3,
     .contact-facts,
@@ -4484,18 +4481,26 @@ video {
     }
 
     .catalog-group .section-header {
-        align-items: flex-start !important;
-        text-align: left !important;
+        align-items: center !important;
+        text-align: center !important;
     }
 
     .catalog-group .section-header .section-subtitle,
-    .catalog-group .section-header .section-title {
-        text-align: left !important;
+    .catalog-group .section-header .section-title,
+    .catalog-subtitle {
+        text-align: center !important;
+        width: 100%;
     }
 
     .catalog-group .section-title::after {
-        left: 0;
-        transform: none;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .catalog-subnav,
+    .catalog-oilnav,
+    .catalog-foodnav {
+        justify-content: center !important;
     }
 
     #home-contact .section-header {
