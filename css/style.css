@@ -659,8 +659,9 @@ ul {
     font-family: 'Inter', sans-serif;
     font-size: 1.08rem;
     color: rgba(255, 255, 255, 0.92);
-    max-width: 640px;
+    max-width: none;
     line-height: 1.6;
+    white-space: nowrap;
 }
 
 /* Category Quick Nav Bar */
@@ -1585,16 +1586,21 @@ ul {
 
 .about-title {
     font-family: 'Outfit', sans-serif;
-    font-size: 3.2rem;
+    font-size: clamp(1.85rem, 2.4vw, 2.85rem);
     font-weight: 800;
-    color: #2b2523;
+    color: #111111;
     line-height: 1.15;
     margin-bottom: 20px;
     letter-spacing: -0.5px;
 }
 
+.about-title .about-title-line {
+    display: block;
+    white-space: nowrap;
+}
+
 .about-title .highlight {
-    color: #145c3e;
+    color: #111111;
 }
 
 .br-m {
@@ -1608,6 +1614,10 @@ ul {
     color: #555555;
     margin-bottom: 36px;
     font-weight: 400;
+}
+
+.about-desc .about-desc-line {
+    display: block;
 }
 
 .about-visual-badge {
@@ -2207,6 +2217,14 @@ ul {
     grid-template-columns: 2fr 1fr 1fr 2fr;
     gap: 40px;
     margin-bottom: 50px;
+    align-items: start;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: start;
 }
 
 .footer-col > p {
@@ -2269,6 +2287,7 @@ ul {
     align-items: flex-start;
     gap: 10px;
     margin-bottom: 6px;
+    min-height: 0;
 }
 
 .footer-heading-icon {
@@ -2277,6 +2296,7 @@ ul {
     justify-content: center;
     width: 42px;
     height: 42px;
+    flex-shrink: 0;
     border-radius: 50%;
     border: 1.5px solid rgba(231, 215, 177, 0.85);
     color: #e7d7b1;
@@ -2287,6 +2307,7 @@ ul {
 .footer-heading h4 {
     margin: 0;
     padding-bottom: 10px;
+    line-height: 1.2;
 }
 
 .footer-heading h4::after {
@@ -2499,6 +2520,7 @@ ul {
         display: flex;
         flex-wrap: wrap;
         gap: 100px;
+        align-items: flex-start;
     }
 
     .footer .footer-col:first-child p {
@@ -2510,6 +2532,7 @@ ul {
     .footer .container {
         display: flex;
         gap: 80px;
+        align-items: flex-start;
     }
 }
 
@@ -2517,6 +2540,7 @@ ul {
     .footer .container {
         display: flex;
         gap: 60px;
+        align-items: flex-start;
     }
 }
 
@@ -2524,6 +2548,7 @@ ul {
     .footer .container {
         display: flex;
         gap: 40px;
+        align-items: flex-start;
     }
 }
 
@@ -2531,6 +2556,7 @@ ul {
     .footer .container {
         display: flex;
         gap: 25px;
+        align-items: flex-start;
     }
 }
 
@@ -2867,11 +2893,13 @@ ul {
     .footer .container {
         display: flex;
         gap: 20px;
+        align-items: flex-start;
     }
 
     .footer-col {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -3944,13 +3972,15 @@ body {
 
 .page-banner h1 {
     color: #fff;
-    font-size: 3rem;
+    font-size: clamp(1.55rem, 2.35vw, 2.45rem);
     margin: 8px 0 12px;
+    white-space: nowrap;
 }
 
 .page-banner p {
     color: rgba(255, 255, 255, 0.9);
-    max-width: 640px;
+    max-width: none;
+    white-space: nowrap;
 }
 
 .page-kicker {
@@ -4326,8 +4356,14 @@ body {
     color: #6d625c;
     font-size: 0.98rem;
     line-height: 1.7;
-    max-width: 560px;
+    max-width: none;
     margin-bottom: 26px;
+}
+
+@media (min-width: 901px) {
+    .about-desc .about-desc-line {
+        white-space: nowrap;
+    }
 }
 
 #home-about .about-points {
@@ -4469,8 +4505,20 @@ video {
 @media (max-width: 1100px) {
     .footer .container {
         display: grid !important;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        gap: 28px 32px !important;
+        align-items: start !important;
+    }
+
+    .footer .footer-col:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer .footer-col:nth-child(2),
+    .footer .footer-col:nth-child(3),
+    .footer .footer-col:last-child {
+        grid-column: auto;
+        align-self: start !important;
     }
 
     .why-features {
@@ -4609,13 +4657,12 @@ video {
     }
 
     .footer .container,
-    .footer-col,
-    .footer-bottom .container {
-        align-items: stretch !important;
+    .footer-col {
+        align-items: flex-start !important;
     }
 
     .footer .container {
-        align-items: stretch !important;
+        align-items: start !important;
     }
 
     .footer-links {
@@ -4962,21 +5009,21 @@ video {
         font-size: 1.85rem !important;
         line-height: 1.25;
         text-align: center !important;
-        max-width: 18ch !important;
+        max-width: none !important;
         width: 100% !important;
         margin: 0 auto 14px !important;
         padding: 0;
-        color: #145c3e;
+        color: #111111 !important;
     }
 
-    .about-title .br-m,
-    #home-about .about-title .br-m {
-        display: inline;
+    .about-title .about-title-line,
+    #home-about .about-title .about-title-line {
+        white-space: normal;
     }
 
     .about-title .highlight,
     #home-about .about-title .highlight {
-        color: #145c3e;
+        color: #111111 !important;
     }
 
     .about-desc,
@@ -5110,11 +5157,14 @@ video {
     }
 
     .page-banner h1 {
-        font-size: 2rem !important;
+        font-size: 1.75rem !important;
+        white-space: normal;
     }
 
     .page-banner p {
         font-size: 0.98rem;
+        white-space: normal;
+        max-width: 100%;
     }
 
     .page-banner.page-banner-video {
@@ -5147,7 +5197,7 @@ video {
         column-gap: 24px !important;
         row-gap: 0 !important;
         margin-bottom: 18px !important;
-        align-items: stretch !important;
+        align-items: start !important;
     }
 
     .footer .footer-col:first-child {
@@ -5162,7 +5212,7 @@ video {
         grid-column: auto;
         width: 100%;
         box-sizing: border-box;
-        align-self: stretch !important;
+        align-self: start !important;
         padding-bottom: 24px !important;
     }
 
@@ -5304,7 +5354,7 @@ video {
         gap: 8px !important;
         margin: 0 0 2px !important;
         width: 100%;
-        min-height: 78px;
+        min-height: 0 !important;
     }
 
     .footer-heading-icon {
