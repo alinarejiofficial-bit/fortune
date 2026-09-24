@@ -5123,19 +5123,26 @@ video {
 
     .footer .container {
         display: grid !important;
-        grid-template-columns: 1fr !important;
-        gap: 28px !important;
+        grid-template-columns: 1fr 1fr !important;
+        column-gap: 20px !important;
+        row-gap: 28px !important;
         margin-bottom: 20px !important;
-        align-items: stretch !important;
+        align-items: start !important;
     }
 
     .footer .footer-col:first-child,
-    .footer .footer-col:nth-child(2),
-    .footer .footer-col:nth-child(3),
     .footer .footer-col:last-child {
         grid-column: 1 / -1;
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .footer .footer-col:nth-child(2),
+    .footer .footer-col:nth-child(3) {
+        grid-column: auto;
+        width: 100%;
+        box-sizing: border-box;
+        align-self: start !important;
     }
 
     #link,
