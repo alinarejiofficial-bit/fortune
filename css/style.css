@@ -6811,7 +6811,7 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         object-position: center center !important;
         filter: none !important;
         image-rendering: auto !important;
-        background-color: #4a1a6b;
+        background-color: #3a1458;
         max-width: none !important;
         min-width: 100% !important;
         min-height: 100% !important;
@@ -6825,7 +6825,7 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         object-position: center center !important;
         filter: none !important;
         image-rendering: auto !important;
-        background-color: #0a6b8a;
+        background-color: #1a6b8a;
         max-width: none !important;
         min-width: 100% !important;
         min-height: 100% !important;
@@ -6839,7 +6839,7 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
         object-position: center center !important;
         filter: none !important;
         image-rendering: auto !important;
-        background-color: #f3efe8;
+        background-color: #f5ebe0;
         max-width: none !important;
         min-width: 100% !important;
         min-height: 100% !important;
@@ -6848,7 +6848,15 @@ body.is-scrolled.is-fortune .btn-nav-contact:hover {
     }
 
     .hero.is-bailley {
-        background-color: #4a1a6b;
+        background-color: #3a1458;
+    }
+
+    .hero.is-bisleri {
+        background-color: #1a6b8a;
+    }
+
+    .hero.is-fortune {
+        background-color: #f5ebe0;
     }
 }
 
