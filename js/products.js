@@ -993,19 +993,6 @@ const PRODUCTS = [
         ]
     },
     {
-        id: "bailley-10l",
-        category: "Bailley",
-        name: "Bailley 10 Ltr Packaged Drinking Water",
-        image: "images/bailley/water-10l.png?v=1",
-        packs: "10 Ltr – Pack of 1",
-        packList: ["10 Litre", "Pack of 1"],
-        summary: "Bailley 10 litre packaged drinking water with minerals.",
-        points: [
-            "10 Ltr – Pack of 1",
-            "Packaged drinking water with minerals"
-        ]
-    },
-    {
         id: "bailley-5l",
         category: "Bailley",
         name: "Bailley 5 Ltr Packaged Drinking Water",
@@ -1082,6 +1069,60 @@ const PRODUCTS = [
             "500 ML – Pack of 24",
             "Bailley One with minerals"
         ]
+    },
+    {
+        id: "bailley-soda-750ml",
+        category: "Bailley",
+        name: "Bailley Soda 750 ML",
+        image: "images/bailley/soda-750ml.png?v=4",
+        packs: "750 ML PET",
+        packList: ["750 ML PET bottle"],
+        summary: "Bailley soda 750 ml PET bottle.",
+        points: [
+            "750 ML PET",
+            "Bailley soda"
+        ]
+    },
+    {
+        id: "charminar-rice-1kg",
+        category: "Rice",
+        name: "Charminar Rice 1 Kg",
+        image: "images/fortune-foods/charminar-rice-1kg.png?v=2",
+        packs: "Pouch 1 kg",
+        packList: ["Pouch — 1 kg"],
+        summary: "Charminar rice, 1 kg pouch.",
+        points: [
+            "Charminar Rice",
+            "Pouch — 1 kg"
+        ]
+    },
+    {
+        id: "super-basmati-bogo",
+        category: "Rice",
+        name: "Fortune Super Rice Buy 1 Get 1",
+        image: "images/fortune-foods/super-basmati-bogo.png?v=2",
+        packs: "1 kg + 1 kg free",
+        packList: ["Buy 1 Get 1", "1 kg + 1 kg free"],
+        summary: "Fortune Super Basmati Rice Buy 1 Get 1 offer pack.",
+        points: [
+            "Fortune Super Basmati Rice",
+            "Buy 1 Get 1",
+            "1 kg + 1 kg free"
+        ]
+    },
+    {
+        id: "aadhar-oil",
+        category: "Oils",
+        name: "Aadhar Refined Sunflower Oil",
+        image: "images/fortune/aadhar-sunflower.png?v=2",
+        packs: "Pouch 500ml, 1L · Jerry Can 5L, 15L · Tin 15L, 15kg",
+        packList: ["Pouch — 1 litre", "Jerry Can — 5 litres", "Tin — 15 kg"],
+        summary: "Aadhar refined sunflower oil.",
+        points: [
+            "Aadhar Refined Sunflower Oil",
+            "Pouch — 1 litre",
+            "Jerry Can — 5 litres"
+        ]
     }
 ];
 
@@ -1109,7 +1150,20 @@ const BRAND_FILTERS = {
     fortune: {
         title: "Fortune",
         match: function (item) {
-            return /fortune|alife/i.test(item.name);
+            return /fortune|alife|charminar|aadhar|aadhaar/i.test(item.name)
+                || item.category === "Oils"
+                || item.category === "Rice"
+                || item.category === "Atta"
+                || item.category === "Soya Chunks"
+                || item.category === "Besan"
+                || item.category === "Sugar"
+                || item.category === "Pulses"
+                || item.category === "Rawa"
+                || item.category === "Maida"
+                || item.category === "Poha"
+                || item.category === "Suji"
+                || item.category === "Wheat"
+                || item.category === "Chana Sattu";
         }
     }
 };
@@ -1166,7 +1220,8 @@ const FORTUNE_OIL_SUBCATEGORIES = [
     { id: "xpert-total", label: "Fortune Xpert Total Balance Oil", productIds: ["xpert-total"] },
     { id: "xpert-immunity", label: "Fortune Xpert Pro Immunity Oil", productIds: ["xpert-immunity"] },
     { id: "xpert-sugar", label: "Fortune Xpert Pro Sugar Conscious Oil", productIds: ["xpert-sugar"] },
-    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar"] }
+    { id: "pehli-dhaar", label: "Fortune Pehli Dhaar Mustard Oil", productIds: ["pehli-dhaar"] },
+    { id: "aadhar-oil", label: "Aadhar Refined Sunflower Oil", productIds: ["aadhar-oil"] }
 ];
 
 const FORTUNE_FOOD_SUBCATEGORIES = [
