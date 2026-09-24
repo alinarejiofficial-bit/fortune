@@ -4930,7 +4930,7 @@ video {
         align-items: stretch !important;
         background: #eef3f4;
         border-radius: 22px;
-        overflow: hidden;
+        overflow: visible;
         box-shadow: 0 8px 24px rgba(28, 25, 23, 0.05);
     }
 
@@ -4945,7 +4945,8 @@ video {
         background: transparent;
         border-radius: 0;
         padding: 22px 20px 8px;
-        text-align: center;
+        text-align: left;
+        align-items: flex-start;
     }
 
     #home-about .about-visual,
@@ -4987,38 +4988,67 @@ video {
 
     #home-about .about-kicker,
     .about-kicker {
-        justify-content: center;
-        margin: 0 0 12px;
-        padding: 0;
-        color: #145c3e;
-        font-size: 0.78rem;
-        font-weight: 800;
-        letter-spacing: 1.8px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        margin: 0 0 12px !important;
+        padding: 0 !important;
+        width: 100% !important;
+        text-align: left !important;
+    }
+
+    #home-about .about-kicker span:first-child,
+    .about-kicker span:first-child {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        text-align: left !important;
+        font-size: 0.72rem !important;
+        letter-spacing: 1.4px !important;
+        line-height: 1.35 !important;
+        color: #145c3e !important;
     }
 
     #home-about .about-kicker-line,
     .about-kicker-line {
-        width: 36px;
+        width: 36px !important;
+        margin: 0 !important;
         background: #d4c4a0;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .about-title,
     #home-about .about-title {
-        font-size: 1.85rem !important;
-        line-height: 1.25;
-        text-align: center !important;
-        max-width: none !important;
+        font-size: clamp(1.2rem, 4.8vw, 1.55rem) !important;
+        line-height: 1.22 !important;
+        text-align: left !important;
+        max-width: 100% !important;
         width: 100% !important;
-        margin: 0 auto 14px !important;
-        padding: 0;
+        margin: 0 0 14px !important;
+        padding: 0 !important;
         color: #111111 !important;
     }
 
     .about-title .about-title-line,
     #home-about .about-title .about-title-line {
-        white-space: normal;
+        display: block !important;
+        white-space: nowrap !important;
+        width: auto;
+    }
+
+    .about-title .about-title-line:nth-child(2),
+    #home-about .about-title .about-title-line:nth-child(2),
+    .about-title .about-title-line:nth-child(3),
+    #home-about .about-title .about-title-line:nth-child(3) {
+        display: inline !important;
+    }
+
+    .about-title .about-title-line:nth-child(2)::after,
+    #home-about .about-title .about-title-line:nth-child(2)::after {
+        content: " ";
     }
 
     .about-title .highlight,
@@ -5030,14 +5060,25 @@ video {
     .about-content p,
     #home-about .about-content p,
     #home-about .about-desc {
-        font-size: 0.98rem !important;
-        text-align: center !important;
-        max-width: none !important;
-        width: auto !important;
-        margin: 0 auto 14px !important;
-        padding: 0;
+        font-size: 0.95rem !important;
+        text-align: left !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 0 14px !important;
+        padding: 0 !important;
         color: #6b7280;
         line-height: 1.65;
+    }
+
+    .about-desc .about-desc-line,
+    #home-about .about-desc .about-desc-line {
+        display: inline !important;
+        white-space: normal !important;
+    }
+
+    .about-desc .about-desc-line::after,
+    #home-about .about-desc .about-desc-line::after {
+        content: " ";
     }
 
     .about-desc:last-child,
