@@ -38,7 +38,6 @@
         <div class="container">
             <span class="page-kicker">PRODUCT SHOWCASE</span>
             <h1 id="banner-title">Product</h1>
-            <p id="banner-packs"></p>
         </div>
     </section>
 
@@ -120,7 +119,6 @@
 
         document.title = product.name + " - Premium Food Supply";
         document.getElementById("banner-title").textContent = product.name;
-        document.getElementById("banner-packs").textContent = "Available Pack Formats: " + product.packs;
         document.getElementById("crumb-name").textContent = product.name;
 
         document.getElementById("detail").innerHTML =

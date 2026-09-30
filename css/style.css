@@ -7006,6 +7006,14 @@ body {
     overflow: hidden;
 }
 
+@media (min-width: 901px) {
+    .hero {
+        width: 100%;
+        min-height: 0;
+        aspect-ratio: 1600 / 639;
+    }
+}
+
 @media (max-width: 900px) {
     .hero-buttons {
         flex-wrap: wrap;
