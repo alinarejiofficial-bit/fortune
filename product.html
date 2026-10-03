@@ -124,13 +124,7 @@
         document.getElementById("detail").innerHTML =
             '<div class="detail-photo"><img src="' + product.image + '" alt="' + product.name + '"></div>' +
             '<div>' +
-                '<span class="about-kicker" style="display:flex; align-items:center; gap:10px; margin-bottom:12px;"><span style="font-family:\'Inter\'; font-size:0.8rem; font-weight:800; letter-spacing:2px; color:#a80825; text-transform:uppercase;">FORTUNE RANGE</span><span class="about-kicker-line"></span></span>' +
                 '<h1>' + product.name + '</h1>' +
-                '<p class="detail-summary">' + product.summary + '</p>' +
-                '<span class="pack-chips-label"><i class="fa-solid fa-boxes-stacked" style="color:#a80825; margin-right:6px;"></i> Available Pack Formats:</span>' +
-                '<div class="pack-chips">' + product.packList.map(function (pack) {
-                    return '<span>' + pack + '</span>';
-                }).join("") + '</div>' +
                 '<ul class="detail-points">' + product.points.map(function (point) {
                     return '<li>' + point + '</li>';
                 }).join("") + '</ul>' +
