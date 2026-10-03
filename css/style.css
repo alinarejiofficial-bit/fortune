@@ -1798,14 +1798,14 @@ ul {
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #333333;
+    color: #111111;
 }
 
 .about-feature-item .feature-sub {
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     font-weight: 500;
-    color: #555555;
+    color: #111111;
 }
 
 .btn-about-cta {
