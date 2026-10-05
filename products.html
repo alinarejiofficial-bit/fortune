@@ -144,11 +144,6 @@
 
         const groups = catalog.querySelectorAll(".catalog-group");
         const chips = document.querySelectorAll(".category-chip");
-        const backBar = document.createElement("div");
-        backBar.className = "catalog-back";
-        backBar.hidden = !brandFilter;
-        backBar.innerHTML = '<button type="button" class="catalog-back-btn"><i class="fa-solid fa-arrow-left"></i> Go back</button>';
-        catalog.parentNode.insertBefore(backBar, catalog);
 
         function showAll() {
             if (brandFilter) {
@@ -161,7 +156,6 @@
             chips.forEach(function (chip) {
                 chip.classList.toggle("active", chip.dataset.filter === "all");
             });
-            backBar.hidden = true;
         }
 
         function showCategory(id) {
@@ -186,8 +180,6 @@
             chips.forEach(function (chip) {
                 chip.classList.toggle("active", chip.dataset.filter === id);
             });
-            backBar.hidden = false;
-            backBar.scrollIntoView({ behavior: "smooth", block: "nearest" });
         }
 
         chips.forEach(function (chip) {
@@ -204,8 +196,6 @@
                 showCategory(id);
             });
         });
-
-        backBar.querySelector(".catalog-back-btn").addEventListener("click", showAll);
 
         if (!brandFilter) {
             const filterParam = new URLSearchParams(window.location.search).get("filter");
