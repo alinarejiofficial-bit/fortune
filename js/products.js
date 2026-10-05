@@ -924,60 +924,60 @@ const PRODUCTS = [
         category: "Packaged Drinking Water",
         name: "Bisleri 10L Packaged Drinking Water",
         image: "images/bisleri/water-10l.png?v=3",
-        packs: "1 Jar · ₹130/- per jar",
-        packList: ["10 Litre jar", "₹130/- per jar"],
+        packs: "1 Jar",
+        packList: ["10 Litre jar"],
         summary: "Bisleri 10 litre packaged drinking water jar.",
-        points: ["10 Litre jar", "₹130/- per jar"]
+        points: ["10 Litre jar"]
     },
     {
         id: "bisleri-5l-jar",
         category: "Packaged Drinking Water",
         name: "Bisleri 5L Packaged Drinking Water",
         image: "images/bisleri/water-5l.png?v=2",
-        packs: "1 Jar · ₹75/- per jar",
-        packList: ["5 Litre jar", "₹75/- per jar"],
+        packs: "1 Jar",
+        packList: ["5 Litre jar"],
         summary: "Bisleri 5 litre packaged drinking water jar.",
-        points: ["5 Litre jar", "₹75/- per jar"]
+        points: ["5 Litre jar"]
     },
     {
         id: "bisleri-2l-case",
         category: "Packaged Drinking Water",
         name: "Bisleri 2L Packaged Drinking Water",
         image: "images/bisleri/water-2l.png?v=2",
-        packs: "Case of 9 bottles · ₹270/-",
-        packList: ["Case of 9 bottles", "₹270/- per case"],
+        packs: "Case of 9 bottles",
+        packList: ["Case of 9 bottles"],
         summary: "Bisleri 2 litre packaged drinking water, case of 9 bottles.",
-        points: ["2 Litre bottle", "Case of 9 bottles", "₹270/- per case"]
+        points: ["2 Litre bottle", "Case of 9 bottles"]
     },
     {
         id: "bisleri-1l-case",
         category: "Packaged Drinking Water",
         name: "Bisleri 1L Packaged Drinking Water",
         image: "images/bisleri/water-1l.png?v=2",
-        packs: "Case of 12 bottles · ₹240/-",
-        packList: ["Case of 12 bottles", "₹240/- per case"],
+        packs: "Case of 12 bottles",
+        packList: ["Case of 12 bottles"],
         summary: "Bisleri 1 litre packaged drinking water, case of 12 bottles.",
-        points: ["1 Litre bottle", "Case of 12 bottles", "₹240/- per case"]
+        points: ["1 Litre bottle", "Case of 12 bottles"]
     },
     {
         id: "bisleri-500ml-case",
         category: "Packaged Drinking Water",
         name: "Bisleri 500ml Packaged Drinking Water",
         image: "images/bisleri/water-500ml.png?v=3",
-        packs: "Case of 24 bottles · ₹240/-",
-        packList: ["Case of 24 bottles", "₹240/- per case"],
+        packs: "Case of 24 bottles",
+        packList: ["Case of 24 bottles"],
         summary: "Bisleri 500ml packaged drinking water, case of 24 bottles.",
-        points: ["500ml bottle", "Case of 24 bottles", "₹240/- per case"]
+        points: ["500ml bottle", "Case of 24 bottles"]
     },
     {
         id: "bisleri-soda-750ml-case",
         category: "Bisleri Soda",
         name: "Bisleri Soda 750ml",
         image: "images/bisleri/soda-750ml.png?v=2",
-        packs: "Case of 12 bottles · ₹240/-",
-        packList: ["Case of 12 bottles", "₹240/- per case"],
+        packs: "Case of 12 bottles",
+        packList: ["Case of 12 bottles"],
         summary: "Bisleri soda 750ml, case of 12 bottles.",
-        points: ["750ml soda", "Case of 12 bottles", "₹240/- per case"]
+        points: ["750ml soda", "Case of 12 bottles"]
     },
     {
         id: "bailley-20l",
