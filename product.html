@@ -121,6 +121,13 @@
         document.getElementById("banner-title").textContent = product.name;
         document.getElementById("crumb-name").textContent = product.name;
 
+        if (document.referrer) {
+            const from = new URL(document.referrer);
+            if (from.origin === window.location.origin && /\/products(\.html)?$/.test(from.pathname)) {
+                document.querySelector('.crumb a[href="products.html"]').href = from.href;
+            }
+        }
+
         document.getElementById("detail").innerHTML =
             '<div class="detail-photo"><img src="' + product.image + '" alt="' + product.name + '"></div>' +
             '<div>' +

@@ -131,8 +131,18 @@
     <script src="js/site.js"></script>
     <script>
         const catalog = document.getElementById("catalog");
-        const brandParam = new URLSearchParams(window.location.search).get("brand");
+        const pageParams = new URLSearchParams(window.location.search);
+        const brandParam = pageParams.get("brand");
         const brandFilter = brandParam ? BRAND_FILTERS[brandParam] : null;
+
+        function saveState(changes) {
+            Object.keys(changes).forEach(function (key) {
+                if (!changes[key] || changes[key] === "all") pageParams.delete(key);
+                else pageParams.set(key, changes[key]);
+            });
+            const query = pageParams.toString();
+            history.replaceState(null, "", "products.html" + (query ? "?" + query : "") + window.location.hash);
+        }
 
         if (brandFilter) {
             catalog.innerHTML = renderBrandCatalog(brandParam);
@@ -156,6 +166,7 @@
             chips.forEach(function (chip) {
                 chip.classList.toggle("active", chip.dataset.filter === "all");
             });
+            saveState({ filter: null });
         }
 
         function showCategory(id) {
@@ -180,6 +191,7 @@
             chips.forEach(function (chip) {
                 chip.classList.toggle("active", chip.dataset.filter === id);
             });
+            saveState({ filter: id });
         }
 
         chips.forEach(function (chip) {
@@ -198,7 +210,7 @@
         });
 
         if (!brandFilter) {
-            const filterParam = new URLSearchParams(window.location.search).get("filter");
+            const filterParam = pageParams.get("filter");
             if (filterParam && filterParam !== "all") showCategory(filterParam);
             else showAll();
         } else {
@@ -280,12 +292,14 @@
                         name !== "all" && el.getAttribute("data-food-sub") !== name
                     );
                 });
+                saveState({ food: name });
             }
 
-            function showFortuneSub(name) {
+            function showFortuneSub(name, restoring) {
                 subchips.forEach(function (chip) {
                     chip.classList.toggle("active", chip.getAttribute("data-subfilter") === name);
                 });
+                saveState({ sub: name });
                 if (name === "all") {
                     families.forEach(function (el) { el.classList.remove("is-subfiltered-out"); });
                     setFoodsNavVisible(false);
@@ -299,7 +313,8 @@
                     );
                 });
                 setFoodsNavVisible(name === "Foods");
-                if (name === "Foods") showFoodSub("all");
+                showFoodSub("all");
+                if (restoring) return;
                 const target = fortuneGroup.querySelector('.catalog-family[data-family="' + name + '"]');
                 if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
             }
@@ -317,6 +332,22 @@
             });
 
             setFoodsNavVisible(false);
+
+            const savedSub = pageParams.get("sub");
+            const savedFood = pageParams.get("food");
+            const hasChip = function (list, attr, value) {
+                return Array.prototype.some.call(list, function (chip) {
+                    return chip.getAttribute(attr) === value;
+                });
+            };
+            if (savedFood && hasChip(foodchips, "data-food-filter", savedFood)) {
+                showFortuneSub("Foods", true);
+                showFoodSub(savedFood);
+            } else if (savedSub && hasChip(subchips, "data-subfilter", savedSub)) {
+                showFortuneSub(savedSub, true);
+            } else {
+                saveState({ sub: null, food: null });
+            }
         })();
     </script>
 </body>
