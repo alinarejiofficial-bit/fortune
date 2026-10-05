@@ -935,9 +935,9 @@ const PRODUCTS = [
         name: "Bisleri 5L Packaged Drinking Water",
         image: "images/bisleri/water-5l.png?v=2",
         packs: "1 Jar",
-        packList: ["5 Litre jar"],
+        packList: ["5L"],
         summary: "Bisleri 5 litre packaged drinking water jar.",
-        points: ["5 Litre jar"]
+        points: ["5L"]
     },
     {
         id: "bisleri-2l-case",
