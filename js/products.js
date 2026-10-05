@@ -794,10 +794,10 @@ const PRODUCTS = [
         category: "Maida",
         name: "Fortune Maida",
         image: "images/fortune-foods/maida.png?v=2",
-        packs: "Pouch 500 grams · Pouch 1kg",
-        packList: ["Pouch — 500 grams", "Pouch — 1kg"],
+        packs: "Pouch 500g · Pouch 1kg",
+        packList: ["Pouch — 500g", "Pouch — 1kg"],
         summary: "Fortune Maida.",
-        points: ["Fortune Maida", "Pouch — 500 grams", "Pouch — 1kg"]
+        points: ["Fortune Maida", "Pouch — 500g", "Pouch — 1kg"]
     },
     {
         id: "regular-poha",
